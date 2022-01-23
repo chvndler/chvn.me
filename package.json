@@ -1,0 +1,57 @@
+{
+  "name": "chvn.me",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "generate": "prisma generate",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@heroicons/react": "^1.0.1",
+    "@prisma/client": "^3.6.0",
+    "@radix-ui/react-hover-card": "^0.1.1",
+    "clsx": "^1.1.1",
+    "contentlayer": "^0.0.34",
+    "date-fns": "^2.27.0",
+    "fathom-client": "^3.2.0",
+    "framer-motion": "^5.4.3",
+    "hex-to-rgb": "^1.0.1",
+    "next": "^12.0.4",
+    "next-contentlayer": "^0.0.34",
+    "next-seo": "^4.26.0",
+    "next-themes": "^0.0.15",
+    "prettier": "^2.5.1",
+    "qss": "^2.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-use": "^17.2.4",
+    "swr": "^1.1.0",
+    "zod": "^3.11.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@types/css-font-loading-module": "^0.0.7",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.5",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "prisma": "3.6.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.0.1",
+    "remark-gfm": "^3.0.1",
+    "tailwindcss": "^3.0.15",
+    "typescript": "^4.3.2"
+  },
+  "description": "[delba.dev](https://delba.dev)",
+  "main": "index.tsx",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "chvndler <chan@ady.world>",
+  "license": "MIT"
+}
