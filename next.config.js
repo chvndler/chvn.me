@@ -1,22 +1,24 @@
-const { withContentlayer } = require("next-contentlayer")
+const path = require('path');
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)$/,
+});
 
-/**
- * @type {import('next').NextConfig}
- */
-module.exports = withContentlayer()({
-  async redirects() {
-    return [
-      {
-        source: "/interactive-playgrounds",
-        destination: "/blog/interactive-playgrounds",
-        permanent: true,
-      },
-    ]
-  },
+module.exports = withMDX({
+  pageExtensions: ['js', 'jsx', 'mdx', 'md'],
   images: {
-    domains: [
-      "api.microlink.io", // Link previews
-      "pbs.twimg.com", // Twitter Profile Picture
-    ],
+    domains: ['img.musicthread.app'],
   },
-})
+  webpack: (config, { dev, isServer }) => {
+    config.resolve.alias['@'] = path.resolve('./');
+
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      });
+    }
+
+    return config;
+  },
+});
