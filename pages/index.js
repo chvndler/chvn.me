@@ -85,7 +85,7 @@ const IndexPage = ({ posts }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Dribbble
+                Are.na
               </a>
               {/* <Arena /> */}
             </div>
