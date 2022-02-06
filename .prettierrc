@@ -7,6 +7,5 @@
   "arrowParens": "avoid",
   "printWidth": 120,
   "trailingComma": "all",
-
   "endOfLine": "auto"
 }
