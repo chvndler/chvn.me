@@ -24,7 +24,7 @@ export const Navbar = () => {
           jc: 'space-between',
           position: 'fixed',
           margin: '0',
-          backgroundColor: '$light100',
+          backgroundColor: '$translucent',
           width: '100vw',
           backdropFilter: 'blur(10px)',
           WebkitBackdropFilter: 'blur(10px)',
@@ -57,7 +57,7 @@ export const Navbar = () => {
                 letterSpacing: '-0.03rem',
               }}
             >
-              NEXT.Start
+              chvn.me
             </Text>
           </Box>
         </Link>
