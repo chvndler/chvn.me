@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Heading } from '@/system/heading';
+import { Text } from '@/system/text';
 import { Box } from '@/system/box';
 import nextStartLogo from '@/public/NEXT.start-dark.svg';
 import { Navbar } from '@/ui/Navbar';
@@ -24,27 +25,26 @@ const Container = styled('div', {
 // APP BEGIN / HOMEPAGE
 const Cover = () => {
   return (
-    <Box css={{ minWidth: '100vw', minHeight: '100vh', zIndex: '0' }}>
-      <Navbar />
+    <Box css={{ minWidth: '100vw', minHeight: '100vh', zIndex: '0', bc: '$yellow7' }}>
       <Container>
         <Box css={{ zIndex: '25' }}>
-          <Heading css={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700' }}>Cover Page</Heading>
-
-          <Link href="/" passHref>
-            <a>
-              <Heading
-                css={{
-                  paddingTop: '10px',
-                  textAlign: 'center',
-                  fontFamily: 'Inter, sans-serif',
-                  fontSize: '16px',
-                  fontWeight: '500',
-                }}
-              >
-                go back home
-              </Heading>
-            </a>
-          </Link>
+          <Heading
+            size="4"
+            css={{
+              fontFamily: '$inter',
+              fontSize: '90px',
+              fontWeight: '900',
+              // BreakPoints
+              '@sm': {
+                fontSize: '18px',
+              },
+              '@md': {
+                fontSize: '28px',
+              },
+            }}
+          >
+            Chandler Chappell
+          </Heading>
         </Box>
       </Container>
     </Box>
