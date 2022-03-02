@@ -1,11 +1,13 @@
 // REACT & NEXT IMPORTS
 import React from 'react';
+import Router from 'next/router';
 import { AppProps } from 'next/app';
 import { useTheme } from 'next-themes';
 import { ThemeProvider } from 'next-themes';
 
 // PROGRESS LOADER
-import NextNprogress from 'nextjs-progressbar';
+import nprogress from 'nprogress';
+import debounce from 'lodash.debounce';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -14,6 +16,20 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 import { reset } from '@/styles/reset';
 import 'inter-ui/inter.css';
 import '@/styles/global.css';
+
+// Only show nprogress after 500ms (slow loading)
+const start = debounce(nprogress.start, 500);
+Router.events.on('routeChangeStart', start);
+Router.events.on('routeChangeComplete', () => {
+  start.cancel();
+  nprogress.done();
+  window.scrollTo(0, 0);
+});
+
+Router.events.on('routeChangeError', () => {
+  start.cancel();
+  nprogress.done();
+});
 
 const appWrapper = css({
   include: ['box', 'minHeightScreen'],
@@ -57,13 +73,6 @@ const App = ({ Component, pageProps }: AppProps) => {
           flexDirection: 'column',
         })}
       >
-        <NextNprogress
-          color="linear-gradient(to right, #b5bdc8 0%,#828c95 36%,#28343b 100%)"
-          startPosition={0.3}
-          stopDelayMs={300}
-          height={3}
-          showOnShallow={true}
-        />
         <Component {...pageProps} />
       </div>
     </ThemeProvider>
