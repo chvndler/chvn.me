@@ -107,29 +107,6 @@ export const Navbar = () => {
           {/* <!-- THEME SWITCH --> */}
           <ThemeSwitch />
 
-          {/* <!-- JSX ELEMENT --> */}
-          <NewLink
-            href="https://api.ady.world"
-            target="_blank"
-            rel="norefferer"
-            css={{
-              fontSize: '13px',
-              color: '$gray12',
-              border: '0px solid $crimson9',
-              borderRadius: '6px',
-              paddingTop: '6px',
-              paddingBottom: '6px',
-              paddingLeft: '10px',
-              paddingRight: '10px',
-              mr: '$3',
-              '@sm': { display: 'none', mr: '$3' },
-              '&:hover': { cursor: 'pointer' },
-            }}
-          >
-            Login
-          </NewLink>
-          {/* <!-- -->*/}
-
           <PopoverPanel />
         </Flex>
       </Flex>
