@@ -7,17 +7,17 @@ import { Text } from '@/system/text';
 import { Heading } from '@/system/heading';
 import { Container } from '@/system/container';
 import nextStartLogo from '@/public/NEXT.start-dark.svg';
-import { Navbar } from '@/ui/Navbar';
 import { Spacer } from '@/ui/Spacer';
+import { RadixAvatar } from '@/functions/RadixAvatar';
 
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
 
 // APP BEGIN / HOMEPAGE
 const Index = () => {
   return (
-    <Box css={{ minWidth: '100vw', height: '100%', overflow: 'visible' }}>
-      <Navbar />
+    <Box css={{ padding: '20px', minWidth: '100vw', height: '100%', overflow: 'visible' }}>
       <Container size="2" css={{ paddingTop: '200px' }}>
+        <RadixAvatar />
         <Heading
           size="4"
           css={{
@@ -49,7 +49,11 @@ const Index = () => {
           <span>Connect</span>
         </Heading>
 
-        <TwitterLogoIcon />
+        <Link href="https://twitter.com/chv_ndler" target="_blank" rel="noreffer" passHref>
+          <a>
+            <TwitterLogoIcon />
+          </a>
+        </Link>
 
         <Spacer />
         <Heading

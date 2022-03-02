@@ -8,6 +8,7 @@ import { ThemeProvider } from 'next-themes';
 // PROGRESS LOADER
 import nprogress from 'nprogress';
 import debounce from 'lodash.debounce';
+import { Navbar } from '@/ui/Navbar';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -73,6 +74,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           flexDirection: 'column',
         })}
       >
+        <Navbar />
         <Component {...pageProps} />
       </div>
     </ThemeProvider>

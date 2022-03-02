@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
+  typescript: {
+    ignoreDevErrors: true,
+  },
   images: {
     domains: ['cdn.ady.systems', 'unsplash.com'],
   },
