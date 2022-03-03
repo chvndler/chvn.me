@@ -4,7 +4,12 @@ module.exports = {
     ignoreDevErrors: true
   },
   images: {
-    domains: ['cdn.ady.systems', 'ady.systems', 'images.unsplash.com']
+    domains: [
+      'cdn.ady.systems',
+      'ady.systems',
+      'images.unsplash.com',
+      'res.cloudinary.com'
+    ]
   },
   experimental: {
     urlImports: [
