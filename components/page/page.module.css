@@ -1,12 +1,15 @@
 .wrapper {
   height: 100%;
-  padding-bottom: var(--small-gap);
+  padding-bottom: 0;
 }
 
 .main {
   max-width: var(--main-content);
-  margin: 0 auto;
-  padding: 0 var(--gap);
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

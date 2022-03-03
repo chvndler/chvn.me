@@ -27,6 +27,7 @@
     "isolatedModules": true,
     "paths": {
       "@components/*": ["components/*"],
+      "@system/*": ["system/*"],
       "@lib/*": ["lib/*"],
       "@styles/*": ["styles/*"],
       "@data/*": ["data/*"]

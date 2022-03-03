@@ -1,10 +1,11 @@
 import Page from '@components/page'
 import Link from '@components/link'
+import { Container } from '@system/container'
 
 const About = () => {
   return (
     <Page description="making cool.">
-      <article>
+      <Container size="3">
         <h1>Chandler Chappell</h1>
         <p>
           Frontend developer, designer, and director. We are the distracted
@@ -28,7 +29,7 @@ const About = () => {
           </Link>
           .
         </p>
-      </article>
+      </Container>
     </Page>
   )
 }
