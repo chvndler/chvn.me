@@ -24,10 +24,6 @@ Router.events.on('routeChangeError', () => {
   nprogress.done()
 })
 
-const appWrapper = css({
-  include: ['box', 'minHeightScreen']
-})
-
 import '@styles/global.css'
 import '@styles/chrome-bug.css'
 import { ThemeProvider } from 'next-themes'
@@ -35,19 +31,6 @@ import { ThemeProvider } from 'next-themes'
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props
-
-    globalCss(reset, {
-      html: {
-        overflowX: 'hidden',
-
-        // iOS MOBILE VIEWPORT FIX
-        minHeight: '-webkit-fill-available'
-      },
-      body: {
-        // iOS MOBILE VIEWPORT FIX
-        minHeight: '-webkit-fill-available'
-      }
-    })
 
     return (
       <ThemeProvider disableTransitionOnChange defaultTheme="dark">
@@ -58,14 +41,7 @@ class MyApp extends App {
           />
         </Head>
 
-        <div
-          className={appWrapper({
-            display: 'flex',
-            flexDirection: 'column'
-          })}
-        >
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
       </ThemeProvider>
     )
   }
