@@ -193,7 +193,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       red500: 'hsl(352,100%,62%)',
 
       // TRANSLUCENT ALPHAS
-      light100: 'rgba(240, 240, 240, 0.5)',
+      light100: 'rgba(240, 240, 240, 0.7)',
       light50: 'rgba(240, 240, 240, 0.8)',
       clear100: 'rgba(240, 240, 240, 0.2)',
 

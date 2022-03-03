@@ -1,0 +1,67 @@
+{
+  "schema": [
+    {
+      "name": "trance",
+      "color": "green"
+    },
+    {
+      "name": "house",
+      "color": "blue"
+    },
+    {
+      "name": "other",
+      "color": "indigo"
+    }
+  ],
+  "data": [
+    {
+      "title": "Alone with the Gods..",
+      "description": "V2 Capsule Film",
+      "image": "https://cdn.ady.systems/chvn/assets/alone.png",
+      "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
+      "key": "indigo"
+    },
+    {
+      "title": "Irminsul, Le Pilier Du Monde",
+      "description": "Damabia (Andrew Bayer Remix)",
+      "image": "https://i.ytimg.com/vi/ELcCv6SoAao/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
+      "key": "trance"
+    },
+    {
+      "title": "17333",
+      "image": "https://i.ytimg.com/vi/SPulNChZO5A/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=SPulNChZO5A",
+      "key": "trance",
+      "description": "Viers"
+    },
+    {
+      "title": "Contrasts",
+      "description": "Vintage & Morelli",
+      "image": "https://i.ytimg.com/vi/Z2ggwjFVS-s/maxresdefault.jpg",
+      "url": "https://youtu.be/Z2ggwjFVS-s",
+      "key": "trance"
+    },
+    {
+      "title": "Nostalgia Drive",
+      "description": "No Mana",
+      "image": "https://i.ytimg.com/vi/G4z_jKXeg7E/maxresdefault.jpg",
+      "url": "https://youtu.be/G4z_jKXeg7E",
+      "key": "trance"
+    },
+    {
+      "title": "No Worries",
+      "description": "Siege (Extended Mix)",
+      "image": "https://i.ytimg.com/vi/maT0N-a5dc0/maxresdefault.jpg",
+      "url": "https://youtu.be/maT0N-a5dc0",
+      "key": "trance"
+    },
+    {
+      "title": "Parallel Lines",
+      "description": "ATTLAS (Enzo Bennet Remix)",
+      "image": "https://i.ytimg.com/vi/MD6rNJk68Zk/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
+      "key": "trance"
+    }
+  ]
+}

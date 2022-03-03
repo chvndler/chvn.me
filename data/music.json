@@ -1,0 +1,32 @@
+{
+  "schema": [
+    {
+      "name": "trance",
+      "color": "green"
+    },
+    {
+      "name": "house",
+      "color": "blue"
+    },
+    {
+      "name": "other",
+      "color": "indigo"
+    }
+  ],
+  "data": [
+    {
+      "title": "James Grant & Jody Wisternoff",
+      "description": "Anjunadeep Open Air (ABGT 350)",
+      "image": "https://i.ytimg.com/vi/_RQe4oMTtOE/maxresdefault.jpg",
+      "url": "https://youtu.be/_RQe4oMTtOE",
+      "key": "trance"
+    },
+    {
+      "title": "Devil",
+      "description": "Boris Brejcha",
+      "image": "https://i.ytimg.com/vi/FMRdt6h62YA/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=FMRdt6h62YA",
+      "key": "house"
+    }
+  ]
+}

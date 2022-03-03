@@ -1,12 +1,16 @@
 module.exports = {
   reactStrictMode: true,
   typescript: {
-    ignoreDevErrors: true,
+    ignoreDevErrors: true
   },
   images: {
-    domains: ['cdn.ady.systems', 'unsplash.com'],
+    domains: ['cdn.ady.systems', 'ady.systems', 'images.unsplash.com']
   },
   experimental: {
-    urlImports: ['https://cdn.ady.systems/', 'https://cdn.skypack.dev/'],
-  },
-};
+    urlImports: [
+      'https://cdn.ady.systems/',
+      'https://assets.vercel.com/',
+      'https://cdn.skypack.dev/'
+    ]
+  }
+}
