@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Link from 'next/link'
+import Header from '@components/header'
 import { NextPage } from 'next'
 
 // ATELIER® DESIGN SYSTEM
@@ -49,6 +50,7 @@ const MySpace: NextPage = () => {
       </Head>
 
       <Box css={{ overflow: 'auto', height: '100vh' }}>
+        <Header />
         <Section size="3">
           <Container
             size="3"

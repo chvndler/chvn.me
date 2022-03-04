@@ -4,7 +4,7 @@ import { Container } from '@system/container'
 
 import styles from './header.module.css'
 // import { Butterfly as LogoIcon } from '@components/icons'
-import { ChLogo as LogoIcon } from '@components/icons'
+import { Butterfly as LogoIcon } from '@components/icons'
 import Command from '@components/command'
 
 const Header = ({ title, content }) => {
