@@ -9,21 +9,19 @@ import Command from '@components/command'
 
 const Header = ({ title, content }) => {
   return (
-    <Container size="3">
-      <nav className={styles.nav}>
-        <div className={styles.header}>
-          <Link href="/">
-            <a aria-label="Navigate Home" className={styles.logo}>
-              <LogoIcon />
-            </a>
-          </Link>
+    <nav className={styles.nav}>
+      <div className={styles.header}>
+        <Link href="/">
+          <a aria-label="Navigate Home" className={styles.logo}>
+            <LogoIcon />
+          </a>
+        </Link>
 
-          <Command />
+        <Command />
 
-          {title && <div className={styles.content}>{title}</div>}
-        </div>
-      </nav>
-    </Container>
+        {title && <div className={styles.content}>{title}</div>}
+      </div>
+    </nav>
   )
 }
 

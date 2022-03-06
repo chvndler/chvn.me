@@ -1,6 +1,7 @@
 @import './syntax.css';
 @import './markdown.css';
 @import './inter.css';
+@import './neue-wide.css';
 @import './jetbrains.css';
 @import './nprogress.css';
 
@@ -115,14 +116,14 @@ h4,
 h5,
 h6 {
   font-family: 'Inter', sans-serif;
-  line-height: 1.75;
+  line-height: normal;
 }
 
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 800;
-  line-height: normal;
+  line-height: -2rem;
   letter-spacing: -1.4px;
 }
 
@@ -146,8 +147,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25rem;
-  letter-spacing: -0.33px;
+  font-family: 'Neue Plak Wide', sans-serif;
+  font-size: 0.6rem;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 hr {

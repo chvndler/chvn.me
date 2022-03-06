@@ -1,12 +1,11 @@
-import { Navbar } from '@components/navbar'
+import Header from '@components/header'
+import Page from '@components/page'
 import Link from '@components/link'
 import { Container } from '@system/container'
 
 const About = () => {
   return (
-    <Container size="3">
-      <Navbar />
-
+    <Page>
       <h1>Chandler Chappell</h1>
       <h4>Frontend Developer, Designer, and Director.</h4>
 
@@ -34,7 +33,7 @@ const About = () => {
         </Link>
         .
       </p>
-    </Container>
+    </Page>
   )
 }
 
