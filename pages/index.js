@@ -11,6 +11,8 @@ const About = () => {
       <h1>Chandler Chappell</h1>
       <h4>Front-end Developer, Designer, & Director</h4>
       <br />
+      <br />
+      <br />
 
       <h5>About.</h5>
       <p>

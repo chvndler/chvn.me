@@ -76,9 +76,6 @@ const CommandMenu = memo(() => {
       },
       // Blog
       'g b': () => router.push('/blog'),
-      // Navigation
-      'g h': () => router.push('/'),
-      'g c': () => router.push('/contact'),
       // Collections
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
@@ -89,6 +86,9 @@ const CommandMenu = memo(() => {
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
+      // Navigation
+      'g h': () => router.push('/'),
+      'g c': () => router.push('/contact'),
       // Social
       'g t': () => () =>
         window.open('https://twitter.com/pacocoursey', '_blank')
