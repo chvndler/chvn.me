@@ -1,11 +1,9 @@
-import Header from '@components/header'
 import Page from '@components/page'
 import Link from '@components/link'
-import { Container } from '@system/container'
 
 const About = () => {
   return (
-    <Page>
+    <Page title="Chvn®" description="chvn.me/">
       <h1>Chandler Chappell</h1>
       <h4>Front-end Developer, Designer, & Director</h4>
       <br />
