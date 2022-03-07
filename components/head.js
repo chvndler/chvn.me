@@ -24,7 +24,7 @@ const Head = ({
       />
 
       {/* Title */}
-      <title>{title}</title>
+      <title>chvn.me | ©2022</title>
       <meta name="og:title" content={title} />
 
       {/* Description */}

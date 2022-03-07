@@ -156,9 +156,9 @@ h4 {
 h5 {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--fg);
-  letter-spacing: 0px;
+  letter-spacing: -0.04rem !important;
   line-height: 0.4;
 }
 
@@ -197,11 +197,19 @@ button {
   font-size: inherit;
 }
 
+.links {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--volt) !important;
+}
+
 p a,
 a.reset {
-  outline: none;
+  outline: none !important;
   color: var(--fg);
-  text-decoration: none;
+  text-decoration: none !important;
+  padding-right: 10px;
+  border: none !important;
 }
 
 p a:hover,

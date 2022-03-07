@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Page description="Hi, I'm Paco. Frontend developer and designer, mechanical keyboard enthusiast, practicing minimalist, and trance lover in search of flow.">
       <article>
-        <h1>Paco Coursey</h1>
+        <h1>Chandler Chappell</h1>
 
         <p>
           Frontend developer and designer. I make beautiful, minimal websites
