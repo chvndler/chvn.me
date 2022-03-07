@@ -15,7 +15,8 @@ import {
 } from 'cmdk'
 
 import {
-  Command as CommandIcon,
+  // Command as CommandIcon,
+  Menu as MenuIcon,
   Sparkles,
   Pencil,
   Search,
@@ -134,7 +135,7 @@ const CommandMenu = memo(() => {
         title="⌘K"
         onClick={() => setOpen(true)}
       >
-        <CommandIcon />
+        <MenuIcon />
       </button>
 
       <DialogOverlay

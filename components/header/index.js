@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { Container } from '@system/container'
 
 import styles from './header.module.css'
+import { ChLogo as LogoIcon } from '@components/icons'
 // import { Butterfly as LogoIcon } from '@components/icons'
-import { Butterfly as LogoIcon } from '@components/icons'
 import Command from '@components/command'
 
 const Header = ({ title, content }) => {
@@ -17,9 +17,10 @@ const Header = ({ title, content }) => {
           </a>
         </Link>
 
-        <Command />
-
-        {title && <div className={styles.content}>{title}</div>}
+        <div>
+          {title && <div className={styles.content}>{title}</div>}
+          <Command />
+        </div>
       </div>
     </nav>
   )

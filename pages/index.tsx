@@ -7,14 +7,18 @@ const About = () => {
   return (
     <Page>
       <h1>Chandler Chappell</h1>
-      <h4>Frontend Developer, Designer, and Director.</h4>
+      <h4>Front-end Developer, Designer, & Director</h4>
+      <br />
 
+      <h5>About</h5>
       <p>
-        Currently building{' '}
+        I've been a designer for nearly 7 years so <strong>front-end</strong>{' '}
+        code is where my most valuable set of skills live. I am currently
+        studying to be full-stack and building{' '}
         <Link underline href="https://vercel.com" external>
           <strong>Atelier Design Yield</strong>
         </Link>
-        ® [ ady® ], to calm the noise within the design culture.
+        ® [ ady® ], to calm the noise within the design.
       </p>
 
       <br />

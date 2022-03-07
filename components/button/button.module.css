@@ -16,7 +16,9 @@
 .button:hover,
 .button:focus {
   outline: none;
-  color: var(--gray);
+  /* color: var(--gray); */
+  color: var(--lime);
+  background: var(--lime);
 }
 
 .button[disabled] {

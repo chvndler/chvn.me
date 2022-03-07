@@ -5,7 +5,7 @@
 .command,
 .logo {
   display: inline-flex;
-  padding: 10px;
+  padding: 8px;
   margin: -10px;
   border-radius: var(--radius);
 }
@@ -24,6 +24,8 @@
   margin-right: var(--gap-half);
 }
 .nav {
+  font-family: 'Neue Plak Wide', sans-serif;
+  font-size: 12px;
   z-index: 10;
   margin: var(--small-gap) auto var(--big-gap) auto;
   position: sticky;
@@ -38,12 +40,19 @@
   padding: 0 var(--gap);
   max-width: var(--main-content);
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .content {
+  display: inline-flex;
+  position: relative;
+  padding-right: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600 !important;
+  letter-spacing: 0;
   overflow: auto;
   color: var(--gray-alpha);
-  font-weight: 500;
   margin-left: var(--gap-double);
 }
 .hint {
