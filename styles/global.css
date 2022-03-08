@@ -47,6 +47,9 @@
   --keyword: #fff;
   --name: #fff;
   --highlight: #2e2e2e;
+
+  /* custom svg colors */
+  --logo: #fb5607;
 }
 
 [data-theme='light'] {
