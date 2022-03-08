@@ -5,7 +5,7 @@
 .command,
 .logo {
   display: inline-flex;
-  padding: 8px;
+  padding: 4px;
   margin: -10px;
   border-radius: var(--radius);
 }
@@ -24,15 +24,23 @@
   margin-right: var(--gap-half);
 }
 .nav {
-  font-family: 'Neue Plak Wide', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   z-index: 10;
-  margin: var(--small-gap) auto var(--big-gap) auto;
+  margin: auto auto auto auto;
+  margin-bottom: 80px;
   position: sticky;
-  padding: var(--gap) 0;
+  padding: 10px 0;
   top: 0;
   background-color: var(--header-bg);
-  backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(220%) blur(20px);
+
+  /* Safari */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-backdrop-filter: saturate(220%) blur(20px);
 }
 .header {
   height: 32px;
@@ -67,7 +75,4 @@
   color: var(--fg);
 }
 @media (max-width: 960px) {
-  .nav {
-    margin: var(--gap-double) 0;
-  }
 }

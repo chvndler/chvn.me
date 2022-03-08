@@ -12,7 +12,7 @@ const Flow = () => (
       {`
         .box {
           background-color: var(--light-gray);
-          border-radius: 50%;
+          border-radius: 0;
           height: 200px;
           width: 200px;
           position: relative;
@@ -28,7 +28,7 @@ const Flow = () => (
           width: 400px;
           height: 400px;
           transform-origin: 50% 48%;
-          border-radius: 43%;
+          border-radius: 50%;
 
           background-color: var(--fg);
           transition: background-color 300ms ease-in-out;
@@ -37,7 +37,7 @@ const Flow = () => (
         }
 
         .wave:nth-child(1) {
-          opacity: 0.8;
+          opacity: 0.4;
         }
 
         .wave:nth-child(2) {

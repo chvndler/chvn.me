@@ -6,15 +6,15 @@ const Pyramid = () => {
       <div className="side right"></div>
       <div className="side back"></div>
 
-      {/* <div className="shadow"></div> */}
+      {/* <!-- <div className="shadow"></div> --> */}
 
       <style jsx>{`
         .container {
-          width: 400px;
-          height: 400px;
+          width: 350px;
+          height: 350px;
           margin: 0 auto;
           position: relative;
-          perspective: 300px;
+          perspective: 350px;
           perspective-origin: 50% 40%;
         }
 
@@ -62,7 +62,7 @@ const Pyramid = () => {
         }
         .shadow {
           position: absolute;
-          top: 300px;
+          top: 260px;
           left: 175px;
           width: 50px;
           height: 50px;

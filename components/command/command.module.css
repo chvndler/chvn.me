@@ -28,7 +28,8 @@
   position: relative;
   margin: 0 auto;
   z-index: 9999;
-  border-radius: 10px;
+  border: 1px solid var(--volt);
+  border-radius: 18px;
   overflow: hidden;
   top: calc(30px + var(--big-gap) + (3 * var(--gap-double)));
   background: var(--bg);

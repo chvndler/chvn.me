@@ -65,6 +65,7 @@ const About = () => {
 
       <br />
       <br />
+
       <h5>Current Projects.</h5>
       <article>
         {items.map(entry => {

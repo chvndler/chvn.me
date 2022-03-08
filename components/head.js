@@ -22,6 +22,7 @@ const Head = ({
         type="font/woff2"
         crossOrigin="anonymous"
       />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
       {/* Title */}
       <title>Chvn®</title>
