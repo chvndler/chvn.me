@@ -31,7 +31,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <ThemeProvider disableTransitionOnChange defaultTheme="dark">
+      <ThemeProvider disableTransitionOnChange defaultTheme="system">
         <Head>
           <meta
             name="viewport"
