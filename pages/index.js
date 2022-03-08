@@ -3,7 +3,7 @@ import Link from '@components/link'
 import Entry from '@components/entry'
 
 // Data
-import { data as items } from '@data/film.json'
+import { data as items } from '@data/current.json'
 
 const About = () => {
   return (
@@ -19,19 +19,48 @@ const About = () => {
         I've been a designer for nearly 7 years so <strong>front-end</strong>{' '}
         code is where my most valuable set of skills live. I am currently
         studying to be full-stack and building{' '}
-        <Link underline href="https://vercel.com" external>
-          <strong>Atelier Design Yield</strong>
+        <Link href="https://vercel.com" external>
+          <strong>Atelier Design Yield®</strong>
         </Link>
-        ® [ ady® ], to calm the noise within design.
+        [ ady® ], to calm the noise within design.
       </p>
 
       <br />
       <br />
       <h5>Connect.</h5>
       <p className="links">
-        <Link href="https://twitter.com/chv_ndler">Twitter</Link>{' '}
-        <Link href="https://github.com/chvndler">GitHub</Link>{' '}
-        <Link href="https://www.instagram.com/chv.ndler/">Instagram</Link>
+        <Link
+          className="arena"
+          href="https://www.are.na/chvndler-ch"
+          target="_blank"
+          rel="norefferer"
+        >
+          Are.na
+        </Link>{' '}
+        <Link
+          className="twitter"
+          href="https://twitter.com/chv_ndler"
+          target="_blank"
+          rel="norefferer"
+        >
+          Twitter
+        </Link>{' '}
+        <Link
+          className="github"
+          href="https://github.com/chvndler"
+          target="_blank"
+          rel="norefferer"
+        >
+          GitHub
+        </Link>{' '}
+        <Link
+          className="instagram"
+          href="https://www.instagram.com/chv.ndler/"
+          target="_blank"
+          rel="norefferer"
+        >
+          Instagram
+        </Link>
       </p>
 
       <br />

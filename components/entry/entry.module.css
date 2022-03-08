@@ -10,8 +10,9 @@
   height: calc(4 * var(--big-gap));
   object-fit: cover;
   background-size: cover;
+  border: 1px solid var(--volt);
   background-repeat: no-repeat;
-  background-color: var(--lighter-gray);
+  background-color: transparent;
   border-radius: 18px;
   overflow: hidden;
 }
@@ -28,9 +29,9 @@
   border-radius: 18px;
   background: radial-gradient(
     circle at center,
-    white 10%,
-    whitesmoke 11%,
-    whitesmoke 100%
+    white 0%,
+    whitesmoke 6%,
+    whitesmoke 10%
   );
   z-index: -1;
 }
@@ -103,15 +104,16 @@
 }
 
 .title {
-  color: #fff;
-  font-size: 1rem;
+  color: var(--volt);
+  font-size: 1.2rem;
   font-weight: bold;
   line-height: normal;
-  text-transform: uppercase;
-  margin-bottom: var(--gap);
+  /* text-transform: uppercase; */
+  margin-bottom: 10px;
 }
 
 .description {
+  font-size: 0.8rem;
   font-weight: 500;
   color: #eaeaea;
 }
