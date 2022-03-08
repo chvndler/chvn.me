@@ -4,6 +4,7 @@ import Entry from '@components/entry'
 
 // Data
 import { data as items } from '@data/current.json'
+// import { Twitter as TwitterIcon } from '@components/icons'
 
 const About = () => {
   return (
