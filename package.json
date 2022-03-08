@@ -83,7 +83,7 @@
       "lib"
     ]
   },
-  "description": "[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/pacocoursey/paco)",
+  "description": "Personal website highlighting my current projects, ideas, blog, & more. Designed with a focus on minimalism, UI interactions, and typography.",
   "main": "next.config.js",
   "directories": {
     "lib": "lib"
