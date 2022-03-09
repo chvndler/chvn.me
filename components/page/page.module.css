@@ -4,7 +4,7 @@
 }
 .main {
   max-width: var(--main-content);
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -15,14 +15,14 @@
 }
 .titlewrapper {
   position: relative;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
 }
 .content {
   display: inline-flex;
   position: relative;
-  text-align: center;
-  align-items: center;
+  text-align: left;
+  align-items: left;
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 800 !important;
