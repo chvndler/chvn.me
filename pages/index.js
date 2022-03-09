@@ -1,14 +1,16 @@
 import Page from '@components/page'
 import Link from '@components/link'
 import Entry from '@components/entry'
+import { useTheme } from 'next-themes'
 
 // Data
 import { data as items } from '@data/current.json'
-// import { Twitter as TwitterIcon } from '@components/icons'
 
-const About = () => {
+const Index = () => {
+  const { theme, setTheme } = useTheme()
+
   return (
-    <Page title="Chvn®" description="chvn.me/">
+    <Page title="" description="chvn.me/">
       <h1>Chandler Chappell</h1>
       <h4>Front-end Developer, Designer, & Director</h4>
       <br />
@@ -85,4 +87,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Index

@@ -7,6 +7,7 @@ const Page = ({
   header = true,
   footer = true,
   title,
+  content,
   description,
   image,
   showHeaderTitle = true,
@@ -15,13 +16,18 @@ const Page = ({
   return (
     <div className={styles.wrapper}>
       <Head
-        title={`${title ? `${title} - ` : ''}Paco Coursey`}
+        title={`${title ? `${title} - ` : ''}chvn®`}
         description={description}
         image={image}
       />
 
       {header && <Header title={showHeaderTitle && title} />}
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <div className={styles.titlewrapper}>
+          {title && <div className={styles.content}>{title}</div>}
+        </div>
+        {children}
+      </main>
       <Footer />
     </div>
   )

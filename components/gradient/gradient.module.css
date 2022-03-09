@@ -1,0 +1,20 @@
+.imagediv {
+  background-image: url('https://cdn.ady.systems/chvn/assets/gr.png');
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  z-index: 1;
+  width: 100vw;
+  height: 80px;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.footimage {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}

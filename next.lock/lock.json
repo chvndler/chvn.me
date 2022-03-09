@@ -1,5 +1,6 @@
 {
   "https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2": { "integrity": "sha512-qsOK0p3TJ/FBo6ZX6GP+7Amx5f8LAV1lnjWl9JfR+5NNAMbZf45cIAjqISBptj8rUuoABRt95Wbt5meeG8WnLA==", "contentType": "application/octet-stream" },
+  "https://cdn.ady.systems/chvn/assets/gr.png": { "integrity": "sha512-di+OlecRu8JkKkVtVcrZWMcLjcek49RJq2m/1/0TrRWbeuAOJ+jnGgE/rod85TuXzLx50VQtCj8B6xV8Svubxg==", "contentType": "image/png" },
   "https://cdn.ady.systems/fontface/BergenMono-Bold.eot": { "integrity": "sha512-QzCTMrsUDT9oYJGlcceoKd1Ip2+IlpfdedZ7P4sT1sPsbvquGmLkwXQ+TZs33ZYCGTpaBTUOWqITdpFei8IPYQ==", "contentType": "binary/octet-stream" },
   "https://cdn.ady.systems/fontface/BergenMono-Bold.woff": { "integrity": "sha512-lXZAt0HS0gN93NAqN49MMC5qSVFGWXIPmdOqRWJzEuOAuakt31hhkrAi3+9FKsTkxcBMRl7Pyop1aTHaBuaRcg==", "contentType": "binary/octet-stream" },
   "https://cdn.ady.systems/fontface/BergenMono-Bold.woff2": { "integrity": "sha512-Pf/ZBtg75V5HwozjhegB9V2VehjC1DwlxCh9snZ5OIUlznpeydDFrfSVaLdXqtF2yS8gJUrRIe2/h/F7EwkdPA==", "contentType": "binary/octet-stream" },

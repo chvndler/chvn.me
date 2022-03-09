@@ -14,19 +14,12 @@ const Footer = () => {
           </a>
         </Link>
 
-        <h5>Connect</h5>
-        <Link href="/">
-          <a aria-label="Twitter" className={styles.footlink}>
-            Connect
-          </a>
-        </Link>
-
-        <h5>Information</h5>
-        <Link href="/">
-          <a aria-label="Twitter" className={styles.footlink}>
-            Connect
-          </a>
-        </Link>
+        <div className={styles.footlink}>
+          <p className={styles.copyright}>
+            Copyright © 2022 |{' '}
+            <a href="https://github.com/chvndler/chvn.me">GitHub</a>
+          </p>
+        </div>
       </div>
     </nav>
   )

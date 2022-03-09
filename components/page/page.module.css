@@ -4,9 +4,30 @@
 }
 .main {
   max-width: var(--main-content);
-  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 1rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.titlewrapper {
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+.content {
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 800 !important;
+  line-height: normal;
+  letter-spacing: -0.08rem;
+  color: var(--gray-alpha);
+  margin-bottom: 40px;
 }
