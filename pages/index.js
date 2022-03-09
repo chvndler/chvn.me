@@ -87,4 +87,5 @@ const Index = () => {
   )
 }
 
+Index.theme = 'light'
 export default Index

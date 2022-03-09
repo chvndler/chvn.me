@@ -1,5 +1,5 @@
 const withIcon = icon => {
-  const Icon = ({ size = 24, color = 'currentColor' }) => {
+  const Icon = ({ size = 22, color = 'currentColor' }) => {
     return (
       <svg
         viewBox="0 0 24 24"
