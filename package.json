@@ -21,6 +21,7 @@
     "@stitches/react": "^1.2.7",
     "animejs": "^3.2.1",
     "classnames": "^2.2.6",
+    "cloudinary-react": "^1.7.1",
     "cmdk": "^0.0.4",
     "intersection-observer": "^0.7.0",
     "lodash.debounce": "^4.0.8",

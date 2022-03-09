@@ -32,12 +32,13 @@
   /* Dark Mode Colors */
   --bg: #131415;
   --fg: #fafbfc;
-  --white: #fff;
+  --white: #231f20;
   --gray: #666;
   --light-gray: #444;
   --lighter-gray: #222;
   --lightest-gray: #1a1a1a;
-  --volt: #70e000;
+  /* --volt: #0071bc; */
+  --volt: #adff02;
   --orange: #fb5607;
   --article-color: #eaeaea;
   --header-border: rgba(19, 20, 21, 0.7);
@@ -78,8 +79,9 @@
   --selection: rgba(0, 0, 0, 0.99);
 
   /* CUSTOM COLORS */
-  --volt: #70e000;
+  --volt: #9b5de5;
   --orange: #fb5607;
+  --white: #175676;
 
   --token: #666;
   --comment: #999;
