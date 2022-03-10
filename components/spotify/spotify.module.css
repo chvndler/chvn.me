@@ -1,0 +1,11 @@
+.track_container {
+  width: var(--main-content);
+  padding: 2px;
+  margin: auto;
+  z-index: 70;
+  color: var(--fg);
+}
+
+.tracks {
+  display: flex;
+}

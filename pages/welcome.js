@@ -1,6 +1,7 @@
 import Page from '@components/page'
 import Link from '@components/link'
 import Entry from '@components/entry'
+import Tracks from '@components/spotify'
 import { useTheme } from 'next-themes'
 
 // Data
@@ -71,6 +72,9 @@ const Welcome = () => {
       <br />
 
       <h5>Current Projects.</h5>
+      <Tracks />
+
+      {/* <!--
       <article>
         {items.map(entry => {
           return (
@@ -84,6 +88,7 @@ const Welcome = () => {
           )
         })}
       </article>
+      --> */}
     </Page>
   )
 }
