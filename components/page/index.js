@@ -4,6 +4,7 @@ import Footer from '@components/footer'
 import styles from './page.module.css'
 
 const Page = ({
+  background = true,
   header = true,
   footer = true,
   title,
@@ -22,6 +23,7 @@ const Page = ({
       />
 
       {header && <Header title={showHeaderTitle && title} />}
+
       <main className={styles.main}>
         <div className={styles.titlewrapper}>
           {title && <div className={styles.content}>{title}</div>}

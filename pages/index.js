@@ -11,7 +11,7 @@ const Index = () => {
 
   return (
     <Page title="" description="chvn.me/">
-      <h1>Chandler Chappell</h1>
+      <h1>CHANDLER CHAPPELL</h1>
       <h4>Front-end Developer, Designer, & Director</h4>
       <br />
       <br />

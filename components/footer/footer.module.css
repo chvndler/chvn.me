@@ -51,7 +51,7 @@
   z-index: 10;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding: 10px 0;
+  padding: 12px 0;
   background-color: var(--footer-bg);
   border: 1px solid var(--header-bg);
   border-bottom: 0;
@@ -81,6 +81,11 @@
 }
 
 @media (max-width: 700px) {
+  .footernav {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 16px 0;
+  }
   .footer {
     display: flex;
     height: auto;
