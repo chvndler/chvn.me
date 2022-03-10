@@ -7,6 +7,7 @@ module.exports = {
     domains: [
       'cdn.ady.systems',
       'ady.systems',
+      'i.scdn.co',
       'images.unsplash.com',
       'res.cloudinary.com'
     ]
