@@ -1,0 +1,47 @@
+.page {
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  z-index: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--bg);
+}
+
+.cover_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.main_content {
+  z-index: 200;
+  max-width: var(--main-content);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  align-items: center;
+  text-align: center;
+  color: var(--fg);
+}

@@ -1,3 +1,6 @@
+{
+  /* <-- FORWARD TO COVER
+
 import Page from '@components/page'
 import Link from '@components/link'
 import Entry from '@components/entry'
@@ -11,8 +14,9 @@ const Index = () => {
 
   return (
     <Page title="" description="chvn.me/">
-      <h1>CHANDLER CHAPPELL</h1>
-      <h4>Front-end Developer, Designer, & Director</h4>
+      <h1>CHANDLER CHAPPELL®</h1>
+      <h2>Front-end Developer</h2>
+      <h3>Designer, & Director</h3>
       <br />
       <br />
       <br />
@@ -85,6 +89,32 @@ const Index = () => {
       </article>
     </Page>
   )
+}
+
+Index.theme = 'light'
+export default Index
+
+--> */
+}
+
+// React & Next.js Imports
+import router from 'next/router'
+import { useRouter } from 'next/router'
+import { useState, useEffect, useContext } from 'react'
+
+// next-theme
+import { useTheme } from 'next-themes'
+
+const Index = () => {
+  const { theme, setTheme } = useTheme()
+  const router = useRouter()
+
+  // Redirect to /cover
+  useEffect(() => {
+    router.replace('/cover')
+  })
+
+  return null
 }
 
 Index.theme = 'light'

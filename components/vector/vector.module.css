@@ -1,0 +1,101 @@
+.box {
+  height: auto;
+  width: 100vw;
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+
+  align-items: center !important;
+  text-align: center;
+}
+
+.signature_logo {
+  width: 500px;
+  height: auto;
+  align-items: center;
+  z-index: 1;
+  display: block;
+  position: fixed;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .signature_logo {
+    width: 300px !important;
+    padding-bottom: 10px;
+    margin: auto;
+  }
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+}
+.copyright a {
+  color: var(--white);
+}
+.footlink {
+  z-index: 9999;
+  text-align: center;
+  align-items: center;
+  display: block;
+  padding: 0px;
+  margin: 0;
+  border-radius: var(--radius);
+
+  margin-right: var(--gap-half);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+.footernav {
+  z-index: 9999;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: var(--full-width);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--volt);
+  z-index: 10;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 12px 6px;
+  background-color: var(--footer-bg) !important;
+  border: 1px solid var(--header-bg);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+
+  backdrop-filter: blur(20px);
+  saturate: 200%;
+
+  /* Safari */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-backdrop-filter: saturate(220%) blur(20px);
+}
+.footer {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  margin: auto;
+  padding: 8px 8px;
+  width: 100%;
+  max-width: var(--full-width);
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}

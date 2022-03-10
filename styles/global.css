@@ -34,7 +34,13 @@
    * <-- [ TYPOGRAPHY ] -->
    *
   */
+
+  /* <-- [ APP FONTS ] --> */
+
   --inter: 'Inter', -apple-system, Helvetica Neue, sans-serif;
+  --jetbrain: 'Jet Brains', 'SFMono-Regular', monospace;
+
+  /* FALLBACKS */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
@@ -51,12 +57,13 @@
   */
   --bg: #131415;
   --fg: #fafbfc;
-  --white: #231f20;
+  --white: #fff;
   --gray: #666;
   --light-gray: #444;
   --lighter-gray: #222;
   --lightest-gray: #1a1a1a;
 
+  --volt-alpha: rgba(199, 239, 0, 0.8);
   --volt: #adff02;
   --orange: #fb5607;
   --article-color: #eaeaea;
@@ -116,6 +123,7 @@
   --selection: rgba(0, 0, 0, 0.99);
 
   /* CUSTOM COLORS */
+  --volt-alpha: rgba(139, 128, 249, 0.5);
   --volt: #9b5de5;
   --orange: #fb5607;
   --white: #175676;
@@ -192,7 +200,9 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  letter-spacing: -0.69px;
+  font-weight: 800;
+  line-height: 0.1;
+  letter-spacing: -0.08rem;
 }
 
 h3 {
@@ -220,6 +230,13 @@ h5 {
   line-height: 0.4;
 }
 
+pre,
+code {
+  font-family: var(--jetbrain);
+  font-size: 12px;
+  color: var(--volt);
+}
+
 /*
  * [ @media Typography ]
 */
@@ -237,14 +254,50 @@ h5 {
   }
 }
 
+.menu_container {
+  z-index: 9999;
+  margin: auto;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item-two {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: auto;
+}
+
+.item-1,
+.item-2 {
+  width: 100%;
+  /* border: 1px solid var(--volt); */
+  /* border-radius: 12px; */
+  padding: 0.2rem;
+  margin: auto;
+}
+
+.item-1 {
+  align-items: right !important;
+}
+
+.item-2 {
+  align-items: left !important;
+}
+
 hr {
   border: none;
   border-bottom: 1px solid var(--light-gray);
   line-height: normal;
-}
-
-.menu_icon {
-  margin-top: 8px;
 }
 
 blockquote {
@@ -254,12 +307,31 @@ blockquote {
   border-left: 3px solid var(--light-gray);
 }
 
+.cmnd_k {
+  display: block;
+  z-index: 9999;
+  border: 1px solid var(--volt);
+  border-radius: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: auto;
+  position: relative;
+  width: 80px;
+}
+
 button {
   border: none;
-  padding: 0;
+  padding: 6px;
   margin: 0;
   line-height: inherit;
   font-size: inherit;
+}
+
+button:hover {
+  transition: var(--transition-slow);
+  cursor: pointer !important;
 }
 
 .links {
@@ -283,11 +355,6 @@ p a:active,
 a.reset:hover,
 a.reset:focus {
   color: var(--gray);
-}
-
-pre,
-code {
-  font-family: var(--font-mono);
 }
 
 .clamp {
