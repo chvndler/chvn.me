@@ -1,8 +1,7 @@
-import NextHead from 'next/head'
-import { useTheme } from 'next-themes'
+import NextHead from 'next/head';
+import { useTheme } from 'next-themes';
 
-const defaultOgImage =
-  'https://res.cloudinary.com/dsdlhtnpw/image/upload/v1572673557/og-image_budbm8.png'
+const defaultOgImage = 'https://cdn.ady.systems/chvn/assets/chvn.og-image.png';
 
 const Head = ({
   title = 'Chvn.me',
@@ -10,14 +9,14 @@ const Head = ({
   image = defaultOgImage,
   children
 }) => {
-  const { systemTheme } = useTheme()
+  const { systemTheme } = useTheme();
 
   return (
     <NextHead>
       {/* Preload font */}
       <link
         rel="preload"
-        href="https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2"
+        href="https://cdn.ady.systems/inter/inter.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
@@ -43,9 +42,9 @@ const Head = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@pacocoursey" />
+      <meta name="twitter:site" content="@chv_ndler" />
       <meta name="apple-mobile-web-app-title" content="Paco" />
-      <meta name="author" content="Paco Coursey" />
+      <meta name="author" content="Chandler Chappell" />
 
       {/* RSS feed */}
       <link
@@ -111,7 +110,7 @@ const Head = ({
       )}
       {children}
     </NextHead>
-  )
-}
+  );
+};
 
-export default Head
+export default Head;
