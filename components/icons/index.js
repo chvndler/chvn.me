@@ -23,6 +23,7 @@ export { default as Lightbulb } from './lightbulb'
 export { default as Command } from './command'
 export { default as Menu } from './menu'
 export { default as Sparkles } from './sparkles'
+export { default as Transform } from './transform'
 
 // Logos
 export { default as Chvn } from './chvn'

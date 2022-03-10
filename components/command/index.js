@@ -29,6 +29,7 @@ import {
   Document,
   Quote,
   Words,
+  Transform,
   Lightbulb,
   ArrowRight,
   GitHub,
@@ -87,11 +88,10 @@ const CommandMenu = memo(() => {
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
       // Navigation
-      'g h': () => router.push('/'),
+      'g h': () => router.push('/welcome'),
       'g c': () => router.push('/contact'),
       // Social
-      'g t': () => () =>
-        window.open('https://twitter.com/pacocoursey', '_blank')
+      'g t': () => () => window.open('https://twitter.com/chv_ndler', '_blank')
     }
   }, [router, setPages])
 
@@ -124,7 +124,7 @@ const CommandMenu = memo(() => {
   useEffect(() => {
     if (!listRef.current || !heightRef.current) return
 
-    const height = Math.min(listRef.current.offsetHeight + 1, 300)
+    const height = Math.min(listRef.current.offsetHeight + 1, 400)
     heightRef.current.style.height = height + 'px'
   })
 
@@ -270,37 +270,35 @@ const DefaultItems = () => {
         />
       </Group>
 
-      <Group title="Collection">
-        <Item value="Reading" icon={<Book />} keybind="g r" />
-        <Item value="Design" icon={<Design />} keybind="g d" />
-        <Item value="Keyboards" icon={<M6 />} keybind="g k" />
-        <Item value="Music" icon={<Music />} keybind="g m" />
-        <Item value="Video" icon={<Video />} keybind="g v" />
-        <Item value="Projects" icon={<Document />} keybind="g p" />
-        <Item value="Quotes" icon={<Quote />} keybind="g q" />
-        <Item value="Words" icon={<Words />} keybind="g w" />
-        <Item value="Ideas" icon={<Lightbulb />} keybind="g i" />
-      </Group>
-
       <Group title="Navigation">
         <Item value="Home" icon={<ArrowRight />} keybind="g h" />
         <Item value="Contact" icon={<ArrowRight />} keybind="g c" />
+      </Group>
+
+      <Group title="Collection">
+        <Item value="Current Projects" icon={<Document />} keybind="g p" />
+        <Item value="Design" icon={<Transform />} keybind="g d" />
+        <Item value="Video" icon={<Video />} keybind="g v" />
+        <Item value="Music" icon={<Music />} keybind="g m" />
+        <Item value="Future Ideas" icon={<Lightbulb />} keybind="g i" />
+        {/* <!-- <Item value="Reading" icon={<Book />} keybind="g r" /> --> */}
+        {/* <!-- <Item value="Keyboards" icon={<M6 />} keybind="g k" /> --> */}
+        {/* <!-- <Item value="Quotes" icon={<Quote />} keybind="g q" /> --> */}
+        {/* <!-- <Item value="Words" icon={<Words />} keybind="g w" /> --> */}
       </Group>
 
       <Group title="Social">
         <Item
           value="GitHub"
           icon={<GitHub />}
-          callback={() =>
-            window.open('https://github.com/pacocoursey', '_blank')
-          }
+          callback={() => window.open('https://github.com/chvndler', '_blank')}
         />
         <Item
           value="Twitter"
           icon={<Twitter />}
           keybind="g t"
           callback={() =>
-            window.open('https://twitter.com/pacocoursey', '_blank')
+            window.open('https://twitter.com/chv_ndler', '_blank')
           }
         />
       </Group>
