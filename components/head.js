@@ -56,14 +56,26 @@ const Head = ({
       />
 
       {/* Favicons */}
-      <link rel="manifest" href="/favicons/manifest.json" />
       <meta name="theme-color" content="#000000" />
-      <link rel="mask-icon" href="/favicons/pinned.svg" color="#000000" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/favicons/apple-touch-icon.png"
+        href="/ico/apple-touch-icon.png"
       />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/ico/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/ico/favicon-16x16.png"
+      />
+      <link rel="mask-icon" href="/ico/pinned.svg" color="#000000" />
+      <link rel="manifest" href="/ico/site.webmanifest" />
 
       {/* Dynamic favicon */}
       {!systemTheme || systemTheme === 'dark' ? (
