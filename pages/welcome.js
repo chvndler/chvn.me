@@ -1,14 +1,13 @@
-import Page from '@components/page'
-import Link from '@components/link'
-import Entry from '@components/entry'
-import Tracks from '@components/spotify'
-import { useTheme } from 'next-themes'
+import Page from '@components/page';
+import Link from '@components/link';
+import Entry from '@components/entry';
+import { useTheme } from 'next-themes';
 
 // Data
-import { data as items } from '@data/current.json'
+import { data as items } from '@data/current.json';
 
 const Welcome = () => {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
   return (
     <Page title="" description="chvn.me/">
@@ -72,7 +71,6 @@ const Welcome = () => {
       <br />
 
       <h5>Current Projects.</h5>
-      <Tracks />
 
       {/* <!--
       <article>
@@ -90,8 +88,8 @@ const Welcome = () => {
       </article>
       --> */}
     </Page>
-  )
-}
+  );
+};
 
-Welcome.theme = 'system'
-export default Welcome
+Welcome.theme = 'system';
+export default Welcome;
