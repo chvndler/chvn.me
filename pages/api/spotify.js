@@ -1,3 +1,4 @@
+// /pages/api/spotify.js
 import querystring from 'querystring';
 
 const {
@@ -39,24 +40,24 @@ export const getNowPlaying = async () => {
 export default async (_, res) => {
   const response = await getNowPlaying();
 
-  if (response.status === 204 || response.status > 400) {
+  if (
+    response.status === 204 ||
+    response.status > 400 ||
+    response.data.currently_playing_type !== 'track'
+  ) {
     return res.status(200).json({ isPlaying: false });
   }
 
-  const song = await response.json();
-  const isPlaying = song.is_playing;
-  const title = song.item.name;
-  const artist = song.item.artists.map(_artist => _artist.name).join(', ');
-  const album = song.item.album.name;
-  const albumImageUrl = song.item.album.images[0].url;
-  const songUrl = song.item.external_urls.spotify;
+  const data = {
+    isPlaying: response.data.is_playing,
+    title: response.data.item.name,
+    album: response.data.item.album.name,
+    artist: response.data.item.album.artists
+      .map(artist => artist.name)
+      .join(', '),
+    albumImageUrl: response.data.item.album.images[0].url,
+    songUrl: response.data.item.external_urls.spotify
+  };
 
-  return res.status(200).json({
-    album,
-    albumImageUrl,
-    artist,
-    isPlaying,
-    songUrl,
-    title
-  });
+  res.status(200).json(data);
 };
