@@ -42,7 +42,7 @@
 }
 .footernav {
   display: flex;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: var(--full-width);
   font-family: 'Inter', sans-serif;
