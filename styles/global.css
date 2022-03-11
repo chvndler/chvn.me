@@ -46,7 +46,7 @@
   --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
     monospace;
 
-  /* Transitions */
+  /* TRANSITIONS */
   --transition: 0.1s ease-in-out;
   --transition-slow: 0.3s ease-in-out;
 
