@@ -11,9 +11,8 @@ const Welcome = () => {
 
   return (
     <Page title="" description="chvn.me/">
-      <h1>CHANDLER CHAPPELL®</h1>
-      <h2>Front-end Developer</h2>
-      <h3>Designer, & Director</h3>
+      <h2>Chandler Chappell</h2>
+      <h4>Designer, & Director</h4>
       <br />
       <br />
       <br />
@@ -72,7 +71,6 @@ const Welcome = () => {
 
       <h5>Current Projects.</h5>
 
-      {/* <!--
       <article>
         {items.map(entry => {
           return (
@@ -83,10 +81,9 @@ const Welcome = () => {
               href={entry.url}
               description={entry.description}
             />
-          )
+          );
         })}
       </article>
-      --> */}
     </Page>
   );
 };

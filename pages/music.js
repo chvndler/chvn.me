@@ -39,7 +39,6 @@ const Music = () => {
               ? data.songUrl
               : 'https://open.spotify.com/user/1218029183'
           }
-          className="relative flex items-center p-5 space-x-4 transition-shadow border rounded-md hover:shadow-md w-72"
         >
           <div className="w-16">
             {data?.isPlaying ? (
