@@ -57,7 +57,7 @@
   */
   --bg: #131415;
   --fg: #fafbfc;
-  --white: #fff;
+  --white: #231f20;
   --gray: #666;
   --light-gray: #444;
   --lighter-gray: #222;
@@ -126,7 +126,7 @@
   --volt-alpha: rgba(139, 128, 249, 0.5);
   --volt: #9b5de5;
   --orange: #fb5607;
-  --white: #175676;
+  --white: #fff;
 
   --token: #666;
   --comment: #999;

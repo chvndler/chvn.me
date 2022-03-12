@@ -27,10 +27,18 @@
   text-align: left;
   align-items: left;
   font-family: 'Inter', sans-serif;
-  font-size: 32px;
+  font-size: 0.8rem;
   font-weight: 800 !important;
   line-height: normal;
-  letter-spacing: -0.08rem;
-  color: var(--gray-alpha);
+  letter-spacing: -0.05rem;
+  color: var(--white);
   margin-bottom: 40px;
+
+  background-color: var(--volt);
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
 }
