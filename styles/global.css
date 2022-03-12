@@ -15,9 +15,7 @@
 @import './nprogress.css';
 
 :root {
-  /*
-  * <-- [ SPACE ] -->
-  */
+  /* <-- [ SPACE ] --> */
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
   --gap: 1rem;
@@ -29,35 +27,24 @@
   --radius: 6px;
   --inline-radius: 5px;
 
-  /*
-   *
-   * <-- [ TYPOGRAPHY ] -->
-   *
-  */
-
-  /* <-- [ APP FONTS ] --> */
+  /* <-- [ TYPOGRAPHY, APP FONTS ] --> */
 
   --inter: 'Inter', -apple-system, Helvetica Neue, sans-serif;
   --jetbrain: 'Jet Brains', 'SFMono-Regular', monospace;
 
-  /* FALLBACKS */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
-    monospace;
+  /* FALLBACKS, Universal */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
 
   /* TRANSITIONS */
   --transition: 0.1s ease-in-out;
   --transition-slow: 0.3s ease-in-out;
 
-  /*
-   *
-   * <-- [ DARK MODE ] -->
-   *
-  */
+  /* <-- [ DARK MODE ] --> */
   --bg: #131415;
   --fg: #fafbfc;
-  --white: #231f20;
+  --white: #fafbfc;
   --gray: #666;
   --light-gray: #444;
   --lighter-gray: #222;
@@ -103,15 +90,11 @@
   --logo: #fb5607;
 }
 
-/*
-*
-* <-- [ LIGHT THEME ] -->
-*
-*/
+/* <-- [ LIGHT THEME ] --> */
 [data-theme='light'] {
   --bg: #fff;
   --fg: #231f20;
-  --gray: #888;
+  --gray: #adb5bd;
   --light-gray: #dedede;
   --lighter-gray: #f5f5f5;
   --lightest-gray: #fafafa;
@@ -126,7 +109,7 @@
   --volt-alpha: rgba(139, 128, 249, 0.5);
   --volt: #9b5de5;
   --orange: #fb5607;
-  --white: #fff;
+  --white: #999;
 
   --token: #666;
   --comment: #999;

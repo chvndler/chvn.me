@@ -27,13 +27,13 @@
   text-align: left;
   align-items: left;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 800 !important;
+  font-size: 1rem;
+  font-weight: 600 !important;
   line-height: normal;
   letter-spacing: -0.05rem;
   color: var(--white);
-  margin-bottom: 40px;
-
+  margin-bottom: 10px;
+  /*
   background-color: var(--volt);
   padding-left: 14px;
   padding-right: 14px;
@@ -41,4 +41,30 @@
   padding-bottom: 2px;
   border: 1px solid var(--gray);
   border-radius: 6px;
+  */
+}
+.content_description {
+  display: block;
+  position: relative;
+  text-align: left;
+  align-items: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 800 !important;
+  line-height: normal;
+  letter-spacing: -0.1rem;
+  color: var(--white);
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  /*
+  background-color: var(--volt);
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  */
 }
