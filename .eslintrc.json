@@ -27,11 +27,9 @@
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "rules": {
-        // Already handled by TS
         "no-dupe-class-members": "off",
         "no-undef": "off",
 
-        // Add TypeScript specific rules (and turn off ESLint equivalents)
         "@typescript-eslint/consistent-type-assertions": "warn",
         "no-array-constructor": "off",
         "@typescript-eslint/no-array-constructor": "warn",
