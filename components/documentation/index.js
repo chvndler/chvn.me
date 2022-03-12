@@ -1,28 +1,59 @@
-import Link from 'next/link';
-import Head from 'next/head';
 import { useState } from 'react';
+
+import Head from '@components/head';
+import Link from 'next/link';
+import Header from '@components/header';
+import Footer from '@components/footer';
 import styles from './docs.module.css';
 
-export default function Layout({ children, meta: pageMeta }) {
+import Navigation from './navigation';
+import Page from '@components/page';
+
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+const Layout = ({
+  title,
+  meta,
+  content,
+  slug,
+  html,
+  hidden,
+  og,
+  date,
+  previous,
+  next,
+
+  header = true,
+  footer = true,
+  title,
+  description,
+  image,
+  showHeaderTitle = true,
+  children,
+  meta: pageMeta
+}) => {
   const [theme, setTheme] = useState('okaidia');
   const meta = {
-    title: 'Prism with Next.js',
-    description:
-      'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.',
-    cardImage:
-      'https://og-image.now.sh/**Prism**%20with%20Next.js.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
     ...pageMeta
   };
 
   return (
-    <>
-      <Head>
-        <title>{meta.title}</title>
+    <div className={styles.wrapper}>
+      <Head
+        title={`${title ? `${title} - ` : ''}chvn®`}
+        description={description}
+        image={image}
+      >
         <meta charSet="utf-8" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-
         <meta name="robots" content="follow, index" />
-
         <meta content={meta.description} name="description" />
         <meta property="og:type" content="website" />
 
@@ -50,62 +81,57 @@ export default function Layout({ children, meta: pageMeta }) {
           href={`https://unpkg.com/prismjs@0.0.1/themes/prism-${theme}.css`}
           rel="stylesheet"
         />
+
+        {hidden && <meta name="robots" content="noindex" />}
+        {date && <meta name="date" content={date} />}
       </Head>
-      <div className={styles.docs}>
-        <nav>
-          <a href="#skip" className="sr-only focus:not-sr-only">
-            Skip to content
-          </a>
-          <div className="flex justify-between items-center p-8 mx-2">
-            <Link href="/">
-              <a className="no-underline font-semibold invisible sm:visible">
-                <h1>{meta.title}</h1>
-              </a>
-            </Link>
-            <ul className="flex justify-between items-center space-x-4">
-              <li>
-                <div className="inline-block relative w-32">
-                  <select
-                    onChange={e => setTheme(e.target.value)}
-                    value={theme}
-                    className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
-                  >
-                    <option value="okaidia">Okaidia</option>
-                    <option value="tomorrow">Tomorrow</option>
-                    <option value="coy">Coy</option>
-                    <option value="funky">Funky</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                    <svg
-                      className="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/leerob/nextjs-prism-markdown"
-                  className="no-underline font-semibold text-gray-700"
-                >
-                  Source
-                </a>
-              </li>
-            </ul>
+
+      {header && <Header title={showHeaderTitle && title} />}
+
+      <Page
+        slug={slug}
+        title={title}
+        meta={meta}
+        description={description}
+        showHeaderTitle={false}
+        image={
+          og && og === true
+            ? `https://res.cloudinary.com/dsdlhtnpw/image/upload/${slug}.png`
+            : og
+        }
+      >
+        <article
+          dangerouslySetInnerHTML={{
+            __html: `<span class="${styles.date}">${date}</span><h1 class="${
+              styles.title
+            }">${escapeHtml(title)}</h1>${html}`
+          }}
+        />
+
+        <select
+          onChange={e => setTheme(e.target.value)}
+          value={theme}
+          className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+        >
+          <option value="okaidia">Okaidia</option>
+          <option value="tomorrow">Tomorrow</option>
+          <option value="coy">Coy</option>
+          <option value="funky">Funky</option>
+        </select>
+
+        <main className={styles.main}>
+          <div className={styles.titlewrapper}>
+            {title && <div className={styles.content}>{title}</div>}
           </div>
-        </nav>
-        <div id="skip">
-          <article
-            className="prose lg:prose-xl px-8 m-auto my-4 sm:my-16"
-            dangerouslySetInnerHTML={{ __html: children }}
-          />
-        </div>
-      </div>
-    </>
+
+          {children}
+          <Navigation previous={previous} next={next} />
+        </main>
+
+        <Footer />
+      </Page>
+    </div>
   );
-}
+};
+
+export default Layout;

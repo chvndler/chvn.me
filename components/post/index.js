@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Navigation from './navigation';
+import Navigation from '@components/post/navigation';
 import Page from '@components/page';
 import styles from './post.module.css';
 

@@ -14,9 +14,10 @@ module.exports = {
   },
   experimental: {
     urlImports: [
+      'https://unpkg.com/',
       'https://cdn.ady.systems/',
       'https://assets.vercel.com/',
       'https://cdn.skypack.dev/'
     ]
   }
-}
+};
