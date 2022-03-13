@@ -1,9 +1,9 @@
-import { memo } from 'react'
-import Link from 'next/link'
+import { memo } from 'react';
+import Link from 'next/link';
 
-import styles from './header.module.css'
-import { Chvn as LogoIcon } from '@components/icons'
-import Command from '@components/command'
+import styles from './header.module.css';
+import { ChvnScript as LogoIcon } from '@components/icons';
+import Command from '@components/command';
 
 const Header = ({ title, content }) => {
   return (
@@ -19,12 +19,13 @@ const Header = ({ title, content }) => {
           {/* -->
           {title && <div className={styles.content}>{title}</div>}
           --> */}
+
           <Command />
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-Header.displayName = 'Header'
-export default memo(Header)
+Header.displayName = 'Header';
+export default memo(Header);

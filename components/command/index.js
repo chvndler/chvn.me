@@ -1,18 +1,10 @@
-import React, { useEffect, useRef, useMemo, useState, memo } from 'react'
-import cn from 'classnames'
-import { useRouter } from 'next/router'
-import useDelayedRender from 'use-delayed-render'
-import { DialogContent, DialogOverlay } from '@reach/dialog'
+import React, { useEffect, useRef, useMemo, useState, memo } from 'react';
+import cn from 'classnames';
+import { useRouter } from 'next/router';
+import useDelayedRender from 'use-delayed-render';
+import { DialogContent, DialogOverlay } from '@reach/dialog';
 
-import {
-  Command,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  useCommand,
-  usePages,
-  CommandGroup
-} from 'cmdk'
+import { Command, CommandInput, CommandItem, CommandList, useCommand, usePages, CommandGroup } from 'cmdk';
 
 import {
   // Command as CommandIcon,
@@ -33,47 +25,47 @@ import {
   Lightbulb,
   ArrowRight,
   GitHub,
-  Twitter
-} from '@components/icons'
-import styles from './command.module.css'
-import headerStyles from '@components/header/header.module.css'
-import { useTheme } from 'next-themes'
-import tinykeys from '@lib/tinykeys'
-import postMeta from '@data/blog.json'
+  Twitter,
+} from '@components/icons';
+import styles from './command.module.css';
+import headerStyles from '@components/header/header.module.css';
+import { useTheme } from 'next-themes';
+import tinykeys from '@lib/tinykeys';
+import postMeta from '@data/blog.json';
 
-const CommandData = React.createContext({})
-const useCommandData = () => React.useContext(CommandData)
+const CommandData = React.createContext({});
+const useCommandData = () => React.useContext(CommandData);
 
 const CommandMenu = memo(() => {
-  const listRef = useRef()
-  const commandRef = useRef()
-  const router = useRouter()
+  const listRef = useRef();
+  const commandRef = useRef();
+  const router = useRouter();
   const commandProps = useCommand({
-    label: 'Site Navigation'
-  })
-  const [pages, setPages] = usePages(commandProps, ThemeItems)
-  const [open, setOpen] = useState(false)
-  const { search, list } = commandProps
+    label: 'Site Navigation',
+  });
+  const [pages, setPages] = usePages(commandProps, ThemeItems);
+  const [open, setOpen] = useState(false);
+  const { search, list } = commandProps;
 
   const { mounted, rendered } = useDelayedRender(open, {
     enterDelay: -1,
-    exitDelay: 200
-  })
+    exitDelay: 200,
+  });
 
   // Can't do this inside of useCommand because it relies on useDelayedRender
   useEffect(() => {
     if (!mounted) {
-      setPages([DefaultItems])
+      setPages([DefaultItems]);
     }
-  }, [mounted, setPages])
+  }, [mounted, setPages]);
 
-  const Items = pages[pages.length - 1]
+  const Items = pages[pages.length - 1];
 
   const keymap = useMemo(() => {
     return {
       t: () => {
-        setPages([ThemeItems])
-        setOpen(true)
+        setPages([ThemeItems]);
+        setOpen(true);
       },
       // Blog
       'g b': () => router.push('/blog'),
@@ -91,79 +83,63 @@ const CommandMenu = memo(() => {
       'g h': () => router.push('/welcome'),
       'g c': () => router.push('/contact'),
       // Social
-      'g t': () => () => window.open('https://twitter.com/chv_ndler', '_blank')
-    }
-  }, [router, setPages])
+      'g t': () => () => window.open('https://twitter.com/chv_ndler', '_blank'),
+    };
+  }, [router, setPages]);
 
   // Register the keybinds globally
   useEffect(() => {
-    const unsubs = [
-      tinykeys(window, keymap, { ignoreFocus: true }),
-      tinykeys(window, { '$mod+k': () => setOpen(o => !o) })
-    ]
+    const unsubs = [tinykeys(window, keymap, { ignoreFocus: true }), tinykeys(window, { '$mod+k': () => setOpen(o => !o) })];
     return () => {
-      unsubs.forEach(unsub => unsub())
-    }
-  }, [keymap])
+      unsubs.forEach(unsub => unsub());
+    };
+  }, [keymap]);
 
   useEffect(() => {
     // When items change, bounce the UI
     if (commandRef.current) {
       // Bounce the UI slightly
-      commandRef.current.style.transform = 'scale(0.99)'
-      commandRef.current.style.transition = 'transform 0.1s ease'
+      commandRef.current.style.transform = 'scale(0.99)';
+      commandRef.current.style.transition = 'transform 0.1s ease';
       // Not exactly safe, but should be OK
       setTimeout(() => {
-        commandRef.current.style.transform = ''
-      }, 100)
+        commandRef.current.style.transform = '';
+      }, 100);
     }
-  }, [pages])
+  }, [pages]);
 
-  const heightRef = useRef()
+  const heightRef = useRef();
 
   useEffect(() => {
-    if (!listRef.current || !heightRef.current) return
+    if (!listRef.current || !heightRef.current) return;
 
-    const height = Math.min(listRef.current.offsetHeight + 1, 400)
-    heightRef.current.style.height = height + 'px'
-  })
+    const height = Math.min(listRef.current.offsetHeight + 1, 400);
+    heightRef.current.style.height = height + 'px';
+  });
 
   return (
     <>
-      <button
-        className={headerStyles.command}
-        title="⌘K"
-        onClick={() => setOpen(true)}
-      >
+      <button className={headerStyles.command} title="⌘K" onClick={() => setOpen(true)}>
         <MenuIcon />
       </button>
 
       <DialogOverlay
         isOpen={mounted}
         className={cn(styles.screen, {
-          [styles.show]: rendered
+          [styles.show]: rendered,
         })}
-        onDismiss={() => setOpen(false)}
-      >
-        <DialogContent
-          className={styles['dialog-content']}
-          aria-label="Site Navigation"
-        >
+        onDismiss={() => setOpen(false)}>
+        <DialogContent className={styles['dialog-content']} aria-label="Site Navigation">
           <Command
             {...commandProps}
             ref={commandRef}
             className={cn(styles.command, {
-              [styles.show]: rendered
-            })}
-          >
+              [styles.show]: rendered,
+            })}>
             <div className={styles.top}>
               <CommandInput
                 placeholder={
-                  Items === ThemeItems
-                    ? 'Select a theme...'
-                    : Items === BlogItems
-                    ? 'Search for posts...'
-                    : 'Type a command or search...'
+                  Items === ThemeItems ? 'Select a theme...' : Items === BlogItems ? 'Search for posts...' : 'Type a command or search...'
                 }
               />
             </div>
@@ -171,13 +147,10 @@ const CommandMenu = memo(() => {
             <div
               ref={heightRef}
               className={cn(styles.container, {
-                [styles.empty]: list.current.length === 0
-              })}
-            >
+                [styles.empty]: list.current.length === 0,
+              })}>
               <CommandList ref={listRef}>
-                <CommandData.Provider
-                  value={{ pages, search, open, setPages, keymap, setOpen }}
-                >
+                <CommandData.Provider value={{ pages, search, open, setPages, keymap, setOpen }}>
                   <Items />
                 </CommandData.Provider>
               </CommandList>
@@ -186,88 +159,69 @@ const CommandMenu = memo(() => {
         </DialogContent>
       </DialogOverlay>
     </>
-  )
-})
+  );
+});
 
-CommandMenu.displayName = 'CommandMenu'
-export default CommandMenu
+CommandMenu.displayName = 'CommandMenu';
+export default CommandMenu;
 
 const ThemeItems = () => {
-  const { theme: activeTheme, themes, setTheme } = useTheme()
-  const { setOpen } = useCommandData()
+  const { theme: activeTheme, themes, setTheme } = useTheme();
+  const { setOpen } = useCommandData();
 
   return themes.map(theme => {
-    if (theme === activeTheme) return null
+    if (theme === activeTheme) return null;
     return (
       <Item
         value={theme}
         key={`theme-${theme}`}
         callback={() => {
-          setTheme(theme)
-          setOpen(false)
-        }}
-      >
+          setTheme(theme);
+          setOpen(false);
+        }}>
         {theme}
       </Item>
-    )
-  })
-}
+    );
+  });
+};
 
 const BlogItems = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   return postMeta.map((post, i) => {
     return (
-      <Item
-        key={`blog-item-${post.title}-${i}`}
-        value={post.title}
-        callback={() => router.push('/blog/[slug]', `/blog/${post.slug}`)}
-      />
-    )
-  })
-}
+      <Item key={`blog-item-${post.title}-${i}`} value={post.title} callback={() => router.push('/blog/[slug]', `/blog/${post.slug}`)} />
+    );
+  });
+};
 
 const Label = ({ title, values, search }) => {
   return (
     <div className={styles.label} aria-hidden>
       {title}
     </div>
-  )
-}
+  );
+};
 
 const Group = ({ children, title }) => {
   return (
     <CommandGroup heading={<Label title={title} />} className={styles.group}>
       {children}
     </CommandGroup>
-  )
-}
+  );
+};
 
 const DefaultItems = () => {
-  const router = useRouter()
-  const { setPages, pages } = useCommandData()
+  const router = useRouter();
+  const { setPages, pages } = useCommandData();
 
   return (
     <>
-      <Item
-        value="Themes"
-        icon={<Sparkles />}
-        keybind="t"
-        closeOnCallback={false}
-      />
+      <Item value="Themes" icon={<Sparkles />} keybind="t" closeOnCallback={false} />
       <Group title="Blog">
         <Item value="Blog" icon={<Pencil />} keybind="g b" />
-        <Item
-          value="Search blog..."
-          icon={<Search />}
-          closeOnCallback={false}
-          callback={() => setPages([...pages, BlogItems])}
-        />
-        <Item
-          value="RSS"
-          icon={<RSS />}
-          callback={() => router.push('/feed.xml')}
-        />
+        <Item value="Search blog..." icon={<Search />} closeOnCallback={false} callback={() => setPages([...pages, BlogItems])} />
+        <Item value="RSS" icon={<RSS />} callback={() => router.push('/feed.xml')} />
       </Group>
 
       <Group title="Navigation">
@@ -280,7 +234,7 @@ const DefaultItems = () => {
         <Item value="Design" icon={<Transform />} keybind="g d" />
         <Item value="Video" icon={<Video />} keybind="g v" />
         <Item value="Music" icon={<Music />} keybind="g m" />
-        <Item value="Future Ideas" icon={<Lightbulb />} keybind="g i" />
+        <Item value="Future Ideas" icon={<Design />} keybind="g i" />
         {/* <!-- <Item value="Reading" icon={<Book />} keybind="g r" /> --> */}
         {/* <!-- <Item value="Keyboards" icon={<M6 />} keybind="g k" /> --> */}
         {/* <!-- <Item value="Quotes" icon={<Quote />} keybind="g q" /> --> */}
@@ -288,45 +242,27 @@ const DefaultItems = () => {
       </Group>
 
       <Group title="Social">
-        <Item
-          value="GitHub"
-          icon={<GitHub />}
-          callback={() => window.open('https://github.com/chvndler', '_blank')}
-        />
-        <Item
-          value="Twitter"
-          icon={<Twitter />}
-          keybind="g t"
-          callback={() =>
-            window.open('https://twitter.com/chv_ndler', '_blank')
-          }
-        />
+        <Item value="GitHub" icon={<GitHub />} callback={() => window.open('https://github.com/chvndler', '_blank')} />
+        <Item value="Twitter" icon={<Twitter />} keybind="g t" callback={() => window.open('https://twitter.com/chv_ndler', '_blank')} />
       </Group>
     </>
-  )
-}
+  );
+};
 
-const Item = ({
-  icon,
-  children,
-  callback,
-  closeOnCallback = true,
-  keybind,
-  ...props
-}) => {
-  const { keymap, setOpen } = useCommandData()
+const Item = ({ icon, children, callback, closeOnCallback = true, keybind, ...props }) => {
+  const { keymap, setOpen } = useCommandData();
 
   const cb = () => {
     if (callback) {
-      callback()
+      callback();
     } else {
-      keymap[keybind]?.()
+      keymap[keybind]?.();
     }
 
     if (closeOnCallback) {
-      setOpen(false)
+      setOpen(false);
     }
-  }
+  };
 
   return (
     <CommandItem {...props} callback={cb}>
@@ -339,7 +275,7 @@ const Item = ({
         <span className={styles.keybind}>
           {keybind.includes(' ') ? (
             keybind.split(' ').map((key, i) => {
-              return <kbd key={`keybind-${key}-${i}`}>{key}</kbd>
+              return <kbd key={`keybind-${key}-${i}`}>{key}</kbd>;
             })
           ) : (
             <kbd>{keybind}</kbd>
@@ -347,5 +283,5 @@ const Item = ({
         </span>
       )}
     </CommandItem>
-  )
-}
+  );
+};
