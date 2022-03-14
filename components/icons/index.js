@@ -24,6 +24,10 @@ export { default as Command } from './command';
 export { default as Menu } from './menu';
 export { default as Sparkles } from './sparkles';
 export { default as Transform } from './transform';
+export { default as Archive } from '@icons/archive';
+export { default as Wrld } from '@icons/wrld';
+export { default as TwitterOutlined } from '@icons/twitter_outlined';
+export { default as Message } from '@icons/message';
 
 // Logos
 export { default as ChvnScript } from './chvn_script';

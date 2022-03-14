@@ -16,6 +16,7 @@
 
 :root {
   /* <-- [ SPACE ] --> */
+  --padding: 20px;
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
   --gap: 1rem;

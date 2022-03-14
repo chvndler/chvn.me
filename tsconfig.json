@@ -30,7 +30,8 @@
       "@system/*": ["system/*"],
       "@lib/*": ["lib/*"],
       "@styles/*": ["styles/*"],
-      "@data/*": ["data/*"]
+      "@data/*": ["data/*"],
+      "@icons/*": ["components/icons/*"]
     },
     "incremental": true
   },

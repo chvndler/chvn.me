@@ -10,6 +10,7 @@ import {
   // Command as CommandIcon,
   Menu as MenuIcon,
   Sparkles,
+  Archive,
   Pencil,
   Search,
   RSS,
@@ -26,6 +27,9 @@ import {
   ArrowRight,
   GitHub,
   Twitter,
+  TwitterOutlined,
+  Message,
+  Wrld,
 } from '@components/icons';
 import styles from './command.module.css';
 import headerStyles from '@components/header/header.module.css';
@@ -33,9 +37,11 @@ import { useTheme } from 'next-themes';
 import tinykeys from '@lib/tinykeys';
 import postMeta from '@data/blog.json';
 
+// Define data to use
 const CommandData = React.createContext({});
 const useCommandData = () => React.useContext(CommandData);
 
+//
 const CommandMenu = memo(() => {
   const listRef = useRef();
   const commandRef = useRef();
@@ -123,6 +129,7 @@ const CommandMenu = memo(() => {
         <MenuIcon />
       </button>
 
+      {/* <!-- [ Begin Cammand Palette ] --> */}
       <DialogOverlay
         isOpen={mounted}
         className={cn(styles.screen, {
@@ -217,20 +224,13 @@ const DefaultItems = () => {
 
   return (
     <>
-      <Item value="Themes" icon={<Sparkles />} keybind="t" closeOnCallback={false} />
-      <Group title="Blog">
-        <Item value="Blog" icon={<Pencil />} keybind="g b" />
-        <Item value="Search blog..." icon={<Search />} closeOnCallback={false} callback={() => setPages([...pages, BlogItems])} />
-        <Item value="RSS" icon={<RSS />} callback={() => router.push('/feed.xml')} />
-      </Group>
-
-      <Group title="Navigation">
-        <Item value="Home" icon={<ArrowRight />} keybind="g h" />
-        <Item value="Contact" icon={<ArrowRight />} keybind="g c" />
+      <Group title="Archive">
+        <Item value="Search archive..." icon={<Search />} closeOnCallback={false} callback={() => setPages([...pages, BlogItems])} />
+        <Item value="Archive" icon={<Archive />} keybind="g b" />
       </Group>
 
       <Group title="Collection">
-        <Item value="Current Projects" icon={<Document />} keybind="g p" />
+        <Item value="Current Projects" icon={<Wrld />} keybind="g p" />
         <Item value="Design" icon={<Transform />} keybind="g d" />
         <Item value="Video" icon={<Video />} keybind="g v" />
         <Item value="Music" icon={<Music />} keybind="g m" />
@@ -241,7 +241,13 @@ const DefaultItems = () => {
         {/* <!-- <Item value="Words" icon={<Words />} keybind="g w" /> --> */}
       </Group>
 
-      <Group title="Social">
+      <Group title="Navigation">
+        <Item value="Themes" icon={<Sparkles />} keybind="t" closeOnCallback={false} />
+        <Item value="Home" icon={<ArrowRight />} keybind="g h" />
+        <Item value="Contact" icon={<ArrowRight />} keybind="g c" />
+      </Group>
+
+      <Group title="Connect">
         <Item value="GitHub" icon={<GitHub />} callback={() => window.open('https://github.com/chvndler', '_blank')} />
         <Item value="Twitter" icon={<Twitter />} keybind="g t" callback={() => window.open('https://twitter.com/chv_ndler', '_blank')} />
       </Group>
@@ -249,6 +255,7 @@ const DefaultItems = () => {
   );
 };
 
+// Item Function
 const Item = ({ icon, children, callback, closeOnCallback = true, keybind, ...props }) => {
   const { keymap, setOpen } = useCommandData();
 
