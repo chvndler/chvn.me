@@ -2,7 +2,7 @@
 title: Good Code
 slug: good-code
 date: Nov 2, 2019
-published: false
+published: true
 ---
 
 I find great satisfaction in writing beautiful code. Very few will ever see this effort and appreciate it, but it is deeply gratifying. We can tell whether our code is high quality. We can predict how often and when it will need to be revisited, whether our coworkers can easily understand it, whether it is easy to use and extend, and whether it meets our personal standards of completeness and correctness.
