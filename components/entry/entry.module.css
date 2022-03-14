@@ -12,7 +12,7 @@
   background-size: cover;
   border: 1px solid var(--volt);
   background-repeat: no-repeat;
-  background-color: var(--white);
+  background-color: var(--lightest-gray);
   border-radius: 18px;
   overflow: hidden;
 }
@@ -27,12 +27,7 @@
   bottom: 0;
   left: 0;
   border-radius: 18px;
-  background: radial-gradient(
-    circle at center,
-    white 0%,
-    whitesmoke 6%,
-    whitesmoke 10%
-  );
+  background: radial-gradient(circle at center, white 0%, whitesmoke 6%, whitesmoke 10%);
   z-index: -1;
 }
 
@@ -47,11 +42,7 @@
   left: 0;
   opacity: 0.3;
   border-radius: 18px;
-  background: linear-gradient(
-    to bottom left,
-    rgba(0, 0, 0, 0.1) 20%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.4) 100%);
   background: linear-gradient(
     23deg,
     hsla(0, 0%, 0%, 0.69) 0%,
