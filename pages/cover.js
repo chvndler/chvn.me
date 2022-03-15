@@ -1,14 +1,8 @@
-import CoverBox from '@components/cover'
-import Command from '@components/command'
-import { SignatureOne as ChvnIcon } from '@components/vector'
-import { useTheme } from 'next-themes'
-
-// Data
-import { data as items } from '@data/current.json'
+import CoverBox from '@components/cover';
+import Command from '@components/command';
+import { SignatureOne as ChvnIcon } from '@components/vector';
 
 const Cover = () => {
-  const { theme, setTheme } = useTheme()
-
   return (
     <div>
       <CoverBox>
@@ -28,8 +22,8 @@ const Cover = () => {
         <ChvnIcon />
       </div>
     </div>
-  )
-}
+  );
+};
 
-Cover.theme = 'system'
-export default Cover
+Cover.theme = 'system';
+export default Cover;

@@ -1,22 +1,17 @@
 // React & Next.js Imports
-import router from 'next/router'
-import { useRouter } from 'next/router'
-import { useState, useEffect, useContext } from 'react'
-
-// next-theme
-import { useTheme } from 'next-themes'
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const Index = () => {
-  const { theme, setTheme } = useTheme()
-  const router = useRouter()
+  const router = useRouter();
 
   // Redirect to /cover
   useEffect(() => {
-    router.replace('/cover')
-  })
+    router.replace('/cover');
+  });
 
-  return null
-}
+  return null;
+};
 
-Index.theme = 'light'
-export default Index
+Index.theme = 'light';
+export default Index;

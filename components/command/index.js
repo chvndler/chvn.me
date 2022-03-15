@@ -11,24 +11,14 @@ import {
   Menu as MenuIcon,
   Sparkles,
   Archive,
-  Pencil,
   Search,
-  RSS,
   Design,
-  M6,
-  Book,
   Music,
   Video,
-  Document,
-  Quote,
-  Words,
   Transform,
-  Lightbulb,
   ArrowRight,
   GitHub,
   Twitter,
-  TwitterOutlined,
-  Message,
   Wrld,
 } from '@components/icons';
 import styles from './command.module.css';
@@ -219,7 +209,6 @@ const Group = ({ children, title }) => {
 };
 
 const DefaultItems = () => {
-  const router = useRouter();
   const { setPages, pages } = useCommandData();
 
   return (
