@@ -17,6 +17,7 @@ node_modules
 /build
 /dist
 /.next
+package-lock.json
 
 # misc
 .DS_Store
