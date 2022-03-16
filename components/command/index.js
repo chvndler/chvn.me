@@ -2,12 +2,21 @@ import React, { useEffect, useRef, useMemo, useState, memo } from 'react';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
 import useDelayedRender from 'use-delayed-render';
+
+// @reach/dialog
 import { DialogContent, DialogOverlay } from '@reach/dialog';
 
 import { Command, CommandInput, CommandItem, CommandList, useCommand, usePages, CommandGroup } from 'cmdk';
 
+// Styles..
+import styles from './command.module.css';
+import headerStyles from '@components/header/header.module.css';
+import { useTheme } from 'next-themes';
+import tinykeys from '@lib/tinykeys';
+import postMeta from '@data/blog.json';
+
+// Import Icons
 import {
-  // Command as CommandIcon,
   Menu as MenuIcon,
   Sparkles,
   Archive,
@@ -21,17 +30,12 @@ import {
   Twitter,
   Wrld,
 } from '@components/icons';
-import styles from './command.module.css';
-import headerStyles from '@components/header/header.module.css';
-import { useTheme } from 'next-themes';
-import tinykeys from '@lib/tinykeys';
-import postMeta from '@data/blog.json';
 
 // Define data to use
 const CommandData = React.createContext({});
 const useCommandData = () => React.useContext(CommandData);
 
-//
+// Menu app begin..
 const CommandMenu = memo(() => {
   const listRef = useRef();
   const commandRef = useRef();
@@ -63,8 +67,10 @@ const CommandMenu = memo(() => {
         setPages([ThemeItems]);
         setOpen(true);
       },
+
       // Blog
       'g b': () => router.push('/blog'),
+
       // Collections
       'g r': () => router.push('/reading'),
       'g d': () => router.push('/design'),
@@ -75,9 +81,11 @@ const CommandMenu = memo(() => {
       'g q': () => router.push('/quotes'),
       'g w': () => router.push('/words'),
       'g i': () => router.push('/ideas'),
+
       // Navigation
       'g h': () => router.push('/welcome'),
       'g c': () => router.push('/contact'),
+
       // Social
       'g t': () => () => window.open('https://twitter.com/chv_ndler', '_blank'),
     };
@@ -109,7 +117,7 @@ const CommandMenu = memo(() => {
   useEffect(() => {
     if (!listRef.current || !heightRef.current) return;
 
-    const height = Math.min(listRef.current.offsetHeight + 1, 400);
+    const height = Math.min(listRef.current.offsetHeight + 1, 300);
     heightRef.current.style.height = height + 'px';
   });
 
@@ -133,6 +141,7 @@ const CommandMenu = memo(() => {
             className={cn(styles.command, {
               [styles.show]: rendered,
             })}>
+            {/* <!-- INPUT BAR --> */}
             <div className={styles.top}>
               <CommandInput
                 placeholder={

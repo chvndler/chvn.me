@@ -50,9 +50,9 @@
   align-items: left;
   font-family: 'Inter', sans-serif;
   font-size: 2rem;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
   line-height: normal;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.08rem;
   color: var(--white);
   margin-bottom: 40px;
   margin-top: 0;

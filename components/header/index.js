@@ -2,7 +2,7 @@ import { memo } from 'react';
 import Link from 'next/link';
 
 import styles from './header.module.css';
-import { ChvnScript as LogoIcon } from '@components/icons';
+// import { ChvnScript as LogoIcon } from '@components/icons';
 import Command from '@components/command';
 
 const Header = ({ title, content }) => {
@@ -11,7 +11,8 @@ const Header = ({ title, content }) => {
       <div className={styles.header}>
         <Link href="/">
           <a aria-label="Navigate Home" className={styles.logo}>
-            <LogoIcon />
+            {/* --> <LogoIcon /> --> */}
+            <h4>CHVN®</h4>
           </a>
         </Link>
 
