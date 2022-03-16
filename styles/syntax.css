@@ -1,3 +1,11 @@
+.large_paragraph {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.2 !important;
+}
+
 .keyword {
   font-weight: bold;
   color: var(--keyword);

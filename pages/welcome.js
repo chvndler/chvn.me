@@ -7,15 +7,14 @@ import { data as items } from '@data/current.json';
 
 const Welcome = () => {
   return (
-    <Page title="" description="chvn.me/">
+    <Page title="" description="">
+      <br />
       <h2>Chandler Chappell</h2>
-      <h4>Designer, & Director</h4>
-      <br />
-      <br />
+      <h4>Front-end Developer, & Director</h4>
       <br />
 
       <h5>About.</h5>
-      <p>
+      <p className="large_paragraph">
         I've been a designer for nearly 7 years so <strong>front-end</strong> code is where my most valuable set of skills live. I am
         currently studying to be full-stack and building{' '}
         <Link href="https://vercel.com" external>
