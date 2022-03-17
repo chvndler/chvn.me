@@ -1,6 +1,7 @@
 import Page from '@components/page';
 import Link from '@components/link';
 import Entry from '@components/entry';
+import Grid from '@components/grid';
 
 // Data
 import { data as items } from '@data/current.json';
@@ -51,6 +52,8 @@ const Welcome = () => {
           return <Entry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
         })}
       </article>
+
+      <Grid />
     </Page>
   );
 };
