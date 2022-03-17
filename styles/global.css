@@ -157,6 +157,10 @@ body {
   user-select: none;
 }
 
+.main {
+  padding: var(--padding);
+}
+
 p,
 li {
   letter-spacing: -0.33px;
@@ -431,4 +435,39 @@ details {
 
 .instagram {
   color: var(--instagram) !important;
+}
+
+/* GRID TEST */
+
+.react_row {
+  border-radius: 18px;
+  background-color: inherit;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+}
+
+.entry {
+  margin: 2px;
+  padding: 2px;
+}
+
+.col {
+  /* background-color: var(--gray); */
+}
+
+.grid_row {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin: auto !important;
+  margin-top: 2em !important;
+  width: 100% !important;
 }
