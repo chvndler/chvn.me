@@ -12,7 +12,7 @@ const Header = ({ title, content }) => {
         <Link href="/">
           <a aria-label="Navigate Home" className={styles.logo}>
             {/* --> <LogoIcon /> --> */}
-            <h4>CHVN®</h4>
+            <h4>CHANDLER® CHAPPELL</h4>
           </a>
         </Link>
 

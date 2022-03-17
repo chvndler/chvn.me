@@ -36,12 +36,19 @@
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
  * @author ocodia
  */
+pre {
+  background-color: var(--pre) !important;
+}
+
+article pre {
+  background-color: var(--pre) !important;
+}
 
 code[class*='language-'],
 pre[class*='language-'] {
   color: #f8f8f2;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Jet Brains', monospace !important;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -81,7 +88,7 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: slategray;
+  color: var(--gray);
 }
 
 .token.punctuation {

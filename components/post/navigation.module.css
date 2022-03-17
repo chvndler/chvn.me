@@ -5,9 +5,10 @@
   align-items: center;
 }
 
-.previous, .next {
-  font-weight: 500;
-  transition: color var(--transition);
+.previous,
+.next {
+  font-weight: 700;
+  transition: color var(--volt);
 }
 
 .next {
@@ -19,7 +20,9 @@
   margin-bottom: var(--gap-half);
 }
 
-.previous:hover, .next:hover,
-.previous:focus, .next:focus {
-  color: var(--fg);
+.previous:hover,
+.next:hover,
+.previous:focus,
+.next:focus {
+  color: var(--volt);
 }
