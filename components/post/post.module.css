@@ -7,4 +7,10 @@
 .title {
   margin-top: 1rem;
   padding-top: 20px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -0.2rem;
 }

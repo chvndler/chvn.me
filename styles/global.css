@@ -208,7 +208,7 @@ h4 {
   /* letter-spacing: 0.8px; */
   letter-spacing: -0.03rem;
   line-height: 0.4;
-  padding-left: 3px;
+  padding-left: 0px;
 }
 
 h5 {
@@ -218,6 +218,14 @@ h5 {
   color: var(--fg);
   letter-spacing: -0.04rem !important;
   line-height: 0.4;
+}
+
+.h6 {
+  font-family: 'Inter', sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.2rem;
 }
 
 pre,

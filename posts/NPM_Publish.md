@@ -2,7 +2,7 @@
 title: Publishing an NPM Package
 description: Package and Publish.
 slug: npm-publish
-date: August 19, 2019
+date: March 18, 2022
 ---
 
 Once you’re up-and-running, publishing an npm package can be as easy as typing npm publish into the terminal. But setting up your package for the first time, testing it locally and writing a useful README can be tricky if you’re a first-timer.

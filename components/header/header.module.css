@@ -53,7 +53,7 @@
 .header {
   height: 32px;
   margin: 0 auto;
-  padding: 0 var(--gap);
+  padding: 0 0;
   max-width: var(--main-content);
   display: flex;
   justify-content: space-between;
