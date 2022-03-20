@@ -47,6 +47,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   transition: color var(--transition);
+  color: var(--article-color);
 }
 
 .description {
