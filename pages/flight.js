@@ -16,7 +16,7 @@ const Flight = () => {
           <Col sm={1} md={3} lg={3}>
             <div className="entry">
               <Entry
-                title="Atelier Design Yield®"
+                title="Atelier ign Yield®"
                 description="The design system."
                 image="https://assets.zeit.co/image/upload/q_auto/front/assets/design/geist-card.png"
                 href="https://zeit.co/design"
