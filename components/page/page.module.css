@@ -31,7 +31,7 @@
   font-weight: 600 !important;
   line-height: normal;
   letter-spacing: -0.05rem;
-  color: var(--article-color);
+  color: var(--fg);
   margin-bottom: 10px;
   /*
   background-color: var(--volt);

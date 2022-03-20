@@ -1,30 +1,19 @@
-import Page from '@components/page'
-import Entry from '@components/entry'
+import Page from '@components/page';
+import Entry from '@components/entry';
 
 // Data
-import { data as items } from '@data/film.json'
+import { data as items } from '@data/film.json';
 
 const Video = () => {
   return (
-    <Page
-      title="Film & Video Prod."
-      description="Collection of exemplary electronic music."
-    >
+    <Page title="Film & Video Production" description="MEDIA©">
       <article>
         {items.map(entry => {
-          return (
-            <Entry
-              key={entry.title}
-              title={entry.title}
-              image={entry.image}
-              href={entry.url}
-              description={entry.description}
-            />
-          )
+          return <Entry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
         })}
       </article>
     </Page>
-  )
-}
+  );
+};
 
-export default Video
+export default Video;

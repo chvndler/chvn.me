@@ -15,24 +15,24 @@
   ],
   "data": [
     {
-      "title": "Atelier Design Yield®",
-      "description": "Essential design components",
+      "title": "ALONE WITH THE GODS®",
+      "description": "V2 Training Capsule, titled Alone with the Gods for hldtru®",
       "image": "https://cdn.ady.systems/chvn/assets/one.png",
       "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
       "key": "indigo"
     },
     {
-      "title": "three.js",
-      "description": "My current collection of three.js builds.",
+      "title": "FILM REEL ©2019",
+      "description": "My 2019 film reel.",
       "image": "https://cdn.ady.systems/chvn/assets/five.png",
-      "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
+      "url": "https://www.youtube.com/watch?v=gFrutOd5130",
       "key": "trance"
     },
     {
-      "title": "NEXT.START",
-      "description": "Barebones starter prjct. Built with Next.js, Typescript, & Stitches.",
+      "title": "AQUAMAN©",
+      "description": "Official Music Video for Aquaman - Young Pharro ft. Chris Buxton.",
       "image": "https://cdn.ady.systems/chvn/assets/three.png",
-      "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
+      "url": "https://www.youtube.com/watch?v=TdvnGouG6S0",
       "key": "trance"
     }
   ]
