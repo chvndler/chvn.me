@@ -25,5 +25,5 @@ const Cover = () => {
   );
 };
 
-Cover.theme = 'system';
+Cover.theme = 'light';
 export default Cover;
