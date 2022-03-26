@@ -1,7 +1,7 @@
 ---
 title: Create Fast.
 description: Burn out, desire, and creative blocks.
-slug: creative
+slug: creative-output
 date: February 2, 2022
 ---
 

@@ -22,8 +22,8 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
     "resolveJsonModule": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
     "paths": {
       "@components/*": ["components/*"],

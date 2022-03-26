@@ -1,6 +1,5 @@
 // REACT & NEXT IMPORTS
 import React from 'react';
-import Head from 'next/head';
 import Router from 'next/router';
 import App from 'next/app';
 import nprogress from 'nprogress';
@@ -32,9 +31,6 @@ class ChvnApp extends App {
 
     return (
       <ThemeProvider disableTransitionOnChange defaultTheme="light">
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        </Head>
         <Component {...pageProps} />
       </ThemeProvider>
     );
