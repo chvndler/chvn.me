@@ -31,7 +31,9 @@
       "@lib/*": ["lib/*"],
       "@styles/*": ["styles/*"],
       "@data/*": ["data/*"],
-      "@icons/*": ["components/icons/*"]
+      "@icons/*": ["components/icons/*"],
+
+      "@public/*": ["public/*"]
     },
     "incremental": true
   },
