@@ -23,6 +23,7 @@ import {
   Search,
   Design,
   Music,
+  Pencil,
   Video,
   Transform,
   ArrowRight,
@@ -78,9 +79,10 @@ const CommandMenu = memo(() => {
       'g m': () => router.push('/music'),
       'g v': () => router.push('/video'),
       'g p': () => router.push('/projects'),
-      'g q': () => router.push('/quotes'),
-      'g w': () => router.push('/words'),
-      'g i': () => router.push('/ideas'),
+      'g n': () => router.push('/notes'),
+      // 'g q': () => router.push('/quotes'),
+      // 'g w': () => router.push('/words'),
+      // 'g i': () => router.push('/ideas'),
 
       // Navigation
       'g h': () => router.push('/welcome'),
@@ -232,7 +234,9 @@ const DefaultItems = () => {
         <Item value="Design" icon={<Transform />} keybind="g d" />
         <Item value="Video" icon={<Video />} keybind="g v" />
         <Item value="Music" icon={<Music />} keybind="g m" />
-        <Item value="Future Ideas" icon={<Design />} keybind="g i" />
+        <Item value="Notes" icon={<Pencil />} keybind="g n" />
+
+        {/* <!-- <Item value="Future Ideas" icon={<Design />} keybind="g i" /> --> */}
         {/* <!-- <Item value="Reading" icon={<Book />} keybind="g r" /> --> */}
         {/* <!-- <Item value="Keyboards" icon={<M6 />} keybind="g k" /> --> */}
         {/* <!-- <Item value="Quotes" icon={<Quote />} keybind="g q" /> --> */}

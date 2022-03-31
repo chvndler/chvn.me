@@ -10,8 +10,8 @@ const Cover = () => {
         <p>
           Press <code>Cmnd+K</code> to navigate.
         </p>
-        <h2>CHANDLER CHAPPELL®</h2>
-
+        <h2>CHANDLER CHAPPELL</h2>
+        <h4>Front-end Developer, Designer, & Director</h4>
         <div className="menu_container">
           <div className="cmnd_k">
             <Command />
