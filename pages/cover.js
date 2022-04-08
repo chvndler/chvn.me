@@ -2,6 +2,7 @@ import CoverBox from '@components/cover';
 import Command from '@components/command';
 // import { SignatureOne as ChvnIcon } from '@components/vector';
 import Video from '@components/video';
+import FramerBox from '@components/framer/box';
 
 const Cover = () => {
   return (
@@ -17,6 +18,8 @@ const Cover = () => {
             <Command />
           </div>
         </div>
+
+        <FramerBox />
       </CoverBox>
     </div>
   );
