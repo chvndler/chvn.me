@@ -40,16 +40,15 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    </Head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      </Head>
       <CommandK />
       <ThemeProvider
         disableTransitionOnChange
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="light-theme"
-      >
+        defaultTheme="light-theme">
         {/* <!-- META TAGS --> */}
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
@@ -58,8 +57,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           className={appWrapper({
             display: 'flex',
             flexDirection: 'column',
-          })}
-        >
+          })}>
           <Component {...pageProps} />
         </div>
       </ThemeProvider>
