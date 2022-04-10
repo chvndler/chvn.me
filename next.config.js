@@ -1,23 +1,38 @@
+const { withContentlayer } = require('next-contentlayer');
+
+/**
+ * @type {import('next').NextConfig}
+ */
+module.exports = withContentlayer()({
+  swcMinify: true,
+  reactStrictMode: true,
+  images: {
+    domains: [
+      'i.scdn.co', // Spotify Album Art
+      'pbs.twimg.com', // Twitter Profile Picture
+    ],
+  },
+  webpack: (config, { dev, isServer }) => {
+    // Replace React with Preact only in client production build
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      });
+    }
+
+    return config;
+  },
+});
+
 module.exports = {
   reactStrictMode: true,
-  typescript: {
-    ignoreDevErrors: true,
-  },
   images: {
-    loader: 'custom',
-    nextImageExportOptimizer: {
-      imageFolderPath: 'public/images',
-      exportFolderPath: 'out',
-      imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-      deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-      quality: 75,
-    },
-    domains: ['cdn.ady.systems', 'ady.systems', 'i.scdn.co', 'images.unsplash.com', 'res.cloudinary.com'],
+    domains: ['cdn.ady.systems', 'unsplash.com'],
   },
   experimental: {
-    urlImports: ['https://unpkg.com/', 'https://cdn.ady.systems/', 'https://assets.vercel.com/', 'https://cdn.skypack.dev/'],
-  },
-  env: {
-    storePicturesInWEBP: true,
+    urlImports: ['https://cdn.ady.systems/', 'https://cdn.skypack.dev/'],
   },
 };

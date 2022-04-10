@@ -15,23 +15,44 @@
   ],
   "data": [
     {
-      "title": "Atelier Design Yield®",
+      "title": "Atelier®",
       "description": "Essential design components",
-      "image": "https://cdn.ady.systems/chvn/assets/one.png",
+      "image": "chvn/solids/dark-blue.jpg",
       "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
       "key": "indigo"
     },
     {
-      "title": "three.js",
-      "description": "My current collection of three.js builds.",
-      "image": "https://cdn.ady.systems/chvn/assets/five.png",
+      "title": "Next.Start",
+      "description": "A minimal Next.js starter project.",
+      "image": "chvn/solids/gray.jpg",
       "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
       "key": "trance"
     },
     {
-      "title": "Next.start",
-      "description": "Barebones starter prjct. Built with Next.js, Typescript, & Stitches.",
-      "image": "https://cdn.ady.systems/chvn/assets/three.png",
+      "title": "SFX.001",
+      "description": "Sound design for your open-source projects.",
+      "image": "chvn/solids/light-purple.jpg",
+      "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
+      "key": "trance"
+    },
+    {
+      "title": "Three.Space",
+      "description": "My current three.js builds.",
+      "image": "chvn/solids/blue.jpg",
+      "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
+      "key": "indigo"
+    },
+    {
+      "title": "Raycast Extension",
+      "description": "A minimal Next.js starter project.",
+      "image": "chvn/solids/crimson-red.jpg",
+      "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
+      "key": "trance"
+    },
+    {
+      "title": "TIME.001",
+      "description": "Sound design for your open-source projects.",
+      "image": "chvn/solids/lime.jpg",
       "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
       "key": "trance"
     }
