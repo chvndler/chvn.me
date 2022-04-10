@@ -2,7 +2,6 @@
   "name": "chvn.me",
   "description": "Typescript, Next.js, Stitches, Radix Starter Project",
   "version": "1.0.0",
-  "private": true,
   "author": "chvndler <chan@ady.world> (@chv.ndler)",
   "license": "MIT",
   "keywords": [
