@@ -1,4 +1,3 @@
-// REACT & NEXT IMPORTS
 import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
@@ -41,6 +40,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    </Head>
       <CommandK />
       <ThemeProvider
         disableTransitionOnChange
