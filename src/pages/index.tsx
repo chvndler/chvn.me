@@ -53,16 +53,26 @@ const Index = () => {
             Connect
           </Heading>
           <Flex direction="row">
-            <Link href="https://github.com/chvndler">
+            <Link href="https://github.com/chvndler" passHref>
               <a>
-                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                <Text
+                  as="a"
+                  target="_blank"
+                  rel="norefferer"
+                  size="1"
+                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   GitHub
                 </Text>
               </a>
             </Link>
-            <Link href="/next">
+            <Link href="https://www.are.na/chvndler-ch">
               <a>
-                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                <Text
+                  as="a"
+                  target="_blank"
+                  rel="norefferer"
+                  size="1"
+                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   Are.na
                 </Text>
               </a>
@@ -70,7 +80,12 @@ const Index = () => {
 
             <Link href="https://twitter.com/chv_ndler">
               <a>
-                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                <Text
+                  as="a"
+                  target="_blank"
+                  rel="norefferer"
+                  size="1"
+                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   Twitter
                 </Text>
               </a>
