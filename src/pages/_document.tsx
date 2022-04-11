@@ -22,8 +22,8 @@ export default class Document extends NextDocument {
 
           <meta property="og:title" content="chvn®" />
           <meta property="og:url" content="https://chvn.me" />
-          <meta property="og:image" content="https://cdn.ady.systems/assets/social.jpg" />
-          <meta property="og:image:secure_url" content="https://cdn.ady.systems/assets/social.jpg" />
+          <meta property="og:image" content="https://cdn.ady.systems/chvn/assets/social.jpg" />
+          <meta property="og:image:secure_url" content="https://cdn.ady.systems/chvn/assets/social.jpg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1600" />
           <meta property="og:image:height" content="900" />
