@@ -3,12 +3,10 @@ import React from 'react';
 
 // Dependencies
 import * as SwitchPrimitive from '@radix-ui/react-switch';
-import { violet, mauve, blackA, whiteA } from '@radix-ui/colors';
 import { useTheme } from 'next-themes';
 
 // Atelier® Design System
 import { darkTheme } from 'stitches.config';
-import { Button } from '@/system/button';
 
 // Stitches
 import { styled } from '@stitches/react';
@@ -56,8 +54,7 @@ export const ThemeSwitch = props => {
           alignItems: 'center',
           marginRight: '$2',
           marginLeft: '$2',
-        }}
-      >
+        }}>
         <Switch
           defaultChecked
           id="s1"
@@ -80,8 +77,7 @@ export const ThemeSwitch = props => {
             // Finally, we still need to let `next-themes` know of the theme change so that it saves it to local storage.
             setTheme(newTheme);
           }}
-          {...props}
-        >
+          {...props}>
           <SwitchThumb />
         </Switch>
       </Flex>

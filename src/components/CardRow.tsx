@@ -1,16 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
 
 // @/system
 import { Box } from '@/system/box';
-import { Container } from '@/system/container';
-import { Section } from '@/system/section';
 import { Heading } from '@/system/heading';
-import { Paragraph } from '@/system/paragraph';
 import { Text } from '@/system/text';
 import { Grid } from '@/system/grid';
-import { SmallButton } from '@/components/buttons/DefaultButton';
-import { Button } from '@/components/buttons/DefaultButton';
 
 import { styled } from '@stitches/react';
 
@@ -47,8 +41,7 @@ export const CardRow = () => {
               gap: '4px',
               gridTemplateColumns: '1fr 1fr 1fr',
             },
-          }}
-        >
+          }}>
           {/* PRODUCT ROW ONE */}
           <Box>
             <Card>

@@ -7,7 +7,6 @@ import { Box } from '@/system/box';
 import { Container } from '@/system/container';
 import { Grid } from '@/system/grid';
 import { Text } from '@/system/text';
-import { Flex } from '@/system/flex';
 
 // Stitches
 import { styled } from '@stitches/react';
@@ -41,8 +40,7 @@ export const Footer = () => {
           margin: 'auto',
           px: '0',
           height: 'auto',
-        }}
-      >
+        }}>
         {/* NAVIGATION SECTION */}
         <Container size="3" css={{ px: '18px' }}>
           <Grid
@@ -57,8 +55,7 @@ export const Footer = () => {
                 gap: '0px',
                 gridTemplateColumns: '1fr 1fr 1fr',
               },
-            }}
-          >
+            }}>
             {/* PRODUCT ROW ONE */}
 
             <Box>
@@ -72,8 +69,7 @@ export const Footer = () => {
                       fontWeight: '500',
                       lineHeight: '1.4',
                       textAlign: 'left',
-                    }}
-                  >
+                    }}>
                     https://chvn.me
                   </Text>
 
@@ -84,8 +80,7 @@ export const Footer = () => {
                       fontSize: '11px',
                       lineHeight: '1.5',
                       letterSpacing: '-.03rem',
-                    }}
-                  >
+                    }}>
                     Copyright © 2021
                   </Text>
                 </Box>
@@ -108,8 +103,7 @@ export const Footer = () => {
                         '&:hover': {
                           cursor: 'pointer',
                         },
-                      }}
-                    >
+                      }}>
                       Current Projects
                     </Text>
                   </NextLink>
@@ -125,8 +119,7 @@ export const Footer = () => {
                         '&:hover': {
                           cursor: 'pointer',
                         },
-                      }}
-                    >
+                      }}>
                       Film
                     </Text>
                   </NextLink>
@@ -155,8 +148,7 @@ export const Footer = () => {
                         '&:hover': {
                           cursor: 'pointer',
                         },
-                      }}
-                    >
+                      }}>
                       Twitter
                     </Text>
                   </NextLink>
@@ -172,8 +164,7 @@ export const Footer = () => {
                         '&:hover': {
                           cursor: 'pointer',
                         },
-                      }}
-                    >
+                      }}>
                       Are.na
                     </Text>
                   </NextLink>
@@ -188,8 +179,7 @@ export const Footer = () => {
                         '&:hover': {
                           cursor: 'pointer',
                         },
-                      }}
-                    >
+                      }}>
                       GitHub
                     </Text>
                   </NextLink>

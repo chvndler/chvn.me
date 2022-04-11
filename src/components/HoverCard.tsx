@@ -4,7 +4,6 @@ import React from 'react';
 // STITCHES & RADIX-UI IMPORTS
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import { keyframes } from '@stitches/react';
-import { mauve } from '@radix-ui/colors';
 
 import { Box } from '@/system/box';
 // import Avatar from 'boring-avatars';
@@ -125,12 +124,10 @@ export const HoverCardComponent = () => {
               </Text>
               <Flex css={{ gap: 15 }}>
                 <Flex css={{ gap: 5 }}>
-                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>0</Text>{' '}
-                  <Text css={{ fontFamily: '$inter' }}>Following</Text>
+                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>0</Text> <Text css={{ fontFamily: '$inter' }}>Following</Text>
                 </Flex>
                 <Flex css={{ gap: 5 }}>
-                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>2,900</Text>{' '}
-                  <Text css={{ fontFamily: '$inter' }}>Followers</Text>
+                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>2,900</Text> <Text css={{ fontFamily: '$inter' }}>Followers</Text>
                 </Flex>
               </Flex>
             </Flex>

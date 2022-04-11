@@ -1,10 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Heading } from '@/system/heading';
 import { Box } from '@/system/box';
-import nextStartLogo from '@/public/NEXT.start-dark.svg';
 import { Navbar } from '@/ui/Navbar';
 
 import { styled } from 'stitches.config';
@@ -39,8 +37,7 @@ const Cover = () => {
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '16px',
                   fontWeight: '500',
-                }}
-              >
+                }}>
                 go back home
               </Heading>
             </a>

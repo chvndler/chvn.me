@@ -1,12 +1,7 @@
+import React from 'react';
 import { Box } from '@/system/box';
 import { Container } from '@/system/container';
 import { Grid } from '@/system/grid';
-import { Text } from '@/system/text';
-import { Heading } from '@/system/heading';
-import { Button } from '@/system/button';
-import { ExternalLinkIcon } from '@radix-ui/react-icons';
-import Image from 'next/image';
-import React from 'react';
 
 export const ShowcaseComp = ({ children }) => {
   return (
@@ -23,8 +18,7 @@ export const ShowcaseComp = ({ children }) => {
             borderColor: '$slate6',
             zIndex: '20',
             position: 'relative',
-          }}
-        >
+          }}>
           <Box
             css={{
               backgroundColor: '$translucent',
@@ -35,8 +29,7 @@ export const ShowcaseComp = ({ children }) => {
               margin: '0',
               zIndex: '100',
               saturate: '200%',
-            }}
-          >
+            }}>
             {children}
           </Box>
         </Grid>

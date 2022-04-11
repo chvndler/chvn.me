@@ -1,5 +1,4 @@
 import React from 'react';
-import Router from 'next/router';
 import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM
@@ -30,8 +29,7 @@ export const Navbar = () => {
           WebkitBackdropFilter: 'blur(10px)',
           saturate: '300%',
           zIndex: '9999',
-        }}
-      >
+        }}>
         {/* <!-- LOGO SECTION --> */}
         <Link href="/" passHref>
           <Box
@@ -45,8 +43,7 @@ export const Navbar = () => {
                 boxShadow: 'none',
               },
               '@bp2': { ml: '$5' },
-            }}
-          >
+            }}>
             <Text
               css={{
                 zIndex: '999',
@@ -56,8 +53,7 @@ export const Navbar = () => {
                 color: '$sky11',
                 lineHeight: '48px',
                 letterSpacing: '-0.03rem',
-              }}
-            >
+              }}>
               <strong>chan</strong>®
             </Text>
           </Box>
@@ -75,8 +71,7 @@ export const Navbar = () => {
             '@sm': {
               display: 'none',
             },
-          }}
-        >
+          }}>
           <Link href="/next" passHref>
             <NewLink
               variant="subtle"
@@ -88,8 +83,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$blue10',
                 },
-              }}
-            >
+              }}>
               blog
             </NewLink>
           </Link>
@@ -106,8 +100,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$yellow9',
                 },
-              }}
-            >
+              }}>
               projects
             </NewLink>
           </Link>
@@ -124,8 +117,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$red9',
                 },
-              }}
-            >
+              }}>
               archive
             </NewLink>
           </Link>
@@ -142,8 +134,7 @@ export const Navbar = () => {
                   textDecoration: 'none',
                   color: '$orange9',
                 },
-              }}
-            >
+              }}>
               film
             </NewLink>
           </Link>
@@ -160,8 +151,7 @@ export const Navbar = () => {
               display: 'inline-flex',
 
               '@bp2': { mr: '$5' },
-            }}
-          >
+            }}>
             {/* <!-- THEME SWITCH --> */}
             <ThemeSwitch />
           </Box>

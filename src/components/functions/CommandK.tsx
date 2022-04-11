@@ -1,5 +1,5 @@
 import React from 'react';
-import { KBarProvider, KBarPortal, KBarPositioner, KBarAnimator, KBarSearch, useMatches, NO_GROUP } from 'kbar';
+import { KBarProvider, KBarPortal, KBarPositioner, KBarSearch } from 'kbar';
 
 // ...
 export const CommandK = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled, keyframes } from '@stitches/react';
-import { violet, blackA, mauve, green } from '@radix-ui/colors';
+import { violet, blackA, mauve } from '@radix-ui/colors';
 import { Cross2Icon } from '@radix-ui/react-icons';
 import { DefaultButton } from '@/components/buttons/DefaultButton';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
@@ -75,7 +75,7 @@ export const DialogClose = DialogPrimitive.Close;
 
 // Your app...
 const Flex = styled('div', { display: 'flex' });
-const Box = styled('div', {});
+// const Box = styled('div', {});
 
 const IconButton = styled('button', {
   all: 'unset',

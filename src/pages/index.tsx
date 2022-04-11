@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Box } from '@/system/box';
@@ -13,8 +12,6 @@ import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { Footer } from '@/ui/Footer';
-import nextStartLogo from '@/public/NEXT.start-dark.svg';
-import arenaLogo from '@/public/icons/are.na.svg';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
@@ -38,8 +35,7 @@ const Index = () => {
                 as="a"
                 target="_blank"
                 rel="noreferrer"
-                css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}
-              >
+                css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>
                 @chv_ndler
               </Text>
             </a>
@@ -49,9 +45,7 @@ const Index = () => {
           <Heading size="3" css={{ color: '$sage8', lineHeight: 'normal' }}>
             Chandler Chappell
           </Heading>
-          <Text css={{ fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>
-            Front-end Developer, Designer, and Director
-          </Text>
+          <Text css={{ fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>Front-end Developer, Designer, and Director</Text>
           <MediumSpacer />
 
           {/* <!-- CONNECT SOCIAL SECTION --> */}
@@ -61,20 +55,14 @@ const Index = () => {
           <Flex direction="row">
             <Link href="https://github.com/chvndler">
               <a>
-                <Text
-                  size="1"
-                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}
-                >
+                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   GitHub
                 </Text>
               </a>
             </Link>
             <Link href="/next">
               <a>
-                <Text
-                  size="1"
-                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}
-                >
+                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   Are.na
                 </Text>
               </a>
@@ -82,10 +70,7 @@ const Index = () => {
 
             <Link href="https://twitter.com/chv_ndler">
               <a>
-                <Text
-                  size="1"
-                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}
-                >
+                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   Twitter
                 </Text>
               </a>
@@ -93,10 +78,7 @@ const Index = () => {
 
             <Link href="/next">
               <a>
-                <Text
-                  size="1"
-                  css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}
-                >
+                <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                   Contact
                 </Text>
               </a>
@@ -123,17 +105,10 @@ const Index = () => {
                 gap: '4px',
                 gridTemplateColumns: '1fr 1fr 1fr',
               },
-            }}
-          >
+            }}>
             {items.map(entry => {
               return (
-                <GridEntry
-                  key={entry.title}
-                  title={entry.title}
-                  image={entry.image}
-                  href={entry.url}
-                  description={entry.description}
-                />
+                <GridEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />
               );
             })}
           </Grid>

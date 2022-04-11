@@ -96,7 +96,7 @@ export const ToastAction = StyledAction;
 export const ToastClose = ToastPrimitive.Close;
 
 // Your app...
-const Box = styled('div', {});
+// const Box = styled('div', {});
 const Button = styled('button', {
   all: 'unset',
   display: 'inline-flex',
@@ -150,8 +150,7 @@ export const ShowToast = ({ children }) => {
         <Button
           onClick={() => {
             setOpen(false);
-          }}
-        >
+          }}>
           {children}
         </Button>
 

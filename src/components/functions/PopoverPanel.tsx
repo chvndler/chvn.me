@@ -7,10 +7,8 @@ import { Popover, Transition } from '@headlessui/react';
 import { Cross as Hamburger } from 'hamburger-react';
 
 // ATELIER® DESIGN SYSTEM
-import { Link } from '@/system/link';
 import { Text } from '@/system/text';
 import { Box } from '@/system/box';
-import { lime } from '@radix-ui/colors';
 
 // Stitches
 import { styled } from '@stitches/react';
@@ -184,8 +182,7 @@ export const PopoverPanel = () => {
                   '@sm': {
                     display: 'block',
                   },
-                }}
-              >
+                }}>
                 <Hamburger
                   toggled={isOpen}
                   toggle={setOpen}
@@ -206,8 +203,7 @@ export const PopoverPanel = () => {
               enterTo="opacity-100 translate-y-0"
               leave="transition ease-in duration-150"
               leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
+              leaveTo="opacity-0 translate-y-1">
               {/* <!-- Begin Panel --> */}
               <Popover.Panel as="div">
                 <Dropdown>
@@ -252,8 +248,7 @@ export const PopoverPanel = () => {
                           color: '$slate1',
 
                           paddingTop: '4px',
-                        }}
-                      >
+                        }}>
                         <span>© 2022 All Rights Reserved.</span>
                       </Text>
                     </Box>

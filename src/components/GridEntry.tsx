@@ -1,19 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import 'intersection-observer';
 
 // @/system
 import { Box } from '@/system/box';
-import { Container } from '@/system/container';
-import { Section } from '@/system/section';
-import { Heading } from '@/system/heading';
-import { Paragraph } from '@/system/paragraph';
-import { Text } from '@/system/text';
-import { Grid } from '@/system/grid';
-import { SmallButton } from '@/components/buttons/DefaultButton';
-import { Button } from '@/components/buttons/DefaultButton';
 
 import { styled } from '@stitches/react';
 
@@ -83,15 +73,8 @@ export const GridEntry = ({ title, description, image, href }) => {
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               objectFit: 'cover',
-            }}
-          >
-            <EntryLink
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              ref={ref}
-              title={`${title} - ${description}`}
-            >
+            }}>
+            <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
               <section>
                 <Box
                   css={{
@@ -102,8 +85,7 @@ export const GridEntry = ({ title, description, image, href }) => {
                     marginLeft: '18px',
                     marginRight: '18px',
                     marginBottom: '20px',
-                  }}
-                >
+                  }}>
                   <Title>{title}</Title>
                   <Description>{description}</Description>
                 </Box>

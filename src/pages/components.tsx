@@ -1,4 +1,4 @@
-import { Box, Heading, Text, TextField } from 'atelier.design';
+import { Box, Heading, Text } from 'atelier.design';
 import { AccordionComponent } from '@/components/AccordionComponent';
 
 // APP BEGIN / Components Page
