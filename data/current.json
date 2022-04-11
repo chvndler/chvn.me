@@ -18,42 +18,42 @@
       "title": "Atelier®",
       "description": "Essential design components",
       "image": "chvn/solids/dark-blue.jpg",
-      "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
+      "url": "https://www.ady.world",
       "key": "indigo"
     },
     {
       "title": "Next.Start",
       "description": "A minimal Next.js starter project.",
       "image": "chvn/solids/gray.jpg",
-      "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
+      "url": "https://github.com/chvndler/next.start",
       "key": "trance"
     },
     {
       "title": "SFX.001",
       "description": "Sound design for your open-source projects.",
       "image": "chvn/solids/light-purple.jpg",
-      "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
+      "url": "https://ady.world",
       "key": "trance"
     },
     {
       "title": "Three.Space",
       "description": "My current three.js builds.",
       "image": "chvn/solids/blue.jpg",
-      "url": "https://www.youtube.com/watch?v=1ubx8Z_-7ZY",
+      "url": "https://github.com/chvndler",
       "key": "indigo"
     },
     {
       "title": "Raycast Extension",
       "description": "A minimal Next.js starter project.",
       "image": "chvn/solids/crimson-red.jpg",
-      "url": "https://www.youtube.com/watch?v=ELcCv6SoAao",
+      "url": "https://github.com/chvndler",
       "key": "trance"
     },
     {
       "title": "TIME.001",
       "description": "Sound design for your open-source projects.",
       "image": "chvn/solids/lime.jpg",
-      "url": "https://www.youtube.com/watch?v=MD6rNJk68Zk",
+      "url": "https://ady.world",
       "key": "trance"
     }
   ]
