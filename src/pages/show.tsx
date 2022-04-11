@@ -32,9 +32,9 @@ const HeadingBox = styled('div', {
   zIndex: '200',
 });
 
-const Showcase = () => {
+const Show = () => {
   return (
-    <Box>
+    <Box css={{ minWidth: '100vw', minHeight: '100vh' }}>
       <Head>
         <title>Showcase.</title>
       </Head>
@@ -74,4 +74,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default Show;

@@ -5,14 +5,13 @@ import { Grid } from '@/system/grid';
 
 export const ShowcaseComp = ({ children }) => {
   return (
-    <Box css={{ bc: '$translucent' }}>
-      <Container size="3" css={{ px: '0px', py: '20px', bc: '$translucent', position: 'relative' }}>
+    <Box css={{ backgroundColor: '$slate1' }}>
+      <Container size="4" css={{ px: '0px', py: '10px', position: 'relative' }}>
         <Grid
           css={{
             gridTemplateColumns: 'repeat(1, minmax(0, 1fr))',
             gap: '$2',
-            bc: '$translucent',
-            br: '26px',
+            borderRadius: '26px',
             px: '0px',
             border: '3px solid',
             borderColor: '$slate6',
@@ -21,7 +20,6 @@ export const ShowcaseComp = ({ children }) => {
           }}>
           <Box
             css={{
-              backgroundColor: '$translucent',
               height: '400px',
               width: '100%',
               position: 'relative',

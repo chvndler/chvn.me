@@ -13,6 +13,7 @@ import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { Footer } from '@/ui/Footer';
+import { CommandK } from '@/components/functions/CommandK';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
@@ -25,6 +26,7 @@ import { data as items } from '@/data/current.json';
 const Index = () => {
   return (
     <>
+      <CommandK />
       <Head>
         <title>Chvn.me®</title>
       </Head>
