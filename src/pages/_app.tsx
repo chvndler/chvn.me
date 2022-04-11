@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
-import { CommandK } from '@/components/functions/CommandK';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
