@@ -147,10 +147,10 @@ export const Navbar = () => {
             css={{
               justifyContent: 'right',
               width: '100px',
-              mr: '$2',
+              mr: '$1',
               display: 'inline-flex',
 
-              '@bp2': { mr: '$5' },
+              '@bp2': { mr: '$4' },
             }}>
             {/* <!-- THEME SWITCH --> */}
             <ThemeSwitch />

@@ -29,31 +29,10 @@
       "key": "trance"
     },
     {
-      "title": "SFX.001",
-      "description": "Sound design for your open-source projects.",
-      "image": "chvn/solids/light-purple.jpg",
-      "url": "https://ady.world",
-      "key": "trance"
-    },
-    {
-      "title": "Three.Space",
-      "description": "My current three.js builds.",
-      "image": "chvn/solids/blue.jpg",
-      "url": "https://github.com/chvndler",
-      "key": "indigo"
-    },
-    {
       "title": "Raycast Extension",
       "description": "A minimal Next.js starter project.",
       "image": "chvn/solids/crimson-red.jpg",
       "url": "https://github.com/chvndler",
-      "key": "trance"
-    },
-    {
-      "title": "TIME.001",
-      "description": "Sound design for your open-source projects.",
-      "image": "chvn/solids/lime.jpg",
-      "url": "https://ady.world",
       "key": "trance"
     }
   ]
