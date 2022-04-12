@@ -13,24 +13,8 @@ import { Text } from '@/system/text';
 
 import { ShowcaseEntry } from '@/components/ShowcaseEntry';
 
-// STITCHES
-import { styled } from 'stitches.config';
-
 // Data
 import { data as items } from '@/data/showcase.json';
-
-const HeadingBox = styled('div', {
-  position: 'absolute',
-  top: '0',
-  left: '0',
-  width: '80%',
-  height: '50%',
-  margin: 'auto',
-  padding: '20px',
-  color: '$slate1',
-
-  zIndex: '200',
-});
 
 const Showcase = () => {
   return (

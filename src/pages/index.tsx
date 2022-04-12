@@ -12,7 +12,6 @@ import { Container } from '@/system/container';
 import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
-import { Footer } from '@/ui/Footer';
 import { AlternateFooter } from '@/ui/AlternateFooter';
 
 // Components..

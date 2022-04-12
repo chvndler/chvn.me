@@ -12,10 +12,6 @@ import { TwitterLogo } from '@/components/TwitterLogo';
 import { ArenaLogoIcon } from '@/components/ArenaLogo';
 import { GitHubIcon } from '@/components/GitHubIcon';
 
-// FUNCTIONS
-import { ThemeSwitch } from '@/functions/ThemeSwitch';
-import { PopoverPanel } from '@/functions/PopoverPanel';
-
 export const AlternateFooter = () => {
   return (
     <>

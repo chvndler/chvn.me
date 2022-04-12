@@ -11,9 +11,6 @@ import { Section } from '@/system/section';
 import { Heading } from '@/system/heading';
 import { Text } from '@/system/text';
 
-// STITCHES
-import { styled } from 'stitches.config';
-
 const BlogPage = () => {
   return (
     <Box>

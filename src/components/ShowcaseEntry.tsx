@@ -5,7 +5,7 @@ import 'intersection-observer';
 // @/system
 import { ShowcaseComp } from '@/components/ShowcaseComposition';
 import { Box } from '@/system/box';
-import { Container, Heading } from 'atelier.design';
+import { Heading } from 'atelier.design';
 
 import { styled } from '@stitches/react';
 
