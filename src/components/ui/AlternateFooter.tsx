@@ -7,21 +7,27 @@ import { Flex } from '@/system/flex';
 import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
 
+// Logos..
+import { TwitterLogo } from '@/components/TwitterLogo';
+import { ArenaLogoIcon } from '@/components/ArenaLogo';
+import { GitHubIcon } from '@/components/GitHubIcon';
+
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
 import { PopoverPanel } from '@/functions/PopoverPanel';
 
-export const Navbar = () => {
+export const AlternateFooter = () => {
   return (
     <>
       <Flex
-        as="header"
+        as="footer"
         css={{
           py: '0px',
           px: '5px',
-          height: '48px',
+          height: '58px',
           jc: 'space-between',
-          position: 'fixed',
+          position: 'relative',
+          // bottom: '0',
           margin: '0',
           backgroundColor: '$translucent',
           width: '100vw',
@@ -49,12 +55,13 @@ export const Navbar = () => {
                 zIndex: '999',
                 fontFamily: 'Inter, sans-serif',
                 // fontWeight: '600',
-                fontSize: '18px',
+                fontSize: '11px',
                 color: '$superLogo',
-                lineHeight: '48px',
+                opacity: '0.4',
+                lineHeight: '58px',
                 letterSpacing: '-0.03rem',
               }}>
-              <strong>chan</strong>®
+              Copyright © 2022
             </Text>
           </Box>
         </Link>
@@ -84,7 +91,7 @@ export const Navbar = () => {
                   color: '$blue10',
                 },
               }}>
-              blog
+              <GitHubIcon />
             </NewLink>
           </Link>
 
@@ -101,7 +108,7 @@ export const Navbar = () => {
                   color: '$yellow9',
                 },
               }}>
-              projects
+              <TwitterLogo />
             </NewLink>
           </Link>
 
@@ -118,24 +125,7 @@ export const Navbar = () => {
                   color: '$red9',
                 },
               }}>
-              archive
-            </NewLink>
-          </Link>
-
-          <Link href="/cover" passHref>
-            <NewLink
-              variant="subtle"
-              css={{
-                display: 'none',
-                color: '$sage8',
-                mr: '$3',
-                '@bp2': { display: 'block', mr: '$3' },
-                '&:hover': {
-                  textDecoration: 'none',
-                  color: '$orange9',
-                },
-              }}>
-              film
+              <ArenaLogoIcon />
             </NewLink>
           </Link>
         </Flex>
@@ -153,10 +143,7 @@ export const Navbar = () => {
               '@bp2': { mr: '$4' },
             }}>
             {/* <!-- THEME SWITCH --> */}
-            <ThemeSwitch />
           </Box>
-
-          <PopoverPanel />
         </Flex>
       </Flex>
     </>

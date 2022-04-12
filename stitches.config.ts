@@ -1,4 +1,5 @@
 import { createStitches } from '@stitches/react';
+
 import {
   gray,
   mauve,
@@ -120,6 +121,23 @@ import type * as Stitches from '@stitches/react';
 import { mixins } from 'stitches-mixins';
 export type { VariantProps } from '@stitches/react';
 
+///////////////////////////////
+// Radix Scales.. Use Cases //
+/////////////////////////////
+
+// 1 [ App background ]
+// 2 [ Subtle background ]
+// 3 [ UI element background ]
+// 4 [ Hovered UI element background ]
+// 5 [ Active / Selected UI element background ]
+// 6 [ Subtle borders and separators ]
+// 7 [ UI element border and focus rings ]
+// 8 [ Hovered UI element border ]
+// 9 [ Solid backgrounds ]
+// 10 [ Hovered solid backgrounds ]
+// 11 [ Low-contrast text ]
+// 12 [ High-contrast text ]
+
 export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config } = createStitches({
   theme: {
     colors: {
@@ -191,6 +209,15 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       purple500: 'hsl(252,78%,60%)',
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
+
+      // SuperLime..
+      superLime0: '#ebffe9',
+      superLime1: '#b8ffb3',
+      superLime2: '#65ff59',
+      superLime3: '#3df330',
+      superLime4: '#39e12c',
+      superLime5: '#34ce28',
+      superLogo: '#6e6d5d',
 
       // TRANSLUCENT ALPHAS
       light100: 'rgba(240, 240, 240, 0.5)',
@@ -509,10 +536,20 @@ export const darkTheme = createTheme('darkTheme', {
     shadowDark: 'hsl(206 22% 7% / 20%)',
 
     // CUSTOM FOR DARK
+    white: 'hsl(0, 0%, 100%)',
     superLime: '#7A306C',
     slime: '#c9cccd',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
+
+    // SuperLime..
+    superLime0: '#ebffe9',
+    superLime1: '#b8ffb3',
+    superLime2: '#65ff59',
+    superLime3: '#3df330',
+    superLime4: '#39e12c',
+    superLime5: '#34ce28',
+    superLogo: '#65ff59',
   },
   utils: {},
 });

@@ -17,10 +17,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/data*": ["./data/*"],
+      "@/data/*": ["./data/*"],
+      "@/types/*": ["./types/*"],
       "@/lib/*": ["./lib/*"],
       "@/public/*": ["./public/*"],
-      "@/documents/*": ["./documents/*"],
+      "@/posts/*": ["./posts/*"],
       "@/functions/*": ["./src/components/functions/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/components/*": ["./src/components/*"]

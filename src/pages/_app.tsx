@@ -21,7 +21,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     html: {
       overflowX: 'hidden',
-      backgroundColor: '$slate1',
+      backgroundColor: '$sage1',
 
       // iOS MOBILE VIEWPORT FIX
       minHeight: '-webkit-fill-available',
@@ -43,15 +43,9 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
       </Head>
 
-      <ThemeProvider
-        disableTransitionOnChange
-        attribute="class"
-        value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="light-theme">
+      <ThemeProvider disableTransitionOnChange attribute="class" value={{ light: 'theme', dark: darkTheme.className }} defaultTheme="theme">
         {/* <!-- META TAGS --> */}
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        </Head>
+
         <div
           className={appWrapper({
             display: 'flex',

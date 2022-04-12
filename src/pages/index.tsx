@@ -13,6 +13,7 @@ import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { Footer } from '@/ui/Footer';
+import { AlternateFooter } from '@/ui/AlternateFooter';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
@@ -28,7 +29,7 @@ const Index = () => {
       <Head>
         <title>Chvn.me®</title>
       </Head>
-      <Box css={{ minWidth: '100vw' }}>
+      <Box css={{ bc: '$sage1', minWidth: '100vw' }}>
         <Navbar />
 
         <Section size="4">
@@ -47,27 +48,29 @@ const Index = () => {
             </Link>
             <SmallSpacer />
 
-            <Heading size="3" css={{ color: '$sage8', lineHeight: 'normal' }}>
+            <Heading size="3" css={{ color: '$sage10', lineHeight: 'normal' }}>
               Chandler Chappell
             </Heading>
-            <Text css={{ fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>Front-end Developer, Designer, and Director</Text>
+            <Text css={{ color: '$sage8', fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>
+              Front-end Developer, Designer, and Director
+            </Text>
             <MediumSpacer />
 
             {/* <!-- CONNECT SOCIAL SECTION --> */}
-            <Heading size="1" css={{ color: '$sage11', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage10', fontWeight: '600', lineHeight: '2' }}>
               Connect
             </Heading>
             <Flex direction="row">
               <Link href="https://github.com/chvndler" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                     GitHub
                   </Text>
                 </a>
               </Link>
               <Link href="https://www.are.na/chvndler-ch" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                     Are.na
                   </Text>
                 </a>
@@ -75,7 +78,7 @@ const Index = () => {
 
               <Link href="https://twitter.com/chv_ndler" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                     Twitter
                   </Text>
                 </a>
@@ -83,7 +86,7 @@ const Index = () => {
 
               <Link href="/next">
                 <a>
-                  <Text size="1" css={{ fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
                     Contact
                   </Text>
                 </a>
@@ -94,7 +97,7 @@ const Index = () => {
 
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <Container size="3">
-            <Heading size="1" css={{ px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
             </Heading>
 
@@ -120,7 +123,7 @@ const Index = () => {
           </Container>
         </Section>
 
-        <Footer />
+        <AlternateFooter />
       </Box>
     </>
   );

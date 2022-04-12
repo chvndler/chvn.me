@@ -32,8 +32,8 @@ export const Footer = () => {
     <>
       <Box
         css={{
-          borderTop: '2px solid',
-          borderColor: '$lime4',
+          // borderTop: '2px solid',
+          // borderColor: '$lime4',
           bc: '$translucent',
           paddingTop: '30px',
           paddingBottom: '80px',
