@@ -1,5 +1,4 @@
 import { Box, Heading, Text } from 'atelier.design';
-import { AccordionComponent } from '@/components/AccordionComponent';
 
 // APP BEGIN / Components Page
 const Components = () => {
@@ -12,8 +11,6 @@ const Components = () => {
         <Text size="3">Text Size 3</Text>
         <Text size="2">Text Size 2</Text>
         <Text size="1">Text Size 1</Text>
-
-        <AccordionComponent />
       </Box>
     </>
   );
