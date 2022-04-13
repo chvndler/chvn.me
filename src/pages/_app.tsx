@@ -17,9 +17,10 @@ const appWrapper = css({
 
 // Your App..
 const App = ({ Component, pageProps }: AppProps) => {
-  // Inject globals & resets
   globalCss(reset, {
     html: {
+      margin: 0,
+      padding: 0,
       overflowX: 'hidden',
 
       // iOS MOBILE VIEWPORT FIX
@@ -44,10 +45,10 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <ThemeProvider
-        // disableTransitionOnChange
+        disableTransitionOnChange
         attribute="class"
-        value={{ light: 'lighTheme', dark: darkTheme.className }}
-        defaultTheme="lighTheme">
+        defaultTheme="system"
+        value={{ light: 'light', dark: darkTheme.className }}>
         {/* <!-- META TAGS --> */}
 
         <div

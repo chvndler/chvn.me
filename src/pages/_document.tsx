@@ -15,6 +15,7 @@ export default class Document extends NextDocument {
         <Head>
           <link rel="amphtml" href="https://chvn.me" />
           <link rel="canonical" href="https://chvn.me" />
+
           <meta name="googlebot" content="follow, index, noarchive" />
           <meta name="robots" content="follow, index, noarchive" />
           <meta name="msapplication-config" content="/browserconfig.xml" />
@@ -36,7 +37,9 @@ export default class Document extends NextDocument {
           <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
           <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-192x192.png" />
           <link rel="manifest" href="/site.webmanifest" />
+
           <meta name="msapplication-TileColor" content="#F2F2F2" />
+          <meta name="color-scheme" content="dark light" />
           <meta name="theme-color" content="#ffffff" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@chv_ndler" />

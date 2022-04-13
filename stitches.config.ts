@@ -1,4 +1,7 @@
 import { createStitches } from '@stitches/react';
+// import type { PropertyValue, ScaleValue } from "@stitches/react";
+import type * as Stitches from '@stitches/react';
+import { mixins } from 'stitches-mixins';
 
 import {
   gray,
@@ -117,10 +120,6 @@ import {
   goldDarkA,
 } from '@radix-ui/colors';
 
-import type * as Stitches from '@stitches/react';
-import { mixins } from 'stitches-mixins';
-export type { VariantProps } from '@stitches/react';
-
 ///////////////////////////////
 // Radix Scales.. Use Cases //
 /////////////////////////////
@@ -138,6 +137,8 @@ export type { VariantProps } from '@stitches/react';
 // 11 [ Low-contrast text ]
 // 12 [ High-contrast text ]
 
+// Exports..
+export type { VariantProps } from '@stitches/react';
 export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config } = createStitches({
   theme: {
     colors: {
@@ -202,7 +203,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...whiteA,
       ...blackA,
 
-      // CUSTOM COLORS
+      // Custom Colors..
       white: 'hsl(0, 0%, 100%)',
       gray500: 'hsl(206,10%,76%)',
       blue500: 'hsl(206,100%,50%)',
@@ -219,12 +220,12 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       superLime5: '#34ce28',
       superLogo: '#6e6d5d',
 
-      // TRANSLUCENT ALPHAS
+      // Translucents..
       light100: 'rgba(240, 240, 240, 0.5)',
       light50: 'rgba(240, 240, 240, 0.8)',
       clear100: 'rgba(240, 240, 240, 0.2)',
 
-      // NEONS
+      // Neons..
       blend: '#aeff00',
       superYellow: '#F6F930',
       superLime: '#96F550',
@@ -232,18 +233,20 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       lime9Alpha: 'rgba(153,213,42, 0.2)',
       sky9Alpha: 'rgba(104,221,253,0.3)',
 
-      // SEMANTICS
+      // Semantics..
       hiContrast: '$slate12',
       semiTransparent: '$light100',
       loContrast: '$slate1',
       panel: '$gray12',
 
-      // LO CONTRAST
+      // Low Contrast..
       canvas: 'hsl(0 0% 93%)',
       transparentPanel: 'hsl(0 0% 0% / 97%)',
       shadowLight: 'hsl(206 22% 7% / 15%)',
       shadowDark: 'hsl(206 22% 7% / 40%)',
     },
+
+    // Fonts..
     fonts: {
       inter: "'Inter', 'sans-serif'",
       jetbrain: "'Jet Brains', monopace",
@@ -326,6 +329,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     dark: '(prefers-color-scheme: dark)',
     light: '(prefers-color-scheme: light)',
   },
+
+  // Utilities..
   utils: {
     include: mixins({
       orchidShadow: {
@@ -463,99 +468,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
   },
 });
 
+// Export CSS..
 export type CSS = Stitches.CSS<typeof config>;
-
-// lightTheme..
-export const lightTheme = createTheme('lightTheme', {
-  colors: {
-    ...gray,
-    ...mauve,
-    ...slate,
-    ...sage,
-    ...olive,
-    ...sand,
-    ...tomato,
-    ...red,
-    ...crimson,
-    ...pink,
-    ...plum,
-    ...purple,
-    ...violet,
-    ...indigo,
-    ...blue,
-    ...sky,
-    ...mint,
-    ...cyan,
-    ...teal,
-    ...green,
-    ...grass,
-    ...lime,
-    ...yellow,
-    ...amber,
-    ...orange,
-    ...brown,
-    ...bronze,
-    ...gold,
-
-    ...grayA,
-    ...mauveA,
-    ...slateA,
-    ...sageA,
-    ...oliveA,
-    ...sandA,
-    ...tomatoA,
-    ...redA,
-    ...crimsonA,
-    ...pinkA,
-    ...plumA,
-    ...purpleA,
-    ...violetA,
-    ...indigoA,
-    ...blueA,
-    ...skyA,
-    ...mintA,
-    ...cyanA,
-    ...tealA,
-    ...greenA,
-    ...grassA,
-    ...limeA,
-    ...yellowA,
-    ...amberA,
-    ...orangeA,
-    ...brownA,
-    ...bronzeA,
-    ...goldA,
-
-    ...whiteA,
-    ...blackA,
-
-    // Semantic colors
-    hiContrast: '$slate12',
-    loContrast: '$slate1',
-    canvas: 'hsl(0 0% 15%)',
-    panel: '$slate3',
-    transparentPanel: 'hsl(0 100% 100% / 97%)',
-    shadowLight: 'hsl(206 22% 7% / 35%)',
-    shadowDark: 'hsl(206 22% 7% / 20%)',
-
-    // CUSTOM FOR DARK
-    white: 'hsl(0, 0%, 100%)',
-    superLime: '#7A306C',
-    slime: '#c9cccd',
-    light100: 'rgba(0, 0, 0, 0.4)',
-    light50: 'rgba(0, 0, 0, 0.8)',
-
-    // SuperLime..
-    superLime0: '#ebffe9',
-    superLime1: '#b8ffb3',
-    superLime2: '#65ff59',
-    superLime3: '#3df330',
-    superLime4: '#39e12c',
-    superLime5: '#34ce28',
-    superLogo: '#65ff59',
-  },
-  utils: {},
-});
 
 // darkTheme..
 export const darkTheme = createTheme('darkTheme', {
@@ -644,4 +558,30 @@ export const darkTheme = createTheme('darkTheme', {
     superLogo: '#65ff59',
   },
   utils: {},
+});
+
+export const globalStyle = globalCss({
+  '*': {
+    margin: 0,
+    padding: 0,
+  },
+  html: {
+    overflowX: 'hidden',
+
+    // iOS MOBILE VIEWPORT FIX
+    minHeight: '-webkit-fill-available',
+  },
+  body: {
+    backgroundColor: '$sage1',
+    display: 'flex',
+    flexDirection: 'column',
+    margin: 0,
+    height: '100vh',
+
+    // iOS MOBILE VIEWPORT FIX
+    minHeight: '-webkit-fill-available',
+  },
+  ul: {
+    listStyle: 'none',
+  },
 });
