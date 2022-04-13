@@ -60,7 +60,7 @@ export const ThemeSwitch = props => {
           id="s1"
           aria-label="Toggle Theme"
           onCheckedChange={() => {
-            const newTheme = theme === 'dark' ? 'theme' : 'dark';
+            const newTheme = theme === 'dark' ? 'light-theme' : 'dark';
 
             document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
               if (iframe.contentDocument?.documentElement) {
