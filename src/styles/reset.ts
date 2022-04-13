@@ -26,6 +26,10 @@ export const reset = {
   a: {
     backgroundColor: 'transparent',
   },
+  svg: {
+    display: 'block',
+    verticalAlign: 'middle',
+  },
   'abbr[title]': {
     borderBottom: 'none',
     textDecoration: 'underline dotted',
@@ -123,5 +127,16 @@ export const reset = {
   },
   '[hidden]': {
     display: 'none',
+  },
+  'pre, code': { margin: 0, fontFamily: '$jetbrain' },
+
+  '::selection': {
+    backgroundColor: '$violetA5',
+    color: '$violet12',
+  },
+
+  '#__next': {
+    position: 'relative',
+    zIndex: 0,
   },
 };

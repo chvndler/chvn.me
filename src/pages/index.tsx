@@ -25,10 +25,11 @@ import { data as items } from '@/data/current.json';
 const Index = () => {
   return (
     <>
-      <Head>
-        <title>Chvn.me®</title>
-      </Head>
-      <Box css={{ bc: '$sage1', minWidth: '100vw' }}>
+      <Box>
+        <Head>
+          <title>Chvn.me®</title>
+        </Head>
+
         <Navbar />
 
         <Section size="4">
