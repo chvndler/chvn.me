@@ -2,7 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
+import { DesignProvider } from '@/components/DesignProvider';
 import { Box } from 'atelier.design';
+import { useTheme } from 'next-themes';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -41,29 +43,32 @@ const globalStyles = globalCss(reset, {
 
 // Your App..
 const App = ({ Component, pageProps }: AppProps) => {
+  const { theme, setTheme } = useTheme();
   globalStyles();
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-      </Head>
+      <DesignProvider>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        </Head>
 
-      <ThemeProvider
-        disableTransitionOnChange
-        attribute="class"
-        value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="system">
-        <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
-          <div
-            className={appWrapper({
-              display: 'flex',
-              flexDirection: 'column',
-            })}>
-            <Component {...pageProps} />
-          </div>
-        </Box>
-      </ThemeProvider>
+        <ThemeProvider
+          disableTransitionOnChange
+          attribute="class"
+          value={{ light: 'light-theme', dark: darkTheme.className }}
+          defaultTheme="system">
+          <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+            <div
+              className={appWrapper({
+                display: 'flex',
+                flexDirection: 'column',
+              })}>
+              <Component {...pageProps} />
+            </div>
+          </Box>
+        </ThemeProvider>
+      </DesignProvider>
     </>
   );
 };

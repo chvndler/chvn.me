@@ -13,8 +13,6 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
-
           <link rel="amphtml" href="https://chvn.me" />
           <link rel="canonical" href="https://chvn.me" />
 
@@ -53,7 +51,9 @@ export default class Document extends NextDocument {
         </Head>
         <body>
           <Main />
-          <NextScript />
+          <NextScript>
+            <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
+          </NextScript>
         </body>
       </Html>
     );
