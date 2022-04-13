@@ -465,6 +465,98 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
 
 export type CSS = Stitches.CSS<typeof config>;
 
+// lightTheme..
+export const lightTheme = createTheme('lightTheme', {
+  colors: {
+    ...gray,
+    ...mauve,
+    ...slate,
+    ...sage,
+    ...olive,
+    ...sand,
+    ...tomato,
+    ...red,
+    ...crimson,
+    ...pink,
+    ...plum,
+    ...purple,
+    ...violet,
+    ...indigo,
+    ...blue,
+    ...sky,
+    ...mint,
+    ...cyan,
+    ...teal,
+    ...green,
+    ...grass,
+    ...lime,
+    ...yellow,
+    ...amber,
+    ...orange,
+    ...brown,
+    ...bronze,
+    ...gold,
+
+    ...grayA,
+    ...mauveA,
+    ...slateA,
+    ...sageA,
+    ...oliveA,
+    ...sandA,
+    ...tomatoA,
+    ...redA,
+    ...crimsonA,
+    ...pinkA,
+    ...plumA,
+    ...purpleA,
+    ...violetA,
+    ...indigoA,
+    ...blueA,
+    ...skyA,
+    ...mintA,
+    ...cyanA,
+    ...tealA,
+    ...greenA,
+    ...grassA,
+    ...limeA,
+    ...yellowA,
+    ...amberA,
+    ...orangeA,
+    ...brownA,
+    ...bronzeA,
+    ...goldA,
+
+    ...whiteA,
+    ...blackA,
+
+    // Semantic colors
+    hiContrast: '$slate12',
+    loContrast: '$slate1',
+    canvas: 'hsl(0 0% 15%)',
+    panel: '$slate3',
+    transparentPanel: 'hsl(0 100% 100% / 97%)',
+    shadowLight: 'hsl(206 22% 7% / 35%)',
+    shadowDark: 'hsl(206 22% 7% / 20%)',
+
+    // CUSTOM FOR DARK
+    white: 'hsl(0, 0%, 100%)',
+    superLime: '#7A306C',
+    slime: '#c9cccd',
+    light100: 'rgba(0, 0, 0, 0.4)',
+    light50: 'rgba(0, 0, 0, 0.8)',
+
+    // SuperLime..
+    superLime0: '#ebffe9',
+    superLime1: '#b8ffb3',
+    superLime2: '#65ff59',
+    superLime3: '#3df330',
+    superLime4: '#39e12c',
+    superLime5: '#34ce28',
+    superLogo: '#65ff59',
+  },
+  utils: {},
+});
+
 // darkTheme..
 export const darkTheme = createTheme('darkTheme', {
   colors: {

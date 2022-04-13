@@ -21,12 +21,12 @@ const App = ({ Component, pageProps }: AppProps) => {
   globalCss(reset, {
     html: {
       overflowX: 'hidden',
-      backgroundColor: '$sage1',
 
       // iOS MOBILE VIEWPORT FIX
       minHeight: '-webkit-fill-available',
     },
     body: {
+      backgroundColor: '$sage1',
       display: 'flex',
       flexDirection: 'column',
       margin: 0,
@@ -44,10 +44,10 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <ThemeProvider
-        disableTransitionOnChange
+        // disableTransitionOnChange
         attribute="class"
-        value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="theme">
+        value={{ light: 'lighTheme', dark: darkTheme.className }}
+        defaultTheme="lighTheme">
         {/* <!-- META TAGS --> */}
 
         <div
