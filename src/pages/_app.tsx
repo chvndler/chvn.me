@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
+import { Box } from 'atelier.design';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -53,13 +54,15 @@ const App = ({ Component, pageProps }: AppProps) => {
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
         defaultTheme="system">
-        <div
-          className={appWrapper({
-            display: 'flex',
-            flexDirection: 'column',
-          })}>
-          <Component {...pageProps} />
-        </div>
+        <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+          <div
+            className={appWrapper({
+              display: 'flex',
+              flexDirection: 'column',
+            })}>
+            <Component {...pageProps} />
+          </div>
+        </Box>
       </ThemeProvider>
     </>
   );
