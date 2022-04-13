@@ -60,18 +60,18 @@ export const ThemeSwitch = props => {
           id="s1"
           aria-label="Toggle Theme"
           onCheckedChange={() => {
-            const newTheme = theme === 'dark' ? 'light-theme' : 'dark';
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
 
             document.querySelectorAll('[data-demo-iframe]').forEach((iframe: HTMLIFrameElement) => {
               if (iframe.contentDocument?.documentElement) {
                 iframe.contentDocument.documentElement.classList.toggle(darkTheme.className);
-                iframe.contentDocument.documentElement.classList.toggle('theme');
+                iframe.contentDocument.documentElement.classList.toggle('light-theme');
                 iframe.contentDocument.documentElement.style.setProperty('color-scheme', newTheme);
               }
             });
 
             document.documentElement.classList.toggle(darkTheme.className);
-            document.documentElement.classList.toggle('theme');
+            document.documentElement.classList.toggle('light-theme');
             document.documentElement.style.setProperty('color-scheme', newTheme);
 
             // Finally, we still need to let `next-themes` know of the theme change so that it saves it to local storage.

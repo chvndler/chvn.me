@@ -15,28 +15,55 @@ const appWrapper = css({
   include: ['box', 'minHeightScreen'],
 });
 
+const globalStyles = globalCss({
+  '*, *::before, *::after': {
+    boxSizing: 'border-box',
+  },
+
+  html: {
+    margin: 0,
+    padding: 0,
+    overflowX: 'hidden',
+    backgroundColor: '$sage1',
+
+    minHeight: '-webkit-fill-available',
+  },
+  body: {
+    margin: 0,
+    color: '$hiContrast',
+    // backgroundColor: '$loContrast',
+    backgroundColor: '$sage1',
+    fontFamily: '$inter',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
+    WebkitTextSizeAdjust: '100%',
+
+    minHeight: '-webkit-fill-available',
+  },
+
+  svg: {
+    display: 'block',
+    verticalAlign: 'middle',
+  },
+
+  'pre, code': { margin: 0, fontFamily: '$mono' },
+
+  '::selection': {
+    backgroundColor: '$violetA5',
+    color: '$violet12',
+  },
+
+  '#__next': {
+    position: 'relative',
+    zIndex: 0,
+  },
+
+  'h1, h2, h3, h4, h5': { fontWeight: 500 },
+});
+
 // Your App..
 const App = ({ Component, pageProps }: AppProps) => {
-  globalCss(reset, {
-    html: {
-      margin: 0,
-      padding: 0,
-      overflowX: 'hidden',
-
-      // iOS MOBILE VIEWPORT FIX
-      minHeight: '-webkit-fill-available',
-    },
-    body: {
-      backgroundColor: '$sage1',
-      display: 'flex',
-      flexDirection: 'column',
-      margin: 0,
-      height: '100vh',
-
-      // iOS MOBILE VIEWPORT FIX
-      minHeight: '-webkit-fill-available',
-    },
-  });
+  globalStyles();
 
   return (
     <>
@@ -47,8 +74,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider
         disableTransitionOnChange
         attribute="class"
-        defaultTheme="system"
-        value={{ light: 'light', dark: darkTheme.className }}>
+        value={{ light: 'light-theme', dark: darkTheme.className }}
+        defaultTheme="system">
         {/* <!-- META TAGS --> */}
 
         <div
