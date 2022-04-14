@@ -32,6 +32,9 @@ const Index = () => {
 
         <Navbar />
 
+        <MediumSpacer />
+        <MediumSpacer />
+
         <Section size="3">
           <Container size="3">
             <HoverCardComponent />
