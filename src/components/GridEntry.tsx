@@ -10,8 +10,8 @@ import { styled } from '@stitches/react';
 const imagePrefix = `https://cdn.ady.systems`;
 
 const Title = styled('div', {
-  mixBlendMode: 'difference',
-  color: '$blend',
+  // mixBlendMode: 'difference',
+  color: '$superLime2',
   fontFamily: '$inter',
   fontSize: '15px',
   fontWeight: '800',
@@ -22,13 +22,13 @@ const Title = styled('div', {
 });
 
 const Description = styled('div', {
-  mixBlendMode: 'difference',
+  // mixBlendMode: 'difference',
   fontFamily: '$inter',
   fontWeight: '500',
   fontSize: '13px',
   lineHeight: '1',
 
-  color: '$blend',
+  color: '$sage5',
 });
 
 const EntryLink = styled('a', {
@@ -49,12 +49,14 @@ const Card = styled('div', {
   padding: '18px',
   alignItems: 'left',
   webkitScrollbar: 'none',
-  height: '150px',
+  height: '200px',
 
   '&:hover': {
-    color: '$slate1',
-    transition: 'opacity 1s, transform 1s',
-    background: 'linear-gradient(to bottom left, rgba(255, 255, 130, 0.8) 20%, rgba(255, 55, 193, 0.6) 100%)',
+    // color: '$slate1',
+    background: '$sage9',
+    transition: 'opacity 0.1s, transform 0.1s',
+    // background: 'linear-gradient(to bottom left, rgba(255, 255, 130, 0.8) 20%, rgba(255, 55, 193, 0.6) 100%)',
+    //   background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(63,255,221,0.5690651260504201) 35%, rgba(0,255,0,1) 100%)',
   },
 });
 

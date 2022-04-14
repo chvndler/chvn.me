@@ -17,7 +17,7 @@
     {
       "title": "Atelier®",
       "description": "Essential design components",
-      "image": "chvn/solids/dark-blue.jpg",
+      "image": "chvn/solids/gray.jpg",
       "url": "https://www.ady.world",
       "key": "indigo"
     },
@@ -31,7 +31,7 @@
     {
       "title": "Raycast Extension",
       "description": "A minimal Next.js starter project.",
-      "image": "chvn/solids/crimson-red.jpg",
+      "image": "chvn/solids/gray.jpg",
       "url": "https://github.com/chvndler",
       "key": "trance"
     }

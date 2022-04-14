@@ -27,12 +27,12 @@ const Index = () => {
     <>
       <Box>
         <Head>
-          <title>Chvn.me®</title>
+          <title>Chandler Chappell</title>
         </Head>
 
         <Navbar />
 
-        <Section size="4">
+        <Section size="3">
           <Container size="3">
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
@@ -63,14 +63,36 @@ const Index = () => {
             <Flex direction="row">
               <Link href="https://github.com/chvndler" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text
+                    size="2"
+                    css={{
+                      color: '$sage8',
+                      fontWeight: '600',
+                      paddingTop: '12px',
+                      paddingLeft: '0px',
+                      paddingRight: '20px',
+                      '&:hover': {
+                        color: '$slate10',
+                      },
+                    }}>
                     GitHub
                   </Text>
                 </a>
               </Link>
               <Link href="https://www.are.na/chvndler-ch" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text
+                    size="2"
+                    css={{
+                      color: '$sage8',
+                      fontWeight: '600',
+                      paddingTop: '12px',
+                      paddingLeft: '0px',
+                      paddingRight: '20px',
+                      '&:hover': {
+                        color: '$slate10',
+                      },
+                    }}>
                     Are.na
                   </Text>
                 </a>
@@ -78,7 +100,18 @@ const Index = () => {
 
               <Link href="https://twitter.com/chv_ndler" passHref>
                 <a target="_blank" rel="norefferer">
-                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text
+                    size="2"
+                    css={{
+                      color: '$sage8',
+                      fontWeight: '600',
+                      paddingTop: '12px',
+                      paddingLeft: '0px',
+                      paddingRight: '20px',
+                      '&:hover': {
+                        color: '$slate10',
+                      },
+                    }}>
                     Twitter
                   </Text>
                 </a>
@@ -86,7 +119,18 @@ const Index = () => {
 
               <Link href="/next">
                 <a>
-                  <Text size="2" css={{ color: '$sage8', fontWeight: '600', paddingTop: '12px', paddingLeft: '0px', paddingRight: '20px' }}>
+                  <Text
+                    size="2"
+                    css={{
+                      color: '$sage8',
+                      fontWeight: '600',
+                      paddingTop: '12px',
+                      paddingLeft: '0px',
+                      paddingRight: '20px',
+                      '&:hover': {
+                        color: '$slate10',
+                      },
+                    }}>
                     Contact
                   </Text>
                 </a>
