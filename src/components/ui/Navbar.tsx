@@ -47,7 +47,7 @@ export const Navbar = () => {
             <Text
               css={{
                 zIndex: '999',
-                fontFamily: 'Inter, sans-serif',
+                fontFamily: '$inter',
                 // fontWeight: '600',
                 fontSize: '18px',
                 color: '$superLogo',
@@ -151,6 +151,7 @@ export const Navbar = () => {
               display: 'inline-flex',
 
               '@bp2': { mr: '$4' },
+              '@xs': { marginRight: '-5px' },
             }}>
             {/* <!-- THEME SWITCH --> */}
             <ThemeSwitch />
