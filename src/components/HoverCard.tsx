@@ -116,18 +116,18 @@ export const HoverCardComponent = () => {
 
             <Flex css={{ flexDirection: 'column', gap: 15 }}>
               <Text css={{ color: '$gray12', fontFamily: '$inter' }}>
-                <Text css={{ color: '$gray12', fontFamily: '$inter' }}>Name</Text>
-                <Text css={{ color: '$gray12', fontFamily: '$inter' }}>@handle</Text>
+                <Text css={{ color: '$gray12', fontFamily: '$inter', paddingBottom: '4px' }}>chan</Text>
+                <Text css={{ color: '$gray12', fontFamily: '$inter' }}>@chv_ndler</Text>
               </Text>
               <Text css={{ color: '$gray12', fontFamily: '$inter' }}>
-                Components, icons, colors, and templates for building high-quality, accessible UI. Free and open-source.
+                everybody think im cool i don't like that. open-source is my motto.
               </Text>
               <Flex css={{ gap: 15 }}>
                 <Flex css={{ gap: 5 }}>
                   <Text css={{ color: '$gray12', fontFamily: '$inter' }}>0</Text> <Text css={{ fontFamily: '$inter' }}>Following</Text>
                 </Flex>
                 <Flex css={{ gap: 5 }}>
-                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>2,900</Text> <Text css={{ fontFamily: '$inter' }}>Followers</Text>
+                  <Text css={{ color: '$gray12', fontFamily: '$inter' }}>392</Text> <Text css={{ fontFamily: '$inter' }}>Followers</Text>
                 </Flex>
               </Flex>
             </Flex>
