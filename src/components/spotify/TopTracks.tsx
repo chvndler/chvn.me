@@ -26,7 +26,7 @@ export default function Tracks() {
             },
             '@bp2': {
               gap: '4px',
-              gridTemplateColumns: '1fr 1fr 1fr',
+              gridTemplateColumns: '1fr 1fr',
             },
           }}>
           {data.tracks.map((track, index) => (

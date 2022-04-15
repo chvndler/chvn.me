@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Box, Text, Heading } from 'atelier.design';
+import { SpotifyLogo } from '@/components/SpotifyLogo';
 
 import { styled } from '@stitches/react';
 
@@ -26,27 +27,37 @@ const Artist = styled('div', {
   color: '$sage8',
 });
 
+/*
+const SpotifyButton = styled('div', {
+  // mixBlendMode: 'difference',
+  fontFamily: '$inter',
+  fontWeight: '500',
+  fontSize: '13px',
+  lineHeight: '1',
+
+  color: '$superLime5',
+});
+*/
+
 const Card = styled('div', {
   display: 'flex',
-  backgroundColor: '$translucent',
+  backgroundColor: '$sage4',
   border: 'solid 1px $slate7',
   // borderTopWidth: '0',
   // borderBottomWidth: '1px',
   // borderLeftWidth: '0',
   // borderRightWidth: '0',
   position: 'relative',
-  borderRadius: '8px',
+  borderRadius: '18px',
   marginTop: '4px',
   marginBottom: '0',
   padding: '18px',
   alignItems: 'left',
-  webkitScrollbar: 'none',
-  height: '110px',
+  // webkitScrollbar: 'none',
+  height: '120px',
 
   '&:hover': {
-    // color: '$slate1',
-    cursor: 'pointer',
-    backgroundColor: '$sage3',
+    backgroundColor: '$slate7',
   },
 });
 
@@ -56,6 +67,19 @@ export default function Track(track) {
       <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
         <Card css={{}}>
           <section>
+            <Heading
+              css={{
+                position: 'absolute',
+                top: '0',
+                left: '0',
+                marginLeft: '18px',
+                marginRight: '18px',
+                marginTop: '16px',
+                fontWeight: '700',
+                fontSize: '15px',
+              }}>
+              {track.ranking}
+            </Heading>
             <Box
               css={{
                 position: 'absolute',
@@ -66,10 +90,6 @@ export default function Track(track) {
                 marginRight: '18px',
                 marginBottom: '20px',
               }}>
-              <Heading size="1" css={{}}>
-                {track.ranking}
-              </Heading>
-
               <Link href={track.songUrl} passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Title>{track.title}</Title>
@@ -79,6 +99,24 @@ export default function Track(track) {
               <Text>
                 <Artist>{track.artist}</Artist>
               </Text>
+            </Box>
+
+            <Box
+              css={{
+                position: 'absolute',
+                bottom: '0',
+                right: '0',
+                width: 'auto',
+
+                marginLeft: '18px',
+                marginRight: '18px',
+                marginBottom: '18px',
+              }}>
+              <Link href={track.songUrl} passHref>
+                <a target="_blank" rel="noopener noreferrer">
+                  <SpotifyLogo />
+                </a>
+              </Link>
             </Box>
           </section>
         </Card>
