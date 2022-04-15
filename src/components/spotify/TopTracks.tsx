@@ -19,7 +19,7 @@ export default function Tracks() {
         <Grid
           css={{
             gap: '4px',
-            gridTemplateColumns: '1fr 1fr',
+            gridTemplateColumns: '1fr',
             '@bp1': {
               gap: '4px',
               gridTemplateColumns: '1fr 1fr',

@@ -43,17 +43,12 @@ const Card = styled('div', {
   display: 'flex',
   backgroundColor: '$sage4',
   border: 'solid 1px $slate7',
-  // borderTopWidth: '0',
-  // borderBottomWidth: '1px',
-  // borderLeftWidth: '0',
-  // borderRightWidth: '0',
   position: 'relative',
   borderRadius: '18px',
   marginTop: '4px',
   marginBottom: '0',
   padding: '18px',
   alignItems: 'left',
-  // webkitScrollbar: 'none',
   height: '120px',
 
   '&:hover': {

@@ -37,7 +37,7 @@ const Index = () => {
         <MediumSpacer />
         <MediumSpacer />
 
-        <Section size="3">
+        <Section size="2" css={{ paddingBottom: '80px' }}>
           <Container size="3">
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
@@ -146,7 +146,7 @@ const Index = () => {
 
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <Container size="3">
-            <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage10', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
             </Heading>
 
@@ -178,7 +178,6 @@ const Index = () => {
             <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Spotify Top 10
             </Heading>
-
             <TopTracks />
           </Container>
         </Section>

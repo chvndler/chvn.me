@@ -83,8 +83,9 @@ const Dropdown = styled('div', {
   saturate: '180%',
   boxShadow: '$colors$shadowLight 0px 10px 38px -10px, $colors$shadowDark 0px 10px 20px -15px',
 
-  minHeight: '60vh',
-  height: 'auto',
+  minHeight: '50vh',
+  maxHeight: '75vh',
+  height: '75vh',
   width: 'auto',
   paddingLeft: '25px',
   paddingRight: '25px',
