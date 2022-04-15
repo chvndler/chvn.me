@@ -17,6 +17,8 @@ import { AlternateFooter } from '@/ui/AlternateFooter';
 // Components..
 import { Navbar } from '@/ui/Navbar';
 import { GridEntry } from '@/components/GridEntry';
+// import { TopTracks } from '@/components/spotify/TopTracks';
+import TopTracks from '@/components/spotify/TopTracks';
 
 // Data
 import { data as items } from '@/data/current.json';
@@ -167,6 +169,17 @@ const Index = () => {
                 );
               })}
             </Grid>
+          </Container>
+        </Section>
+
+        {/* <!-- TOP TRACKS --> */}
+        <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
+          <Container size="3">
+            <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+              Spotify Top 10
+            </Heading>
+
+            <TopTracks />
           </Container>
         </Section>
 

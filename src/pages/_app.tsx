@@ -4,7 +4,7 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { DesignProvider } from '@/components/DesignProvider';
 import { Box } from 'atelier.design';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 
 // STITCHES.DEV
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -43,7 +43,7 @@ const globalStyles = globalCss(reset, {
 
 // Your App..
 const App = ({ Component, pageProps }: AppProps) => {
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme();
   globalStyles();
 
   return (
