@@ -17,7 +17,6 @@ import { AlternateFooter } from '@/ui/AlternateFooter';
 // Components..
 import { Navbar } from '@/ui/Navbar';
 import { GridEntry } from '@/components/GridEntry';
-// import { TopTracks } from '@/components/spotify/TopTracks';
 import TopTracks from '@/components/spotify/TopTracks';
 
 // Data

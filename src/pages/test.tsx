@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Navbar } from '@/ui/Navbar';
-import NowPlaying from '@/components/spotify/NowPlaying';
+// import NowPlaying from '@/components/spotify/NowPlaying';
+// import { SpotifyPlaying } from '@/components/functions/SpotifyPlaying';
+import { SeparatorGrid } from '@/components/SeparatorGrid';
 
 import { styled } from 'stitches.config';
 
@@ -19,17 +21,17 @@ const Container = styled('div', {
 });
 
 // APP BEGIN / HOMEPAGE
-const Index = () => {
+const Test = () => {
   return (
     <Box>
       <Navbar />
       <Container>
         <Box>
-          <NowPlaying />
+          <SeparatorGrid />
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default Index;
+export default Test;
