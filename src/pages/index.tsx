@@ -9,8 +9,7 @@ import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
 import { CustomContainer } from '@/components/CustomContainer';
-import { SmallSpacer } from '@/components/SmallSpacer';
-import { MediumSpacer } from '@/components/MediumSpacer';
+import { SmallSpacer, MediumSpacer, LargeSpacer } from '@/components/space';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
 import { MarketingButton } from '@/components/MarketingButton';
@@ -36,8 +35,7 @@ const Index = () => {
 
         <Navbar />
 
-        <MediumSpacer />
-        <MediumSpacer />
+        <LargeSpacer />
 
         <Section size="2" css={{ paddingBottom: '80px' }}>
           <CustomContainer>
@@ -50,6 +48,7 @@ const Index = () => {
 
             <SmallSpacer />
 
+            {/* <!-- About.. --> */}
             <Heading size="3" css={{ color: '$sage12', lineHeight: 'normal' }}>
               Chandler Chappell
             </Heading>
@@ -57,9 +56,10 @@ const Index = () => {
               Front-end Developer, Designer, and Director
             </Text>
 
+            {/* <!-- Marketing Button.. --> */}
             <Box css={{ marginTop: '20px' }}>
-              <Link href="/" passHref>
-                <MarketingButton as="a" icon={ArrowRightIcon}>
+              <Link href="https://github.com/chvndler" passHref>
+                <MarketingButton as="a" target="_blank" rel="norefferer noopener" icon={ArrowRightIcon}>
                   GitHub
                 </MarketingButton>
               </Link>
@@ -67,7 +67,7 @@ const Index = () => {
 
             <MediumSpacer />
 
-            {/* <!-- CONNECT SOCIAL SECTION --> */}
+            {/* <!-- Social Links.. --> */}
             <Heading size="1" css={{ color: '$sage12', fontWeight: '600', lineHeight: '2' }}>
               Connect
             </Heading>
@@ -150,6 +150,7 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
+        {/* <!-- Current Projects.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '100px' }}>
           <CustomContainer>
             <Heading size="1" css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
@@ -178,6 +179,7 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
+        {/* <!-- Spotify Now Playing.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '40px', alignItems: 'left' }}>
           <CustomContainer css={{ alignItems: 'left' }}>
             <Heading size="1" css={{ color: '$sage12', px: '8px', fontWeight: '600', lineHeight: '2' }}>
@@ -203,7 +205,7 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
-        {/* <!-- TOP TRACKS --> */}
+        {/* <!-- Spotify Top Tracks.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <CustomContainer>
             <Heading size="1" css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
@@ -213,6 +215,7 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
+        {/* <!-- Footer.. --> */}
         <AlternateFooter />
       </Box>
     </>
