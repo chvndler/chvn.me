@@ -15,23 +15,30 @@
   ],
   "data": [
     {
-      "title": "Atelier®",
+      "title": "Atelier Design Yield®",
       "description": "Essential design components",
-      "image": "chvn/solids/gray.jpg",
+      "image": "",
       "url": "https://www.ady.world",
       "key": "indigo"
     },
     {
       "title": "Next.Start",
       "description": "A minimal Next.js starter project.",
-      "image": "chvn/solids/gray.jpg",
+      "image": "",
       "url": "https://github.com/chvndler/next.start",
       "key": "trance"
     },
     {
       "title": "Raycast Extension",
       "description": "A minimal Next.js starter project.",
-      "image": "chvn/solids/gray.jpg",
+      "image": "",
+      "url": "https://github.com/chvndler",
+      "key": "trance"
+    },
+    {
+      "title": "ADY® Interval",
+      "description": "A minimal Next.js starter project.",
+      "image": "",
       "url": "https://github.com/chvndler",
       "key": "trance"
     }

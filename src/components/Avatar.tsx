@@ -15,7 +15,7 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
   flexShrink: 0,
   position: 'relative',
-  border: '1px solid $sage8',
+  border: '1.5px solid inherit',
   borderRadius: '20%',
   fontFamily: 'inherit',
   lineHeight: '1',
@@ -32,8 +32,8 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
     right: 0,
     bottom: 0,
     left: 0,
-    borderRadius: '32px',
-    boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)',
+    borderRadius: '20%',
+    boxShadow: 'inset 0px 0px 4px rgba(0, 0, 0, 0.12)',
   },
 
   variants: {
@@ -64,6 +64,11 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
       },
     },
     variant: {
+      spotify: {
+        backgroundColor: '$sage11',
+        border: 'solid 1.5px #1ed760',
+        color: '$sage6',
+      },
       hiContrast: {
         backgroundColor: '$hiContrast',
         color: '$loContrast',

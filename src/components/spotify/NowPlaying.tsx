@@ -1,8 +1,8 @@
 import useSWR from 'swr';
 import fetcher from '@/lib/fetcher';
-// import Link from 'next/link';
+import Link from 'next/link';
 import { NowPlayingSong } from '@/types/tracks';
-import { Box, Flex, Text } from 'atelier.design';
+import { Box, Flex, Text, Skeleton } from 'atelier.design';
 import { Avatar } from '@/components/Avatar';
 import { Status } from 'atelier.design';
 
@@ -13,29 +13,41 @@ export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
 
   return (
-    <Box>
-      <Flex css={{ border: '1px solid $white', padding: '10px' }}>
-        <Box css={{ width: '100%' }}>
+    <>
+      <Flex css={{ padding: '10px' }}>
+        <Box css={{ width: 'auto' }}>
           <Flex css={{ flexDirection: 'row' }}>
             {data?.songUrl ? (
               <>
                 {/* <!-- isPlaying Component --> */}
-                <Box css={{ position: 'relative', margin: 'auto' }}>
-                  <Avatar size="5" alt="Spotify" src={data.albumImageUrl} fallback=""></Avatar>
+                <Box css={{ position: 'relative', margin: 'auto', alignItems: 'left' }}>
+                  <Link href={data.songUrl} passHref>
+                    <a target="_blank" rel="noreferrer noopener">
+                      <Avatar variant="spotify" size="5" alt="Spotify" src={data.albumImageUrl} fallback="©" />
+                    </a>
+                  </Link>
                 </Box>
 
-                <Flex css={{ paddingLeft: '6px', flexDirection: 'column', margin: 'auto' }}>
-                  <Text
-                    css={{
-                      lineHeight: '0.7',
-                      margin: '1px',
-                      fontSize: '13px',
-                      padding: '3px',
-                      fontWeight: '800',
-                      color: '$sage11',
-                    }}>
-                    {data.title}
-                  </Text>
+                <Flex css={{ alignItems: 'left', paddingLeft: '6px', flexDirection: 'column', margin: 'auto' }}>
+                  <Link href={data.songUrl} passHref>
+                    <a target="_blank" rel="noreferrer noopener">
+                      <Text
+                        css={{
+                          alignItems: 'left',
+                          lineHeight: '0.7',
+                          margin: '1px',
+                          fontSize: '13px',
+                          padding: '3px',
+                          fontWeight: '800',
+                          color: '$sage11',
+                          '&:hover': {
+                            cursor: 'pointer',
+                          },
+                        }}>
+                        {data.title}
+                      </Text>
+                    </a>
+                  </Link>
 
                   <Text
                     css={{
@@ -58,7 +70,7 @@ export default function NowPlaying() {
               <>
                 {/* <!-- Not Playing Component --> */}
                 <Box css={{ position: 'relative', margin: 'auto' }}>
-                  <Avatar size="5" alt="Spotify" src="" fallback="?"></Avatar>
+                  <Avatar variant="spotify" size="5" alt="Spotify" src="" fallback="💤"></Avatar>
                 </Box>
 
                 <Flex css={{ paddingLeft: '6px', flexDirection: 'column', margin: 'auto' }}>
@@ -71,7 +83,7 @@ export default function NowPlaying() {
                       fontWeight: '800',
                       color: '$sage11',
                     }}>
-                    Not Playing
+                    Not Listening
                   </Text>
 
                   <Text
@@ -83,11 +95,11 @@ export default function NowPlaying() {
                       fontWeight: '500',
                       color: '$sage9',
                     }}>
-                    Download Spotify
+                    <Skeleton variant="text" />
                   </Text>
 
                   <Box css={{ paddingLeft: '6px', paddingRight: '6px', paddingTop: '4px' }}>
-                    <Status size="1" variant="gray"></Status>
+                    <Status size="1" variant="red"></Status>
                   </Box>
                 </Flex>
               </>
@@ -95,6 +107,6 @@ export default function NowPlaying() {
           </Flex>
         </Box>
       </Flex>
-    </Box>
+    </>
   );
 }

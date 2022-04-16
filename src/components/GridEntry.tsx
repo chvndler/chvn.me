@@ -11,14 +11,15 @@ const imagePrefix = `https://cdn.ady.systems`;
 
 const Title = styled('div', {
   // mixBlendMode: 'difference',
-  color: '$superLime2',
+  color: '$sage12',
   fontFamily: '$inter',
-  fontSize: '15px',
-  fontWeight: '800',
+  fontSize: '17px',
+  fontWeight: '700',
   marginBottom: '10px',
-  lineHeight: '1',
+  lineHeight: '0.6',
+  letterSpacing: '-0.05rem',
 
-  textTransform: 'uppercase',
+  // textTransform: 'uppercase',
 });
 
 const Description = styled('div', {
@@ -26,9 +27,9 @@ const Description = styled('div', {
   fontFamily: '$inter',
   fontWeight: '500',
   fontSize: '13px',
-  lineHeight: '1',
+  lineHeight: '0.8',
 
-  color: '$sage5',
+  color: '$sage10',
 });
 
 const EntryLink = styled('a', {
@@ -40,8 +41,8 @@ const EntryLink = styled('a', {
 
 const Card = styled('div', {
   display: 'flex',
-  backgroundColor: '$sage3',
-  border: 'solid 1px $slate7',
+  backgroundColor: '$blue8',
+  border: 'solid 2px $slate7',
   position: 'relative',
   borderRadius: '20px',
   marginTop: '4px',
@@ -49,14 +50,12 @@ const Card = styled('div', {
   padding: '18px',
   alignItems: 'left',
   webkitScrollbar: 'none',
-  height: '200px',
+  height: '140px',
 
   '&:hover': {
     // color: '$slate1',
     background: '$sage9',
     transition: 'opacity 0.1s, transform 0.1s',
-    // background: 'linear-gradient(to bottom left, rgba(255, 255, 130, 0.8) 20%, rgba(255, 55, 193, 0.6) 100%)',
-    //   background: 'linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(63,255,221,0.5690651260504201) 35%, rgba(0,255,0,1) 100%)',
   },
 });
 
@@ -66,35 +65,33 @@ export const GridEntry = ({ title, description, image, href }) => {
   return (
     <>
       <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
-        {/* PRODUCT ROW ONE */}
-        <Box>
-          <Card
-            css={{
-              backgroundImage: image ? (!inView ? 'none' : `url('${imagePrefix}/${image}')`) : 'none',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              objectFit: 'cover',
-            }}>
-            <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
-              <section>
-                <Box
-                  css={{
-                    position: 'absolute',
-                    bottom: '0',
-                    left: '0',
+        {/* <!-- Grid Will Render this asChild.. --> */}
+        <Card
+          css={{
+            backgroundImage: image ? (!inView ? 'none' : `url('${imagePrefix}/${image}')`) : 'none',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            objectFit: 'cover',
+          }}>
+          <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
+            <section>
+              <Box
+                css={{
+                  position: 'absolute',
+                  bottom: '0',
+                  left: '0',
 
-                    marginLeft: '18px',
-                    marginRight: '18px',
-                    marginBottom: '20px',
-                  }}>
-                  <Title>{title}</Title>
-                  <Description>{description}</Description>
-                </Box>
-              </section>
-            </EntryLink>
-          </Card>
-        </Box>
+                  marginLeft: '18px',
+                  marginRight: '18px',
+                  marginBottom: '20px',
+                }}>
+                <Title>{title}</Title>
+                <Description>{description}</Description>
+              </Box>
+            </section>
+          </EntryLink>
+        </Card>
       </Box>
     </>
   );

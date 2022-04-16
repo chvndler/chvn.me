@@ -1,9 +1,10 @@
 import React from 'react';
-// import Link from 'next/link';
+import Link from 'next/link';
 
-import { Box } from '@/system/box';
+import { Box } from 'atelier.design';
 import { Navbar } from '@/ui/Navbar';
-import NowPlaying from '@/components/spotify/NowPlaying';
+import { MarketingButton } from '@/components/MarketingButton';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 import { styled } from 'stitches.config';
 
@@ -24,7 +25,11 @@ const Test = () => {
       <Navbar />
       <Container>
         <Box>
-          <NowPlaying />
+          <Link href="/" passHref>
+            <MarketingButton as="a" icon={ArrowRightIcon}>
+              Enter
+            </MarketingButton>
+          </Link>
         </Box>
       </Container>
     </Box>

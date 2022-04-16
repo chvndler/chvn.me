@@ -13,11 +13,14 @@ import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
+import { MarketingButton } from '@/components/MarketingButton';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
 import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
+import NowPlaying from '@/components/spotify/NowPlaying';
 
 // Data
 import { data as items } from '@/data/current.json';
@@ -40,28 +43,32 @@ const Index = () => {
           <CustomContainer>
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
-              <a>
-                <Text
-                  as="a"
-                  target="_blank"
-                  rel="noreferrer"
-                  css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>
-                  @chv_ndler
-                </Text>
+              <a target="_blank" rel="noreferrer">
+                <Text css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>@chv_ndler</Text>
               </a>
             </Link>
+
             <SmallSpacer />
 
-            <Heading size="3" css={{ color: '$sage10', lineHeight: 'normal' }}>
+            <Heading size="3" css={{ color: '$sage12', lineHeight: 'normal' }}>
               Chandler Chappell
             </Heading>
             <Text css={{ color: '$sage8', fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>
               Front-end Developer, Designer, and Director
             </Text>
+
+            <Box css={{ marginTop: '20px' }}>
+              <Link href="/" passHref>
+                <MarketingButton as="a" icon={ArrowRightIcon}>
+                  GitHub
+                </MarketingButton>
+              </Link>
+            </Box>
+
             <MediumSpacer />
 
             {/* <!-- CONNECT SOCIAL SECTION --> */}
-            <Heading size="1" css={{ color: '$sage10', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', fontWeight: '600', lineHeight: '2' }}>
               Connect
             </Heading>
             <Flex direction="row">
@@ -143,9 +150,9 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
-        <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
+        <Section size="2" css={{ paddingTop: '0', paddingBottom: '100px' }}>
           <CustomContainer>
-            <Heading size="1" css={{ color: '$sage10', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
             </Heading>
 
@@ -159,7 +166,7 @@ const Index = () => {
                 },
                 '@bp2': {
                   gap: '4px',
-                  gridTemplateColumns: '1fr 1fr 1fr',
+                  gridTemplateColumns: '1fr 1fr',
                 },
               }}>
               {items.map(entry => {
@@ -171,10 +178,35 @@ const Index = () => {
           </CustomContainer>
         </Section>
 
+        <Section size="2" css={{ paddingTop: '0', paddingBottom: '40px', alignItems: 'left' }}>
+          <CustomContainer css={{ alignItems: 'left' }}>
+            <Heading size="1" css={{ color: '$sage12', px: '8px', fontWeight: '600', lineHeight: '2' }}>
+              Now Playing
+            </Heading>
+            <Text
+              css={{
+                paddingBottom: '10px',
+                paddingTop: '3px',
+                paddingLeft: '8px',
+                paddingRight: '8px',
+                lineHeight: '0.7',
+                margin: '1px',
+                fontSize: '11px',
+                fontWeight: '500',
+                color: '#1ed760',
+              }}>
+              on Spotify®
+            </Text>
+            <Box css={{ alignItems: 'left' }}>
+              <NowPlaying />
+            </Box>
+          </CustomContainer>
+        </Section>
+
         {/* <!-- TOP TRACKS --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <CustomContainer>
-            <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Spotify Top 10
             </Heading>
             <TopTracks />

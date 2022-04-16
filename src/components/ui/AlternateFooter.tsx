@@ -33,34 +33,33 @@ export const AlternateFooter = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
-        <Link href="/" passHref>
-          <Box
-            as="a"
+
+        <Box
+          as="a"
+          css={{
+            width: '100px',
+            ml: '$2',
+            display: 'inline-flex',
+            textDecoration: 'none',
+            '&:focus': {
+              boxShadow: 'none',
+            },
+            '@bp2': { ml: '$5' },
+          }}>
+          <Text
             css={{
-              width: '100px',
-              ml: '$2',
-              display: 'inline-flex',
-              textDecoration: 'none',
-              '&:focus': {
-                boxShadow: 'none',
-              },
-              '@bp2': { ml: '$5' },
+              zIndex: '999',
+              fontFamily: 'Inter, sans-serif',
+              // fontWeight: '600',
+              fontSize: '11px',
+              color: '$superLogo',
+              opacity: '0.4',
+              lineHeight: '58px',
+              letterSpacing: '-0.03rem',
             }}>
-            <Text
-              css={{
-                zIndex: '999',
-                fontFamily: 'Inter, sans-serif',
-                // fontWeight: '600',
-                fontSize: '11px',
-                color: '$superLogo',
-                opacity: '0.4',
-                lineHeight: '58px',
-                letterSpacing: '-0.03rem',
-              }}>
-              Copyright © 2022
-            </Text>
-          </Box>
-        </Link>
+            Copyright © 2022
+          </Text>
+        </Box>
 
         {/* NAVIGATION SECTION */}
 
@@ -72,27 +71,13 @@ export const AlternateFooter = () => {
             fontFamily: 'Inter, sans-serif',
             fontSize: '12px',
             '@sm': {
-              display: 'none',
+              ai: 'right',
             },
           }}>
-          <Link href="/next" passHref>
+          <Link href="https://twitter.com/chv_ndler" passHref>
             <NewLink
-              variant="subtle"
-              css={{
-                marginRight: '$3',
-                color: '$sage8',
-                '@sm': { marginRight: '$2' },
-                '&:hover': {
-                  textDecoration: 'none',
-                  color: '$blue10',
-                },
-              }}>
-              <GitHubIcon />
-            </NewLink>
-          </Link>
-
-          <Link href="/showcase" passHref>
-            <NewLink
+              target="_blank"
+              rel="norefferer"
               variant="subtle"
               css={{
                 marginRight: '$3',
@@ -108,8 +93,10 @@ export const AlternateFooter = () => {
             </NewLink>
           </Link>
 
-          <Link href="/cover" passHref>
+          <Link href="https://www.are.na/chvndler-ch" passHref>
             <NewLink
+              target="_blank"
+              rel="norefferer"
               variant="subtle"
               css={{
                 display: 'none',
@@ -122,6 +109,24 @@ export const AlternateFooter = () => {
                 },
               }}>
               <ArenaLogoIcon />
+            </NewLink>
+          </Link>
+
+          <Link href="https://github.com/chvndler" passHref>
+            <NewLink
+              target="_blank"
+              rel="norefferer"
+              variant="subtle"
+              css={{
+                marginRight: '$3',
+                color: '$sage8',
+                '@sm': { marginRight: '$2' },
+                '&:hover': {
+                  textDecoration: 'none',
+                  color: '$blue10',
+                },
+              }}>
+              <GitHubIcon />
             </NewLink>
           </Link>
         </Flex>
@@ -137,6 +142,7 @@ export const AlternateFooter = () => {
               display: 'inline-flex',
 
               '@bp2': { mr: '$4' },
+              '@sm': { display: 'none' },
             }}>
             {/* <!-- THEME SWITCH --> */}
           </Box>
