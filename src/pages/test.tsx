@@ -1,12 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 import { Box } from '@/system/box';
-import { Heading } from '@/system/heading';
 import { Navbar } from '@/ui/Navbar';
 import NowPlaying from '@/components/spotify/NowPlaying';
-// import { SpotifyPlaying } from '@/components/functions/SpotifyPlaying';
-import { SeparatorGrid } from '@/components/SeparatorGrid';
 
 import { styled } from 'stitches.config';
 

@@ -1,13 +1,13 @@
 import useSWR from 'swr';
 import fetcher from '@/lib/fetcher';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { NowPlayingSong } from '@/types/tracks';
-import { Box, Container, Flex, Text, Paragraph } from 'atelier.design';
+import { Box, Flex, Text } from 'atelier.design';
 import { Avatar } from '@/components/Avatar';
-import { Status, Separator } from 'atelier.design';
+import { Status } from 'atelier.design';
 
-import { TwitterLogo } from '@/components/TwitterLogo';
-import { SpotifyLogo } from '@/components/SpotifyLogo';
+// import { TwitterLogo } from '@/components/TwitterLogo';
+// import { SpotifyLogo } from '@/components/SpotifyLogo';
 
 export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);

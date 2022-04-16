@@ -8,7 +8,6 @@ import { Text } from '@/system/text';
 import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
-import { Container } from '@/system/container';
 import { CustomContainer } from '@/components/CustomContainer';
 import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';

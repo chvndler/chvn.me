@@ -1,7 +1,5 @@
 import React from 'react';
 import useSWR from 'swr';
-import { useEffect } from 'react';
-import { animate } from 'motion';
 import Link from 'next/link';
 import * as SeparatorPrimitive from '@radix-ui/react-separator';
 
@@ -9,11 +7,10 @@ import fetcher from '@/lib/fetcher';
 import { NowPlayingSong } from '@/types/tracks';
 import { SpotifyLogo } from '@/components/SpotifyLogo';
 import AnimatedBars from '@/components/AnimatedBars';
-import { Box, Paragraph, Text, Container, Flex, Status, Heading } from 'atelier.design';
+import { Box, Paragraph, Text, Flex } from 'atelier.design';
 import { Avatar } from '@/components/Avatar';
 
 import { styled } from 'stitches.config';
-import { violet } from '@radix-ui/colors';
 
 const StyledSeparator = styled(SeparatorPrimitive.Root, {
   backgroundColor: '$sage5',

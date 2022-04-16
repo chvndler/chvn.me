@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 
 import { Box } from '@/system/box';
-import { Heading } from '@/system/heading';
 import { Navbar } from '@/ui/Navbar';
 import NowPlaying from '@/components/spotify/NowPlaying';
 
