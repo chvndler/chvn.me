@@ -15,7 +15,7 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
   flexShrink: 0,
   position: 'relative',
-  border: 'none',
+  border: '1px solid $sage8',
   borderRadius: '20%',
   fontFamily: 'inherit',
   lineHeight: '1',

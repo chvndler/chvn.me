@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Navbar } from '@/ui/Navbar';
-// import NowPlaying from '@/components/spotify/NowPlaying';
+import NowPlaying from '@/components/spotify/NowPlaying';
 // import { SpotifyPlaying } from '@/components/functions/SpotifyPlaying';
 import { SeparatorGrid } from '@/components/SeparatorGrid';
 
@@ -27,7 +27,7 @@ const Test = () => {
       <Navbar />
       <Container>
         <Box>
-          <SeparatorGrid />
+          <NowPlaying />
         </Box>
       </Container>
     </Box>

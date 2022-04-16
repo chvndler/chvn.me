@@ -9,6 +9,7 @@ import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
 import { Container } from '@/system/container';
+import { CustomContainer } from '@/components/CustomContainer';
 import { SmallSpacer } from '@/components/SmallSpacer';
 import { MediumSpacer } from '@/components/MediumSpacer';
 import { HoverCardComponent } from '@/components/HoverCard';
@@ -37,7 +38,7 @@ const Index = () => {
         <MediumSpacer />
 
         <Section size="2" css={{ paddingBottom: '80px' }}>
-          <Container size="3">
+          <CustomContainer>
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
               <a>
@@ -140,11 +141,11 @@ const Index = () => {
                 </a>
               </Link>
             </Flex>
-          </Container>
+          </CustomContainer>
         </Section>
 
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
-          <Container size="3">
+          <CustomContainer>
             <Heading size="1" css={{ color: '$sage10', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
             </Heading>
@@ -168,17 +169,17 @@ const Index = () => {
                 );
               })}
             </Grid>
-          </Container>
+          </CustomContainer>
         </Section>
 
         {/* <!-- TOP TRACKS --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
-          <Container size="3">
+          <CustomContainer>
             <Heading size="1" css={{ color: '$sage10', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Spotify Top 10
             </Heading>
             <TopTracks />
-          </Container>
+          </CustomContainer>
         </Section>
 
         <AlternateFooter />
