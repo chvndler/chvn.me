@@ -1,11 +1,11 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 import { Box } from 'atelier.design';
 import { Navbar } from '@/ui/Navbar';
-import { MarketingButton } from '@/components/MarketingButton';
+// import { MarketingButton } from '@/components/MarketingButton';
 import { MobileDropdown } from '@/components/functions/MobileDropdown';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
+// import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 import { styled } from 'stitches.config';
 

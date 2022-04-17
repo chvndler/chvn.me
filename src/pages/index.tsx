@@ -57,7 +57,7 @@ const Index = () => {
             </Text>
 
             {/* <!-- Marketing Button.. --> */}
-            <Box css={{ marginTop: '20px' }}>
+            <Box css={{ marginTop: '25px' }}>
               <Link href="https://github.com/chvndler" passHref>
                 <MarketingButton as="a" target="_blank" rel="norefferer noopener" icon={ArrowRightIcon}>
                   GitHub

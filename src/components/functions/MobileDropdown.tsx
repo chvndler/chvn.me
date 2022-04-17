@@ -1,10 +1,10 @@
 import React from 'react';
-import { Fragment } from 'react';
+// import { Fragment } from 'react';
 import { useState } from 'react';
 import { keyframes } from '@stitches/react';
 import { styled } from 'stitches.config';
 import { SmallSpacer, MediumSpacer } from '@/components/space';
-import { HamburgerMenuIcon, DotFilledIcon, CheckIcon, ChevronRightIcon } from '@radix-ui/react-icons';
+// import { DotFilledIcon, CheckIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { Cross as Hamburger } from 'hamburger-react';
 import { Box, Text } from 'atelier.design';

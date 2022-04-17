@@ -20,10 +20,10 @@ export const StyledButton = styled('button', {
   lineHeight: '$sizes$6',
 
   $$backlight: `
-    0 0 0 2px $colors$superLime2,
+    0 0 0 2px $colors$orange3,
     -15px 0 30px -15px $colors$orangeA8,
     0 0 30px -15px $colors$pinkA8,
-    15px 0 30px -15px $colors$blueA8
+    15px 0 30px -15px $colors$violetA8
   `,
   color: '$hiContrast',
   bc: 'hsl(0 0% 20%)',
@@ -69,10 +69,10 @@ export const StyledButton = styled('button', {
         // <!-- BackLight -->
         [`.${darkTheme} &`]: {
           $$backlight: `
-            0 0 0 2px $colors$lime8,
-            -15px 0 30px -15px $colors$orangeA8,
-            0 0 30px -15px $colors$pinkA8,
-            15px 0 30px -15px $colors$violetA8
+            0 0 0 1px $colors$limeA9,
+            -5px 0 20px -5px $colors$orangeA8,
+            0 0 30px -5px $colors$pinkA8,
+            15px 0 30px -5px $colors$limeA8
           `,
           color: '$hiContrast',
           bc: 'hsl(0 0% 6%)',
