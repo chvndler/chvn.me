@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box } from '@/system/box';
 import { Navbar } from '@/ui/Navbar';
-import NowPlaying from '@/components/spotify/NowPlaying';
+import { BlogPosts } from '@/components/BlogPosts';
 
 import { styled } from 'stitches.config';
 
@@ -17,13 +17,13 @@ const Container = styled('div', {
 });
 
 // APP BEGIN / HOMEPAGE
-const Index = () => {
+const Index = ({ posts }) => {
   return (
     <Box>
       <Navbar />
       <Container>
         <Box>
-          <NowPlaying />
+          <BlogPosts />
         </Box>
       </Container>
     </Box>
