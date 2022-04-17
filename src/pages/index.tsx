@@ -189,7 +189,6 @@ const Index = () => {
             </Heading>
             <Text
               css={{
-                paddingBottom: '10px',
                 paddingTop: '0px',
                 paddingLeft: '8px',
                 paddingRight: '8px',
