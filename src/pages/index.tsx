@@ -153,7 +153,7 @@ const Index = () => {
         </Section>
 
         {/* <!-- Current Projects.. --> */}
-        <Section size="2" css={{ paddingTop: '0', paddingBottom: '100px' }}>
+        <Section size="2" css={{ paddingTop: '0', paddingBottom: '80px' }}>
           <CustomContainer>
             <Heading size="1" css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
@@ -190,14 +190,16 @@ const Index = () => {
             <Text
               css={{
                 paddingBottom: '10px',
-                paddingTop: '3px',
+                paddingTop: '0px',
                 paddingLeft: '8px',
                 paddingRight: '8px',
+                paddingBottom: '12px',
                 lineHeight: '0.7',
                 margin: '1px',
                 fontSize: '11px',
                 fontWeight: '500',
                 color: '#1ed760',
+                '@sm': { lineHeight: '0' },
               }}>
               on Spotify®
             </Text>
@@ -211,7 +213,7 @@ const Index = () => {
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <CustomContainer>
             <Heading size="1" css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
-              Spotify Top 10
+              Spotify Top 5
             </Heading>
             <TopTracks />
           </CustomContainer>
