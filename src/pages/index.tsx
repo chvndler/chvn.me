@@ -22,7 +22,7 @@ import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
 
 // Data
-import { data as items } from '@/data/current.json';
+import { data as items } from '@/projects/current.json';
 
 // APP BEGIN / HOMEPAGE
 const Index = () => {

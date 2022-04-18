@@ -19,6 +19,7 @@
 
       "@/*": ["./src/*"],
       "@/data/*": ["./data/*"],
+      "@/projects/*": ["./projects/*"],
       "@/types/*": ["./types/*"],
       "@/lib/*": ["./lib/*"],
       "@/public/*": ["./public/*"],

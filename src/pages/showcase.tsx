@@ -14,7 +14,7 @@ import { Text } from '@/system/text';
 import { ShowcaseEntry } from '@/components/ShowcaseEntry';
 
 // Data
-import { data as items } from '@/data/showcase.json';
+import { data as items } from '@/projects/showcase.json';
 
 const Showcase = () => {
   return (
