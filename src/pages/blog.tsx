@@ -6,7 +6,7 @@ import { InferGetStaticPropsType } from 'next';
 import { pick } from '@/lib/utils';
 import { allBlogs } from 'contentlayer/generated';
 
-import { Box, Heading, Text, Paragraph, TextField } from 'atelier.design';
+import { Box, Heading, Paragraph, TextField } from 'atelier.design';
 
 export default function Blog({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [searchValue, setSearchValue] = useState('');
