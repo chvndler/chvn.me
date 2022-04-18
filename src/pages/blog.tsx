@@ -22,7 +22,6 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
         <Head>
           <title>Blog - chvn.me/</title>
         </Head>
-
         <Navbar />
         <Box css={{ paddingTop: '80px', paddingBottom: '80px' }}>
           <BlogContainer title="Blog – Chandler CHappell" description="Notes, thoughts, and ideas.">
