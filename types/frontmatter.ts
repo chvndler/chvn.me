@@ -10,7 +10,7 @@ export type Frontmatter = {
   name?: string;
   publishedName?: string;
   slug: string;
-  by?: 'colm' | 'stephen' | 'pedro';
+  by?: 'chvn' | 'chvn' | 'chvn';
   readingTime?: { text: string; minutes: number; time: number; words: number };
   gzip?: number;
 };

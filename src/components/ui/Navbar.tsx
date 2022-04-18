@@ -72,7 +72,7 @@ export const Navbar = () => {
               display: 'none',
             },
           }}>
-          <Link href="/next" passHref>
+          <Link href="/blog" passHref>
             <NewLink
               variant="subtle"
               css={{

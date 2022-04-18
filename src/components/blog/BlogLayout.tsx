@@ -1,48 +1,76 @@
 import { parseISO, format } from 'date-fns';
 
 import BlogContainer from '@/components/blog/BlogContainer';
-import { CustomContainer } from '@/components/CustomContainer';
-import { Box, Flex, Heading, Text, Paragraph } from 'atelier.design';
-// import Subscribe from 'components/Subscribe';
-// import ViewCounter from 'components/ViewCounter';
+import { Box, Flex, Heading, Text, Section } from 'atelier.design';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
+
+import { styled } from 'stitches.config';
 
 const editUrl = slug => `https://github.com/chvndler/chvn.me/edit/main/data/blog/${slug}.mdx`;
 const discussUrl = slug => `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://chvn.me/blog/${slug}`)}`;
 
+const RawContent = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  fontFamily: '$inter',
+  lineHeight: '1.3',
+});
+
 export default function BlogLayout({ children, post }: PropsWithChildren<{ post: Blog }>) {
   return (
     <BlogContainer
-      title={`${post.title} – Lee Robinson`}
+      title={`${post.title} – chvn.me`}
       description={post.summary}
-      image={`https://leerob.io${post.image}`}
+      image={`https://chvn.me${post.image}`}
       date={new Date(post.publishedAt).toISOString()}
       type="article">
       <article>
-        <Heading size="2">{post.title}</Heading>
-        <Flex css={{ flexDirection: 'column' }}>
-          <Box css={{ alignItems: 'center' }}>
-            {/* <!-- ADD A COOL BLOG ICON HERE --> */}
-            <Paragraph size="1">
-              {'@chv_ndler / '}
-              {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
-            </Paragraph>
-          </Box>
-        </Flex>
+        <Section size="2">
+          <Heading
+            size="2"
+            css={{
+              marginTop: '5px',
+              marginBottom: '5px',
+              color: '$sage12',
+              letterSpacing: '-0.05rem',
+              lineHeight: '1.2',
+              fontWeight: '700',
+              '&:hover': {
+                opacity: '0.8',
+              },
+            }}>
+            {post.title}
+          </Heading>
+
+          <Flex css={{ flexDirection: 'column' }}>
+            <Box css={{ alignItems: 'center' }}>
+              {/* <!-- ADD A COOL BLOG ICON HERE --> */}
+              <Text size="2" css={{ color: '$sage11', lineHeight: '1.4', fontWeight: '500' }}>
+                {'@chv_ndler / '}
+                {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
+              </Text>
+            </Box>
+          </Flex>
+        </Section>
 
         {/* <!-- CHILDREN (CONTENT) --> */}
-        <CustomContainer>{children}</CustomContainer>
+        <Section size="2">
+          <RawContent>{children}</RawContent>
+        </Section>
 
-        <Text size="1">
-          <a href={discussUrl(post.slug)} target="_blank" rel="noopener noreferrer">
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a href={editUrl(post.slug)} target="_blank" rel="noopener noreferrer">
-            {'Edit on GitHub'}
-          </a>
-        </Text>
+        <Flex css={{ margin: 'auto', alignItems: 'center', textAlign: 'center' }}>
+          <Text size="1" css={{ textAlign: 'center' }}>
+            <a href={discussUrl(post.slug)} target="_blank" rel="noopener noreferrer">
+              {'Discuss on Twitter'}
+            </a>
+            {`  •  `}
+            <a href={editUrl(post.slug)} target="_blank" rel="noopener noreferrer">
+              {'Edit on GitHub'}
+            </a>
+          </Text>
+        </Flex>
       </article>
     </BlogContainer>
   );

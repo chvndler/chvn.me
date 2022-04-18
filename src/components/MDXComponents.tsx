@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import * as React from 'react';
 
 import { Container, Box, Flex } from 'atelier.design';
 

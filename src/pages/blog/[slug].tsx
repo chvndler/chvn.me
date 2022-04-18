@@ -1,5 +1,3 @@
-// import { getTweets } from 'lib/twitter';
-// import Tweet from 'components/Tweet';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import components from '@/components/MDXComponents';
 import BlogLayout from '@/components/blog/BlogLayout';
