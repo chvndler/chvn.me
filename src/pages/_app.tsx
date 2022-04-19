@@ -5,6 +5,9 @@ import { ThemeProvider } from 'next-themes';
 import { DesignProvider } from '@/components/DesignProvider';
 import { Box } from 'atelier.design';
 
+// Components..
+import { Navbar } from '@/ui/Navbar';
+
 // stitches.config
 import { css, globalCss, darkTheme } from 'stitches.config';
 
@@ -57,6 +60,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           value={{ light: 'light-theme', dark: darkTheme.className }}
           defaultTheme="system">
           <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+            <Navbar />
             <div
               className={appWrapper({
                 display: 'flex',

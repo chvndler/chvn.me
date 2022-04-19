@@ -16,7 +16,6 @@ import { MarketingButton } from '@/components/MarketingButton';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 // Components..
-import { Navbar } from '@/ui/Navbar';
 import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
@@ -33,8 +32,6 @@ const Index = () => {
           <title>Chandler Chappell</title>
         </Head>
 
-        <Navbar />
-
         <LargeSpacer />
 
         <Section size="2" css={{ paddingBottom: '80px' }}>
@@ -42,7 +39,9 @@ const Index = () => {
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
               <a target="_blank" rel="noreferrer">
-                <Text css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>@chv_ndler</Text>
+                <Text css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>
+                  @chv_ndler
+                </Text>
               </a>
             </Link>
 
@@ -153,7 +152,9 @@ const Index = () => {
         {/* <!-- Current Projects.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '80px' }}>
           <CustomContainer>
-            <Heading size="1" css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading
+              size="1"
+              css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Projects
             </Heading>
 
@@ -172,7 +173,13 @@ const Index = () => {
               }}>
               {items.map(entry => {
                 return (
-                  <GridEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />
+                  <GridEntry
+                    key={entry.title}
+                    title={entry.title}
+                    image={entry.image}
+                    href={entry.url}
+                    description={entry.description}
+                  />
                 );
               })}
             </Grid>
@@ -209,7 +216,9 @@ const Index = () => {
         {/* <!-- Spotify Top Tracks.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <CustomContainer>
-            <Heading size="1" css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading
+              size="1"
+              css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Spotify Top 5
             </Heading>
             <TopTracks />

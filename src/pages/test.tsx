@@ -2,7 +2,6 @@ import React from 'react';
 // import Link from 'next/link';
 
 import { Box } from 'atelier.design';
-import { Navbar } from '@/ui/Navbar';
 // import { MarketingButton } from '@/components/MarketingButton';
 import { MobileDropdown } from '@/components/functions/MobileDropdown';
 // import { ArrowRightIcon } from '@radix-ui/react-icons';
@@ -23,7 +22,6 @@ const Container = styled('div', {
 const Test = () => {
   return (
     <Box>
-      <Navbar />
       <Container>
         <Box>
           <MobileDropdown />

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { Navbar } from '@/components/ui/Navbar';
 import BlogContainer from '@/components/blog/BlogContainer';
 import BlogPost from '@/components/blog/BlogPost';
 import { InferGetStaticPropsType } from 'next';
@@ -22,7 +21,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
         <Head>
           <title>Blog - chvn.me/</title>
         </Head>
-        <Navbar />
+
         <Box css={{ paddingTop: '80px', paddingBottom: '80px' }}>
           <BlogContainer title="Blog – Chandler CHappell" description="Notes, thoughts, and ideas.">
             <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
@@ -66,7 +65,13 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                   <Badge size="2" variant="violet">
                     <Heading
                       size="2"
-                      css={{ padding: '4px', color: '$superLogo', fontSize: '13px', fontWeight: '800', letterSpacing: '-0.02rem' }}>
+                      css={{
+                        padding: '4px',
+                        color: '$superLogo',
+                        fontSize: '13px',
+                        fontWeight: '800',
+                        letterSpacing: '-0.02rem',
+                      }}>
                       Popular Posts
                     </Heading>
                   </Badge>
@@ -93,7 +98,13 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
               <Badge size="2" variant="violet">
                 <Heading
                   size="2"
-                  css={{ padding: '4px', color: '$superLogo', fontSize: '13px', fontWeight: '800', letterSpacing: '-0.02rem' }}>
+                  css={{
+                    padding: '4px',
+                    color: '$superLogo',
+                    fontSize: '13px',
+                    fontWeight: '800',
+                    letterSpacing: '-0.02rem',
+                  }}>
                   All Posts
                 </Heading>
               </Badge>
