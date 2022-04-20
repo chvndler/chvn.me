@@ -59,8 +59,7 @@ export const Navbar = () => {
           </Box>
         </Link>
 
-        {/* NAVIGATION SECTION */}
-
+        {/* <!-- Nav Link #1 --> */}
         <Flex
           as="nav"
           css={{
@@ -88,6 +87,7 @@ export const Navbar = () => {
             </NewLink>
           </Link>
 
+          {/* <!-- Nav Link #2 --> */}
           <Link href="/showcase" passHref>
             <NewLink
               variant="subtle"
@@ -105,6 +105,7 @@ export const Navbar = () => {
             </NewLink>
           </Link>
 
+          {/* <!-- Nav Link #3 --> */}
           <Link href="/cover" passHref>
             <NewLink
               variant="subtle"
@@ -122,6 +123,7 @@ export const Navbar = () => {
             </NewLink>
           </Link>
 
+          {/* <!-- Nav Link #4 --> */}
           <Link href="/cover" passHref>
             <NewLink
               variant="subtle"
