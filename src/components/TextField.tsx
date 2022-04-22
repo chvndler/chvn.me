@@ -113,12 +113,9 @@ export const TextField = styled('input', {
         },
       },
       lime: {
-        width: '70%',
+        width: '100%',
         boxShadow: 'inset 0 0 0 2px $colors$sageA7',
         backgroundColor: 'transparent',
-        '@sm': {
-          width: '100%',
-        },
         '@hover': {
           '&:hover': {
             boxShadow: 'inset 0 0 0 2px $colors$sageA9',

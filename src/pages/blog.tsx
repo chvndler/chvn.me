@@ -49,7 +49,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
             <Section size="1">
               <Box css={{ position: 'relative' }}>
                 <TextField
-                  size="2"
+                  size="3"
                   variant="lime"
                   aria-label="Search articles"
                   type="text"
@@ -76,19 +76,19 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                     </Heading>
                   </Badge>
                   <BlogPost
-                    title="Rust is the Future."
-                    summary="Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?"
-                    slug="rust"
+                    title="How I Got Into Code."
+                    summary="Learn more about who I am, and what led me down the path of all things tech."
+                    slug="about-me"
                   />
                   <BlogPost
                     title="Style Guides, Design Systems, and Libraries."
                     summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-                    slug="style-guides-component-libraries-design-systems"
+                    slug="style"
                   />
                   <BlogPost
                     title="Creating a Monorepo."
                     summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-                    slug="monorepo-lerna-yarn-workspaces"
+                    slug="turborepo"
                   />
                 </Section>
               </>
