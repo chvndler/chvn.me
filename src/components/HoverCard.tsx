@@ -12,7 +12,7 @@ import { TwitterLogo } from '@/components/TwitterLogo';
 import { styled } from 'stitches.config';
 import { Box, Text, Paragraph } from 'atelier.design';
 
-const chvnImage = 'https://pbs.twimg.com/profile_images/1514845619222941696/Rewx3uqs_400x400.jpg';
+const chvnImage = 'https://pbs.twimg.com/profile_images/1515346115742380032/iYSxj3w-_400x400.jpg';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -145,7 +145,9 @@ export const HoverCardComponent = () => {
               </Paragraph>
               <Flex css={{ gap: 15 }}>
                 <Flex css={{ gap: 5 }}>
-                  <Text size="1" css={{ color: '$superLogo', letterSpacing: '-0.05rem', fontFamily: '$inter', fontWeight: '600' }}>
+                  <Text
+                    size="1"
+                    css={{ color: '$superLogo', letterSpacing: '-0.05rem', fontFamily: '$inter', fontWeight: '600' }}>
                     181
                   </Text>{' '}
                   <Text size="1" css={{ color: '$sage8', fontFamily: '$inter' }}>
@@ -153,7 +155,9 @@ export const HoverCardComponent = () => {
                   </Text>
                 </Flex>
                 <Flex css={{ gap: 5 }}>
-                  <Text size="1" css={{ color: '$superLogo', letterSpacing: '-0.05rem', fontFamily: '$inter', fontWeight: '600' }}>
+                  <Text
+                    size="1"
+                    css={{ color: '$superLogo', letterSpacing: '-0.05rem', fontFamily: '$inter', fontWeight: '600' }}>
                     333
                   </Text>{' '}
                   <Text size="1" css={{ color: '$sage8', fontFamily: '$inter' }}>

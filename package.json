@@ -1,6 +1,6 @@
 {
   "name": "chvn.me",
-  "description": "Typescript, Next.js, Stitches, Radix Starter Project",
+  "description": "Personal site displaying current projects, works, and stories.",
   "version": "1.0.0",
   "author": "chvndler <chan@ady.world> (@chv.ndler)",
   "license": "MIT",
