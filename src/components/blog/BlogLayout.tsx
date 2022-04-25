@@ -4,6 +4,7 @@ import BlogContainer from '@/components/blog/BlogContainer';
 import { Box, Flex, Heading, Text, Section } from 'atelier.design';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
+import { TwitterLogo } from '@/components/TwitterLogo';
 
 import { styled } from 'stitches.config';
 
@@ -61,12 +62,16 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
             <RawContent>{children}</RawContent>
           </Section>
 
-          <Flex css={{ margin: 'auto', alignItems: 'center', textAlign: 'center' }}>
-            <Text size="1" css={{ textAlign: 'center' }}>
+          <Flex css={{ flexDirection: 'row', margin: 'auto', alignItems: 'center', textAlign: 'center' }}>
+            <Text size="1" css={{ textAlign: 'center', fontWeight: 'bold', marginRight: '6px' }}>
               <a href={discussUrl(post.slug)} target="_blank" rel="noopener noreferrer">
                 {'Discuss on Twitter'}
               </a>
-              {`  •  `}
+            </Text>
+            {` `}
+            <TwitterLogo />
+            {`  •  `}
+            <Text size="1" css={{ textAlign: 'center', fontWeight: 'bold' }}>
               <a href={editUrl(post.slug)} target="_blank" rel="noopener noreferrer">
                 {'Edit on GitHub'}
               </a>

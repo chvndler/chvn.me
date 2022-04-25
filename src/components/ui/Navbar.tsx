@@ -6,6 +6,7 @@ import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
+import { AppBar } from '@/components/ui/AppBar';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
@@ -14,6 +15,7 @@ import { PopoverPanel } from '@/functions/PopoverPanel';
 export const Navbar = () => {
   return (
     <>
+      <AppBar />
       <Flex
         as="header"
         css={{
@@ -76,7 +78,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage8',
+                color: '$sage11',
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
                   textDecoration: 'none',
@@ -93,7 +95,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 marginRight: '$3',
-                color: '$sage8',
+                color: '$sage11',
 
                 '@sm': { marginRight: '$2' },
                 '&:hover': {
@@ -111,7 +113,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$sage8',
+                color: '$sage11',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
@@ -129,7 +131,7 @@ export const Navbar = () => {
               variant="subtle"
               css={{
                 display: 'none',
-                color: '$sage8',
+                color: '$sage11',
                 mr: '$3',
                 '@bp2': { display: 'block', mr: '$3' },
                 '&:hover': {
