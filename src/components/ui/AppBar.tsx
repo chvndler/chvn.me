@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM
-import { Box } from 'atelier.design';
 import { styled } from 'stitches.config';
 
 const GradientBar = styled('div', {

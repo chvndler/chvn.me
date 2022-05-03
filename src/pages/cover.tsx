@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Heading } from '@/system/heading';
+// import { Heading } from '@/system/heading';
 import { Box } from '@/system/box';
+import { Breakout } from '@/components/Breakout';
 
 import { styled } from 'stitches.config';
 
@@ -24,22 +25,14 @@ const Cover = () => {
     <Box css={{ minWidth: '100vw', minHeight: '100vh', zIndex: '0' }}>
       <Container>
         <Box css={{ zIndex: '25' }}>
-          <Heading css={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700' }}>Cover Page</Heading>
-
-          <Link href="/" passHref>
-            <a>
-              <Heading
-                css={{
-                  paddingTop: '10px',
-                  textAlign: 'center',
-                  fontFamily: 'Inter, sans-serif',
-                  fontSize: '16px',
-                  fontWeight: '500',
-                }}>
-                go back home
-              </Heading>
-            </a>
-          </Link>
+          <Breakout>
+            <p className="intro">
+              Chandler Chappell is a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
+              working on various personal and professional projects. I spend most of my time{' '}
+              <Link href="/blog">writing</Link>, thinking, <Link href="https://twitter.com/_dte">tweeting</Link>, and
+              blogging about code, life, and ideas.
+            </p>
+          </Breakout>
         </Box>
       </Container>
     </Box>

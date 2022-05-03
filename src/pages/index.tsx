@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Text } from '@/system/text';
+import { Container } from '@/system/container';
 import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
@@ -19,6 +20,8 @@ import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
+import { Breakout } from '@/components/Breakout';
+import { Timeline } from '@/components/Timeline';
 
 // Data
 import { data as items } from '@/projects/current.json';
@@ -33,6 +36,19 @@ const Index = () => {
         </Head>
 
         <LargeSpacer />
+
+        <Container size="4">
+          <Breakout>
+            <p className="intro">
+              Chandler Chappell is a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
+              working on various personal and professional projects. I spend most of my time{' '}
+              <Link href="/blog">writing</Link>, thinking, <Link href="https://twitter.com/_dte">tweeting</Link>, and
+              blogging about code, life, and ideas.
+            </p>
+          </Breakout>
+
+          <Timeline />
+        </Container>
 
         <Section size="2" css={{ paddingBottom: '80px' }}>
           <CustomContainer>

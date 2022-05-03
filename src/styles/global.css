@@ -36,3 +36,34 @@ ul {
   border-radius: 26px;
   z-index: 0 !important;
 }
+
+table {
+  font: inherit;
+  width: 100%;
+  border-collapse: initial;
+  -webkit-border-horizontal-spacing: 0;
+}
+
+th {
+  font-weight: normal;
+  border: none;
+  font-size: inherit;
+  text-align: right;
+}
+
+th,
+td {
+  font-family: 'Inter';
+  border: none;
+  line-height: 1.2;
+}
+
+th,
+th + td {
+  border-top: 1px solid #231f20 !important;
+  border-collapse: no-collapse;
+}
+
+table :global(a) {
+  text-decoration: none;
+}
