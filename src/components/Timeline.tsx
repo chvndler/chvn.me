@@ -20,8 +20,6 @@ const Table = styled('table', {
   WebkitBorderHorizontalSpacing: '0',
 });
 
-const TableBody = styled('div', {});
-
 const Description = styled('p', {
   fontFamily: '$inter',
   fontSize: '14px',
@@ -40,7 +38,7 @@ export const Timeline = () => {
     .sort((a, b) => a.date.valueOf() - b.date.valueOf())
     .reduce<TimelineEntries>((sections, currentValue) => {
       const year = currentValue.date.getFullYear().toString();
-      if (sections[year] != undefined) {
+      if (sections[year] !== undefined) {
         sections[year].push(currentValue);
       } else {
         sections[year] = [currentValue];

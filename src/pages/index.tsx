@@ -21,7 +21,7 @@ import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
 import { Breakout } from '@/components/Breakout';
-import { Timeline } from '@/components/Timeline';
+// import { Timeline } from '@/components/Timeline';
 
 // Data
 import { data as items } from '@/projects/current.json';
@@ -46,8 +46,6 @@ const Index = () => {
               blogging about code, life, and ideas.
             </p>
           </Breakout>
-
-          <Timeline />
         </Container>
 
         <Section size="2" css={{ paddingBottom: '80px' }}>

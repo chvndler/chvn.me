@@ -12,6 +12,7 @@ const ContainerHack = styled('div', {
 
 const BreakoutContainer = styled('div', {
   width: 'calc(100vw - var(--scrollbar-width, 0px))',
+  height: '100vh',
   marginLeft: '-50vw',
   padding: '12px',
 
