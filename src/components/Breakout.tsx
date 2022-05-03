@@ -15,11 +15,6 @@ const BreakoutContainer = styled('div', {
   height: '100vh',
   marginLeft: '-50vw',
   padding: '12px',
-
-  fontFamily: '$inter',
-  fontSize: '48px',
-  fontWeight: '600',
-  letterSpacing: '-0.2rem',
 });
 
 export const Breakout = ({ children }: Props) => {

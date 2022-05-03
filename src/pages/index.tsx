@@ -21,10 +21,23 @@ import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
 import { Breakout } from '@/components/Breakout';
-// import { Timeline } from '@/components/Timeline';
+
+import { styled } from 'stitches.config';
 
 // Data
 import { data as items } from '@/projects/current.json';
+
+const IntroText = styled('p', {
+  fontFamily: '$inter',
+  fontWeight: '600',
+  fontSize: '52px',
+  letterSpacing: '-0.2rem',
+
+  '@sm': {
+    fontSize: '34px',
+    letterSpacing: '-0.1rem',
+  },
+});
 
 // APP BEGIN / HOMEPAGE
 const Index = () => {
@@ -39,12 +52,12 @@ const Index = () => {
 
         <Container size="4">
           <Breakout>
-            <p className="intro">
+            <IntroText>
               Chandler Chappell is a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
               working on various personal and professional projects. I spend most of my time{' '}
               <Link href="/blog">writing</Link>, thinking, <Link href="https://twitter.com/_dte">tweeting</Link>, and
               blogging about code, life, and ideas.
-            </p>
+            </IntroText>
           </Breakout>
         </Container>
 
