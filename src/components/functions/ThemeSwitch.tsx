@@ -52,8 +52,8 @@ export const ThemeSwitch = props => {
       <Flex
         css={{
           alignItems: 'center',
-          marginRight: '$2',
-          marginLeft: '$2',
+          marginRight: '0',
+          marginLeft: '0',
         }}>
         <Switch
           defaultChecked

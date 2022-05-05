@@ -20,7 +20,7 @@ export const Navbar = () => {
         as="header"
         css={{
           py: '0px',
-          px: '5px',
+          px: '4px',
           height: '48px',
           jc: 'space-between',
           position: 'fixed',
@@ -38,13 +38,13 @@ export const Navbar = () => {
             as="a"
             css={{
               width: '100px',
-              ml: '$2',
+              ml: '12px',
               display: 'inline-flex',
               textDecoration: 'none',
               '&:focus': {
                 boxShadow: 'none',
               },
-              '@bp2': { ml: '$5' },
+              '@bp2': { ml: '12px' },
             }}>
             <Text
               css={{
