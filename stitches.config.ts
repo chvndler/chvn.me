@@ -250,8 +250,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       inter: "'Inter', 'sans-serif'",
       jetbrain: "'Jet Brains', monopace",
-      neueplak: "'Neue Plak Extended', sans-serif",
-      neuewide: "'Neue Plak Wide', sans-serif",
+      urbane: "'Urbane', 'sans-serif'",
       untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
     },
     space: {

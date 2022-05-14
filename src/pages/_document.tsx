@@ -16,6 +16,9 @@ export default class Document extends NextDocument {
           <link rel="amphtml" href="https://chvn.me" />
           <link rel="canonical" href="https://chvn.me" />
 
+          {/* <!-- Preload Jetbrains for CodeBlocks --> */}
+          <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+
           <meta name="googlebot" content="follow, index, noarchive" />
           <meta name="robots" content="follow, index, noarchive" />
           <meta name="msapplication-config" content="/browserconfig.xml" />

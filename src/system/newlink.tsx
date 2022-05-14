@@ -2,8 +2,9 @@ import { styled } from 'stitches.config';
 import { Text } from '@/system/text';
 
 export const NewLink = styled('a', {
+  fontFamily: '$urbane',
   alignItems: 'center',
-  fontSize: '14px',
+  fontSize: '13px',
   fontWeight: '600',
   gap: '$1',
   flexShrink: 0,

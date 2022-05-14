@@ -14,6 +14,7 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 // Styles..
 import { reset } from '@/styles/reset';
 import 'inter-ui/inter.css';
+import '@/styles/urbane.css';
 import '@/styles/global.css';
 
 const appWrapper = css({
@@ -34,7 +35,7 @@ const globalStyles = globalCss(reset, {
     color: '$hiContrast',
     // backgroundColor: '$loContrast',
     backgroundColor: '$sage1',
-    fontFamily: '$inter',
+    fontFamily: '$urbane',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
     WebkitTextSizeAdjust: '100%',
@@ -58,7 +59,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           disableTransitionOnChange
           attribute="class"
           value={{ light: 'light-theme', dark: darkTheme.className }}
-          defaultTheme="system">
+          defaultTheme="light">
           <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
             <Navbar />
             <div

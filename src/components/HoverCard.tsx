@@ -12,7 +12,7 @@ import { TwitterLogo } from '@/components/TwitterLogo';
 import { styled } from 'stitches.config';
 import { Box, Text, Paragraph } from 'atelier.design';
 
-const chvnImage = 'https://pbs.twimg.com/profile_images/1515346115742380032/iYSxj3w-_400x400.jpg';
+const chvnImage = 'https://cdn.ady.systems/chvn/avatar/chvnAvatar03.PNG';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },

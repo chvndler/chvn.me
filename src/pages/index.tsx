@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import { IntroLink } from '@/system/IntroLink';
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
 import { Text } from '@/system/text';
@@ -28,12 +29,20 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
-  fontFamily: '$inter',
+  fontFamily: '$urbane',
   fontWeight: '600',
-  fontSize: '52px',
-  letterSpacing: '-0.2rem',
+  fontSize: '3.5rem',
+  // letterSpacing: '-0.2rem',
+  letterSpacing: '-0.05rem',
+  lineHeight: '1',
 
   '@sm': {
+    lineHeight: '1.05',
+    fontSize: '34px',
+    letterSpacing: '-0.1rem',
+  },
+  '@xs': {
+    lineHeight: '1.05',
     fontSize: '34px',
     letterSpacing: '-0.1rem',
   },
@@ -53,15 +62,25 @@ const Index = () => {
         <Container size="4">
           <Breakout>
             <IntroText>
-              Chandler Chappell is a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
-              working on various personal and professional projects. I spend most of my time{' '}
-              <Link href="/blog">writing</Link>, thinking, <Link href="https://twitter.com/_dte">tweeting</Link>, and
-              blogging about code, life, and ideas.
+              I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
+              building{' '}
+              <IntroLink variant="straight" href="https://github.com/AtelierDesign" target="_blank" rel="norefferer">
+                Atelier Design Yield®
+              </IntroLink>{' '}
+              to calm the noise within the design culture. I spend most of my time{' '}
+              <IntroLink variant="subtle" href="https://github.com/chvndler" target="_blank" rel="norefferer">
+                writing code
+              </IntroLink>
+              , thinking,{' '}
+              <IntroLink variant="subtle" href="https://twitter.com/chv_ndler">
+                tweeting
+              </IntroLink>
+              , and journaling about code, life, and ideas.
             </IntroText>
           </Breakout>
         </Container>
 
-        <Section size="2" css={{ paddingBottom: '80px' }}>
+        <Section size="2" css={{ paddingBottom: '80px', paddingTop: '80px' }}>
           <CustomContainer>
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>

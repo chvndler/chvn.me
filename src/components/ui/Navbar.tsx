@@ -90,7 +90,7 @@ export const Navbar = () => {
           </Link>
 
           {/* <!-- Nav Link #2 --> */}
-          <Link href="/showcase" passHref>
+          <Link href="/projects" passHref>
             <NewLink
               variant="subtle"
               css={{
