@@ -11,7 +11,7 @@ import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
 import { CustomContainer } from '@/components/CustomContainer';
-import { SmallSpacer, MediumSpacer, LargeSpacer } from '@/components/space';
+import { SmallSpacer, MediumSpacer } from '@/components/space';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
 import { MarketingButton } from '@/components/MarketingButton';

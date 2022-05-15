@@ -24,13 +24,13 @@ const navigation = [
   {
     name: 'blog',
     description: '',
-    href: '/cover',
+    href: '/blog',
     // icon: IconTwo,
   },
   {
     name: 'projects',
     description: '',
-    href: 'https://github.com/chvndler',
+    href: '/projects',
     // icon: IconThree,
   },
   {
