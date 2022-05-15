@@ -43,7 +43,7 @@ const IntroText = styled('p', {
   },
   '@xs': {
     lineHeight: '1.05',
-    fontSize: '34px',
+    fontSize: '30px',
     letterSpacing: '-0.1rem',
   },
 });
@@ -57,9 +57,17 @@ const Index = () => {
           <title>Chandler Chappell</title>
         </Head>
 
-        <LargeSpacer />
+        <Container
+          size="4"
+          css={{
+            paddingTop: '40px',
+            paddingBottom: '40px',
 
-        <Container size="4">
+            '@xs': {
+              paddingTop: '20px',
+              paddingBottom: '20px',
+            },
+          }}>
           <Breakout>
             <IntroText>
               I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
