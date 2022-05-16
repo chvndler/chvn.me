@@ -5,7 +5,8 @@ export const CustomContainer = styled('div', {
   // Reset
   boxSizing: 'border-box',
   flexShrink: 0,
-  maxWidth: '760px',
+  maxWidth: '1000px',
+  minWidth: '1000px',
   padding: '8px',
   margin: 'auto',
 
