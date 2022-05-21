@@ -28,7 +28,6 @@ const globalStyles = globalCss(reset, {
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
-    backgroundColor: '$sage1',
 
     minHeight: '-webkit-fill-available',
   },
@@ -61,7 +60,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           attribute="class"
           value={{ light: 'light-theme', dark: darkTheme.className }}
           defaultTheme="light">
-          <Box css={{ backgroundColor: '$sage1', zIndex: '0' }}>
+          <Box css={{ backgroundColor: '$translucent', zIndex: '0' }}>
             <Navbar />
             <div
               className={appWrapper({
