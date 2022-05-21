@@ -11,13 +11,11 @@ import { Flex } from '@/system/flex';
 import { Grid } from '@/system/grid';
 import { Section } from '@/system/section';
 import { CustomContainer } from '@/components/CustomContainer';
-import { SmallSpacer, MediumSpacer } from '@/components/space';
+import { SmallSpacer, LargeSpacer } from '@/components/space';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
-import { MarketingButton } from '@/components/MarketingButton';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { colord, extend, LchColor } from 'colord';
-import lchPlugin from 'colord/plugins/lch';
+// import { MarketingButton } from '@/components/MarketingButton';
+// import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 // Components..
 import { GridEntry } from '@/components/GridEntry';
@@ -31,7 +29,7 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
-  color: '$sage12',
+  color: '$chvn7',
   fontFamily: '$mori',
   fontWeight: 'bold',
   fontSize: '3.2rem',
@@ -40,35 +38,20 @@ const IntroText = styled('p', {
   lineHeight: '1',
 
   '@sm': {
-    lineHeight: '1.05',
+    lineHeight: '1.1',
     fontSize: '34px',
     letterSpacing: '-0.1rem',
   },
   '@xs': {
-    lineHeight: '1.05',
+    lineHeight: '1.1',
     fontSize: '30px',
     letterSpacing: '-0.1rem',
   },
 });
 
-const Footnote = styled('p', {
-  fontFamily: '$mori',
-  fontWeight: '600',
-  fontSize: '0.8rem',
-  // letterSpacing: '-0.2rem',
-  letterSpacing: '-0.03rem',
-  lineHeight: '1',
-
-  position: 'relative',
-  margin: '0',
-  padding: '0',
-});
-
-extend([lchPlugin]);
-
 // APP BEGIN / HOMEPAGE
 // const Index = ( => {
-export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: LchColor; fg: LchColor }) {
+export default function Index() {
   return (
     <>
       <Box>
@@ -83,7 +66,7 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
             paddingBottom: '40px',
 
             '@xs': {
-              paddingTop: '20px',
+              paddingTop: '40px',
               paddingBottom: '20px',
             },
           }}>
@@ -91,7 +74,7 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
             <IntroText className="intro">
               I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
               building{' '}
-              <IntroLink variant="escape" href="https://github.com/AtelierDesign" target="_blank" rel="norefferer">
+              <IntroLink variant="escape" href="https://ady.world" target="_blank" rel="norefferer">
                 ( ady )
               </IntroLink>
               ® to calm the noise within the design culture. I spend most of my time{' '}
@@ -104,8 +87,6 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
               </IntroLink>
               , and journaling about code, life, and ideas.
             </IntroText>
-
-            <Footnote>*Atelier Design Yield</Footnote>
           </Breakout>
         </Container>
 
@@ -114,7 +95,7 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
               <a target="_blank" rel="noreferrer">
-                <Text css={{ color: '$sage8', fontFamily: '$inter', fontSize: '12px', fontWeight: '500' }}>
+                <Text css={{ color: '$chvn5', fontFamily: '$mori', fontSize: '12px', fontWeight: '500' }}>
                   @chv_ndler
                 </Text>
               </a>
@@ -123,14 +104,21 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
             <SmallSpacer />
 
             {/* <!-- About.. --> */}
-            <Heading css={{ color: '$sage12', lineHeight: 'normal', fontFamily: '$iaaf', fontWeight: 'normal' }}>
+            <Heading
+              size="3"
+              css={{
+                color: '$chvn5',
+                lineHeight: 'normal',
+                fontFamily: '$inter',
+                fontWeight: '800',
+              }}>
               Chandler Chappell
             </Heading>
-            <Text css={{ color: '$sage8', fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>
+            <Text css={{ color: '$chvn7', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
               Front-end Developer, Designer, and Director
             </Text>
 
-            {/* <!-- Marketing Button.. --> */}
+            {/* <!-- Marketing Button..
             <Box css={{ marginTop: '25px' }}>
               <Link href="https://github.com/chvndler" passHref>
                 <MarketingButton as="a" icon={ArrowRightIcon}>
@@ -138,11 +126,20 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
                 </MarketingButton>
               </Link>
             </Box>
+             --> */}
 
-            <MediumSpacer />
+            <LargeSpacer />
 
             {/* <!-- Social Links.. --> */}
-            <Heading size="1" css={{ color: '$sage12', fontFamily: '$iaaf', lineHeight: '2' }}>
+            <Heading
+              size="3"
+              css={{
+                color: '$chvn5',
+                fontFamily: '$inter',
+                fontWeight: '600',
+                lineHeight: '2.5',
+                letterSpacing: '-0.15rem',
+              }}>
               Connect
             </Heading>
             <Flex direction="row">
@@ -151,9 +148,11 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
                   <Text
                     size="2"
                     css={{
-                      color: '$sage8',
-                      fontWeight: '600',
-                      paddingTop: '12px',
+                      color: '$chvn7',
+                      fontFamily: '$inter',
+                      fontWeight: '800',
+                      lineHeight: 'normal',
+                      paddingTop: '5px',
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
@@ -169,9 +168,11 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
                   <Text
                     size="2"
                     css={{
-                      color: '$sage8',
-                      fontWeight: '600',
-                      paddingTop: '12px',
+                      color: '$chvn7',
+                      fontFamily: '$inter',
+                      fontWeight: '800',
+                      lineHeight: 'normal',
+                      paddingTop: '5px',
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
@@ -188,9 +189,11 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
                   <Text
                     size="2"
                     css={{
-                      color: '$sage8',
-                      fontWeight: '600',
-                      paddingTop: '12px',
+                      color: '$chvn7',
+                      fontFamily: '$inter',
+                      fontWeight: '800',
+                      lineHeight: 'normal',
+                      paddingTop: '5px',
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
@@ -207,9 +210,11 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
                   <Text
                     size="2"
                     css={{
-                      color: '$sage8',
-                      fontWeight: '600',
-                      paddingTop: '12px',
+                      color: '$chvn7',
+                      fontFamily: '$inter',
+                      fontWeight: '800',
+                      lineHeight: 'normal',
+                      paddingTop: '5px',
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
@@ -228,8 +233,14 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '80px' }}>
           <CustomContainer>
             <Heading
-              size="1"
-              css={{ color: '$sage12', px: '0px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+              size="3"
+              css={{
+                color: '$chvn5',
+                fontFamily: '$inter',
+                fontWeight: '600',
+                lineHeight: '2.5',
+                letterSpacing: '-0.15rem',
+              }}>
               Projects
             </Heading>
 
@@ -264,7 +275,9 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
         {/* <!-- Spotify Now Playing.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '40px', alignItems: 'left' }}>
           <CustomContainer css={{ alignItems: 'left' }}>
-            <Heading size="1" css={{ color: '$sage12', px: '8px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading
+              size="1"
+              css={{ color: '$sage12', px: '8px', fontFamily: '$inter', fontWeight: 'bold', lineHeight: '2' }}>
               Now Playing
             </Heading>
             <Text
@@ -301,35 +314,9 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
         </Section>
 
         {/* <!-- Footer.. --> */}
-        <code>
-          <Link href={`https://github.com/chvndler/chvn.me/commit/${commitSha}`}>{commitSha.slice(0, 7)}</Link>
-        </code>
+
         <AlternateFooter />
       </Box>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const commitSha = process.env.VERCEL_GIT_COMMIT_SHA || '7ba51d';
-  const indices = commitSha
-    .slice(0, 6)
-    .split('')
-    .map(i => parseInt(i, 16));
-  const hex = indices.map(i => commitSha[i % (commitSha.length - 1)]).join('');
-  const bg = colord(`#${hex}`).toLch();
-
-  const fg = {
-    ...bg,
-    l: (bg.l + 50) % 100,
-    h: (bg.h - 180) % 360,
-  };
-
-  return {
-    props: {
-      commitSha,
-      bg,
-      fg,
-    },
-  };
 }

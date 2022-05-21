@@ -28,13 +28,14 @@ const globalStyles = globalCss(reset, {
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
+    backgroundColor: '$chvn1',
 
     minHeight: '-webkit-fill-available',
   },
   body: {
     margin: 0,
     color: '$hiContrast',
-    backgroundColor: '$translucent',
+    backgroundColor: '$chvn1',
     fontFamily: '$mori',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
@@ -60,7 +61,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           attribute="class"
           value={{ light: 'light-theme', dark: darkTheme.className }}
           defaultTheme="light">
-          <Box css={{ backgroundColor: '$translucent', zIndex: '0' }}>
+          <Box css={{ zIndex: '0' }}>
             <Navbar />
             <div
               className={appWrapper({

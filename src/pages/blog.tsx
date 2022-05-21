@@ -22,25 +22,41 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
           <title>Blog - chvn.me/</title>
         </Head>
 
-        <Box css={{ paddingTop: '80px', paddingBottom: '80px' }}>
+        <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
           <BlogContainer title="Blog – Chandler CHappell" description="Notes, thoughts, and ideas.">
             <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
               <Section size="1" css={{ paddingBottom: '0px' }}>
-                <Heading size="3" css={{ color: '$sage12', lineHeight: '1.3', paddingBottom: '6px' }}>
+                <Heading
+                  size="4"
+                  css={{
+                    color: '$chvn5',
+                    fontFamily: '$inter',
+                    fontWeight: '700',
+                    lineHeight: '1.3',
+                    paddingBottom: '6px',
+                  }}>
                   Blog
                 </Heading>
-                <Text css={{ color: '$superLogo', fontSize: '15px', fontWeight: '700', lineHeight: '1.3' }}>
+                <Text
+                  css={{
+                    color: '$chvn4',
+                    fontSize: '15px',
+                    fontWeight: '500',
+                    lineHeight: '1.3',
+                  }}>
                   Notes, Thoughts, and Ideas.
                 </Text>
                 <Text
                   css={{
-                    color: '$sage12',
+                    color: '$chvn7',
                     fontSize: '15px',
                     fontWeight: '500',
                     lineHeight: '1.3',
                   }}>{`I have currently written ${posts.length} stories here, for you.`}</Text>
 
-                <Text size="1" css={{ fontSize: '13px', color: '$sage8', fontWeight: '500', lineHeight: '2.2' }}>
+                <Text
+                  size="1"
+                  css={{ paddingTop: '20px', fontSize: '15px', color: '$chvn7', fontWeight: '500', lineHeight: '2.2' }}>
                   Use the search bar to filter by title.
                 </Text>
               </Section>
@@ -62,15 +78,20 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
             {!searchValue && (
               <>
                 <Section size="2">
-                  <Badge size="2" variant="violet">
+                  <Badge
+                    size="2"
+                    // variant="lime"
+                    css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
                     <Heading
                       size="2"
                       css={{
                         padding: '4px',
-                        color: '$superLogo',
+                        fontFamily: '$inter',
+                        color: '$chvn4',
                         fontSize: '13px',
                         fontWeight: '800',
                         letterSpacing: '-0.02rem',
+                        lineHeight: 'normal',
                       }}>
                       Popular Posts
                     </Heading>
@@ -95,15 +116,17 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
             )}
 
             <Section size="1">
-              <Badge size="2" variant="violet">
+              <Badge size="2" css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
                 <Heading
                   size="2"
                   css={{
                     padding: '4px',
-                    color: '$superLogo',
+                    fontFamily: '$inter',
+                    color: '$chvn4',
                     fontSize: '13px',
                     fontWeight: '800',
                     letterSpacing: '-0.02rem',
+                    lineHeight: 'normal',
                   }}>
                   All Posts
                 </Heading>

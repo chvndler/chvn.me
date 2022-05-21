@@ -211,6 +211,14 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       green500: 'hsl(148,60%,60%)',
       red500: 'hsl(352,100%,62%)',
 
+      chvn1: '#f1f1f1',
+      chvn2: '#cccab8',
+      chvn3: '#cefe71',
+      chvn4: '#a493f8',
+      chvn5: '#837e95',
+      chvn6: '#2b4570',
+      chvn7: '#413a3c',
+
       // SuperLime..
       superLime0: '#ebffe9',
       superLime1: '#b8ffb3',
@@ -251,7 +259,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       inter: "'Inter', 'sans-serif'",
       olympic: "'Olympic Sans', 'sans-serif'",
       mori: "'Mori Gothic', 'sans-serif'",
-      iaaf: "'IAAF Sans'",
+      iaaf: "'IAAF Sans', sans-serif",
     },
     space: {
       1: '5px',
@@ -546,6 +554,14 @@ export const darkTheme = createTheme('darkTheme', {
     slime: '#c9cccd',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
+
+    chvn1: '#413a3c',
+    chvn2: '#2b4570',
+    chvn3: '#837e95',
+    chvn4: '#a493f8',
+    chvn5: '#cefe71',
+    chvn6: '#cccab8',
+    chvn7: '#f1f1f1',
 
     // SuperLime..
     superLime0: '#ebffe9',

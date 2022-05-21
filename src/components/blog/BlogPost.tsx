@@ -16,9 +16,10 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
               paddingLeft: '10px',
               paddingRight: '10px',
               borderRadius: '12px',
-              border: '1px solid $sage1',
+              border: '1px solid $chvn1',
               '&:hover': {
-                backgroundColor: '$sage2',
+                // backgroundColor: '$sage2',
+                backgroundColor: '$sage5',
                 border: '1px solid $sage3',
               },
             }}>
@@ -33,9 +34,10 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
               <Heading
                 size="2"
                 css={{
+                  fontFamily: '$inter',
                   marginTop: '5px',
                   marginBottom: '5px',
-                  color: '$sage12',
+                  color: '$chvn7',
                   letterSpacing: '-0.05rem',
                   lineHeight: '1.2',
                   fontWeight: '700',
@@ -45,7 +47,7 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
                 }}>
                 {title}
               </Heading>
-              <Text size="2" css={{ color: '$sage11', lineHeight: '1.4', fontWeight: '500' }}>
+              <Text size="2" css={{ color: '$chvn7', lineHeight: '1.4', fontWeight: '500' }}>
                 {summary}
               </Text>
             </Box>
