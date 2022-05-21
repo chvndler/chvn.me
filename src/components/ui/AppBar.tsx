@@ -6,16 +6,14 @@ import { styled } from 'stitches.config';
 const GradientBar = styled('div', {
   position: 'fixed',
   width: '100vw',
-  height: '6px',
+  height: '9px',
   left: '0',
   top: '0',
   // background: 'linear-gradient(110deg, $blue9 0%, $orange10 40%, $lime9 100%)',
-  background: 'linear-gradient(110deg, #ffd89b 0%, #D76D77 40%, #19547b 100%)',
-  // background: '-webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173)',
+  backgroundColor: 'linear-gradient(110deg, $chvn4 0%, $chvn6 40%, $chvn7 100%)',
+  //backgroundColor: '-webkit-linear-gradient(to right, $chvn4 0%,, $chvn6 40%, $chvn7 100%)',
 
-  //background: '#59C173',
-
-  zIndex: '9999',
+  zIndex: '999',
 });
 
 export const AppBar = () => {

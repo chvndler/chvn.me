@@ -2,6 +2,8 @@ import { Box, Heading, Text, Container, Section } from 'atelier.design';
 import { SmallSpacer } from '@/components/space';
 import { CustomContainer } from '@/components/CustomContainer';
 
+import { VideoPlayer } from '@/components/VideoPlayer';
+
 // APP BEGIN / Components Page
 const Components = () => {
   return (
@@ -41,6 +43,10 @@ const Components = () => {
         <Container size="1" css={{ bc: '$sage4', padding: '10px' }}>
           <Text size="2">Container Size = 1</Text>
         </Container>
+
+        <Section>
+          <VideoPlayer id="max" videoId="eKEjR6hOJvg" />
+        </Section>
       </Box>
     </>
   );

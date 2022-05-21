@@ -11,10 +11,10 @@ type TitleAndMetaTagsProps = {
 };
 
 export function TitleAndMetaTags({
-  title = 'Radix UI',
-  description = 'Everything you need to build a design system, website or web app.',
+  title = 'Chandler Ch®',
+  description = 'Personal site displaying current projects, works, and stories.',
   image,
-  url = 'https://radix-ui.com',
+  url = 'https://chvn.me',
   pathname,
 }: TitleAndMetaTagsProps) {
   const router = useRouter();

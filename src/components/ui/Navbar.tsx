@@ -49,14 +49,14 @@ export const Navbar = () => {
             <Text
               css={{
                 zIndex: '999',
-                fontFamily: '$inter',
-                // fontWeight: '600',
+                fontWeight: 'bold',
+                fontFamily: '$mori',
                 fontSize: '18px',
-                color: '$superLogo',
+                color: '$chvn4',
                 lineHeight: '48px',
                 letterSpacing: '-0.03rem',
               }}>
-              <strong>chan</strong>®
+              chandler
             </Text>
           </Box>
         </Link>

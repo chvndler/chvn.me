@@ -34,8 +34,8 @@ const IntroText = styled('p', {
   fontWeight: 'bold',
   fontSize: '3.2rem',
   // letterSpacing: '-0.2rem',
-  letterSpacing: '-0.15rem',
-  lineHeight: '1',
+  letterSpacing: '-0.13rem',
+  lineHeight: '1.1',
 
   '@sm': {
     lineHeight: '1.1',
