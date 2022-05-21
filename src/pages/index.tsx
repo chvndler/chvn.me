@@ -31,6 +31,7 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
+  color: '$sage12',
   fontFamily: '$mori',
   fontWeight: 'bold',
   fontSize: '3.2rem',
@@ -304,35 +305,6 @@ export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: Lc
           <Link href={`https://github.com/chvndler/chvn.me/commit/${commitSha}`}>{commitSha.slice(0, 7)}</Link>
         </code>
         <AlternateFooter />
-
-        <style jsx>{`
-          .intro {
-            font-size: clamp(1.5rem, 8vmin, 3.5rem);
-            line-height: 1.2;
-            font-style: normal;
-            font-family: var(--font-sans);
-            letter-spacing: -0.025em;
-          }
-
-          .intro :global(a) {
-            --padding-size: 0.05em;
-            font-family: var(--font-heading);
-            letter-spacing: 0;
-            font-style: italic;
-          }
-        `}</style>
-        <style jsx global>{`
-          @supports (color: lch(50% 70 180)) {
-            html:has(.intro) {
-              --wash-color: lch(${bg.l}% ${bg.c} ${bg.h}) !important;
-              --text-color: lch(${fg.l}% ${fg.c} ${fg.h}) !important;
-              --meta-color: lch(${fg.l}% ${fg.c} ${fg.h} / 0.75) !important;
-              --site-color: lch(${(bg.l + 50) % 100}% ${(bg.c + 30) % 100} ${bg.h}) !important;
-              --code-wash: lch(${(bg.l + 10) % 100}% ${bg.c} ${bg.h}) !important;
-              --code-color: var(--text-color) !important;
-            }
-          }
-        `}</style>
       </Box>
     </>
   );

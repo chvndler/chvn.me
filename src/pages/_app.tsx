@@ -34,8 +34,8 @@ const globalStyles = globalCss(reset, {
   },
   body: {
     margin: 0,
-    // color: '$hiContrast',
-    // backgroundColor: '$sage1',
+    color: '$hiContrast',
+    backgroundColor: '$translucent',
     fontFamily: '$mori',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',

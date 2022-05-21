@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --site-color: #dd425c;
+  --text-color: #231f20;
+  --wash-color: #f1f1f1;
+  --mark-color: rgba(255, 200, 0, 0.15);
+  --highlight-color: #ffc800;
+  --hover-color: var(--site-color);
+  --code-wash: #f1f1f1;
+  --code-color: #222;
+  --wash-color: var(--highlight-color) !important;
+}
+
 @supports (color: lch(50% 70 180)) {
   html:has(.intro) {
     --wash-color: lch(${bg.l}% ${bg.c} ${bg.h}) !important;
@@ -83,13 +95,10 @@ table :global(a) {
   font-size: clamp(1.5rem, 8vmin, 3.5rem);
   line-height: 1.2;
   font-style: normal;
-  font-family: var(--font-sans);
   letter-spacing: -0.025em;
 }
 
 .intro :global(a) {
-  --padding-size: 0.05em;
-  font-family: var(--font-heading);
   letter-spacing: 0;
   font-style: italic;
 }
