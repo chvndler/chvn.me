@@ -16,6 +16,8 @@ import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
 import { MarketingButton } from '@/components/MarketingButton';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { colord, extend, LchColor } from 'colord';
+import lchPlugin from 'colord/plugins/lch';
 
 // Components..
 import { GridEntry } from '@/components/GridEntry';
@@ -61,8 +63,11 @@ const Footnote = styled('p', {
   padding: '0',
 });
 
+extend([lchPlugin]);
+
 // APP BEGIN / HOMEPAGE
-const Index = () => {
+// const Index = ( => {
+export default function Index({ commitSha, bg, fg }: { commitSha: string; bg: LchColor; fg: LchColor }) {
   return (
     <>
       <Box>
@@ -82,7 +87,7 @@ const Index = () => {
             },
           }}>
           <Breakout>
-            <IntroText>
+            <IntroText className="intro">
               I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
               building{' '}
               <IntroLink variant="escape" href="https://github.com/AtelierDesign" target="_blank" rel="norefferer">
@@ -295,10 +300,64 @@ const Index = () => {
         </Section>
 
         {/* <!-- Footer.. --> */}
+        <code>
+          <Link href={`https://github.com/chvndler/chvn.me/commit/${commitSha}`}>{commitSha.slice(0, 7)}</Link>
+        </code>
         <AlternateFooter />
+
+        <style jsx>{`
+          .intro {
+            font-size: clamp(1.5rem, 8vmin, 3.5rem);
+            line-height: 1.2;
+            font-style: normal;
+            font-family: var(--font-sans);
+            letter-spacing: -0.025em;
+          }
+
+          .intro :global(a) {
+            --padding-size: 0.05em;
+            font-family: var(--font-heading);
+            letter-spacing: 0;
+            font-style: italic;
+          }
+        `}</style>
+        <style jsx global>{`
+          @supports (color: lch(50% 70 180)) {
+            html:has(.intro) {
+              --wash-color: lch(${bg.l}% ${bg.c} ${bg.h}) !important;
+              --text-color: lch(${fg.l}% ${fg.c} ${fg.h}) !important;
+              --meta-color: lch(${fg.l}% ${fg.c} ${fg.h} / 0.75) !important;
+              --site-color: lch(${(bg.l + 50) % 100}% ${(bg.c + 30) % 100} ${bg.h}) !important;
+              --code-wash: lch(${(bg.l + 10) % 100}% ${bg.c} ${bg.h}) !important;
+              --code-color: var(--text-color) !important;
+            }
+          }
+        `}</style>
       </Box>
     </>
   );
-};
+}
 
-export default Index;
+export async function getStaticProps() {
+  const commitSha = process.env.VERCEL_GIT_COMMIT_SHA || '7ba51d';
+  const indices = commitSha
+    .slice(0, 6)
+    .split('')
+    .map(i => parseInt(i, 16));
+  const hex = indices.map(i => commitSha[i % (commitSha.length - 1)]).join('');
+  const bg = colord(`#${hex}`).toLch();
+
+  const fg = {
+    ...bg,
+    l: (bg.l + 50) % 100,
+    h: (bg.h - 180) % 360,
+  };
+
+  return {
+    props: {
+      commitSha,
+      bg,
+      fg,
+    },
+  };
+}
