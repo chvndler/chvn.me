@@ -13,8 +13,10 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 
 // Styles..
 import { reset } from '@/styles/reset';
+import '@/styles/mori-gothic.css';
+import '@/styles/iaaf.css';
 import 'inter-ui/inter.css';
-import '@/styles/urbane.css';
+import '@/styles/olympic-sans.css';
 import '@/styles/global.css';
 
 const appWrapper = css({
@@ -35,7 +37,7 @@ const globalStyles = globalCss(reset, {
     color: '$hiContrast',
     // backgroundColor: '$loContrast',
     backgroundColor: '$sage1',
-    fontFamily: '$urbane',
+    fontFamily: '$mori',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
     WebkitTextSizeAdjust: '100%',

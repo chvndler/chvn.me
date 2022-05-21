@@ -29,11 +29,11 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
-  fontFamily: '$urbane',
-  fontWeight: '600',
-  fontSize: '3.5rem',
+  fontFamily: '$mori',
+  fontWeight: 'bold',
+  fontSize: '3.2rem',
   // letterSpacing: '-0.2rem',
-  letterSpacing: '-0.05rem',
+  letterSpacing: '-0.15rem',
   lineHeight: '1',
 
   '@sm': {
@@ -48,6 +48,19 @@ const IntroText = styled('p', {
   },
 });
 
+const Footnote = styled('p', {
+  fontFamily: '$mori',
+  fontWeight: '600',
+  fontSize: '0.8rem',
+  // letterSpacing: '-0.2rem',
+  letterSpacing: '-0.03rem',
+  lineHeight: '1',
+
+  position: 'relative',
+  margin: '0',
+  padding: '0',
+});
+
 // APP BEGIN / HOMEPAGE
 const Index = () => {
   return (
@@ -60,7 +73,7 @@ const Index = () => {
         <Container
           size="4"
           css={{
-            paddingTop: '40px',
+            paddingTop: '80px',
             paddingBottom: '40px',
 
             '@xs': {
@@ -72,10 +85,10 @@ const Index = () => {
             <IntroText>
               I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
               building{' '}
-              <IntroLink variant="straight" href="https://github.com/AtelierDesign" target="_blank" rel="norefferer">
-                Atelier Design Yield®
-              </IntroLink>{' '}
-              to calm the noise within the design culture. I spend most of my time{' '}
+              <IntroLink variant="escape" href="https://github.com/AtelierDesign" target="_blank" rel="norefferer">
+                ( ady )
+              </IntroLink>
+              ® to calm the noise within the design culture. I spend most of my time{' '}
               <IntroLink variant="subtle" href="https://github.com/chvndler" target="_blank" rel="norefferer">
                 writing code
               </IntroLink>
@@ -85,6 +98,8 @@ const Index = () => {
               </IntroLink>
               , and journaling about code, life, and ideas.
             </IntroText>
+
+            <Footnote>*Atelier Design Yield</Footnote>
           </Breakout>
         </Container>
 
@@ -102,7 +117,7 @@ const Index = () => {
             <SmallSpacer />
 
             {/* <!-- About.. --> */}
-            <Heading size="3" css={{ color: '$sage12', lineHeight: 'normal' }}>
+            <Heading css={{ color: '$sage12', lineHeight: 'normal', fontFamily: '$iaaf', fontWeight: 'normal' }}>
               Chandler Chappell
             </Heading>
             <Text css={{ color: '$sage8', fontSize: '16px', fontWeight: '600', lineHeight: 'normal' }}>
@@ -121,7 +136,7 @@ const Index = () => {
             <MediumSpacer />
 
             {/* <!-- Social Links.. --> */}
-            <Heading size="1" css={{ color: '$sage12', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', fontFamily: '$iaaf', lineHeight: '2' }}>
               Connect
             </Heading>
             <Flex direction="row">

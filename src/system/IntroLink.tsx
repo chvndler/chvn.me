@@ -3,13 +3,14 @@ import { Text } from '@/system/text';
 
 export const IntroLink = styled('a', {
   alignItems: 'center',
+  fontFamily: '$olympic',
   fontSize: 'inherit',
   fontWeight: 'inherit',
   gap: '$1',
   flexShrink: 0,
   outline: 'none',
   textDecorationLine: 'none',
-  textUnderlineOffset: '3px',
+  textUnderlineOffset: '2px',
   textDecorationColor: '$sage4',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   lineHeight: 'inherit',
@@ -47,6 +48,20 @@ export const IntroLink = styled('a', {
         textDecorationColor: '$bronze9',
         '&:focus': {
           outlineColor: '$bronze8',
+        },
+      },
+      escape: {
+        fontFamily: '$mori',
+        fontStyle: 'none',
+        color: '$bronze12',
+        textDecorationColor: '$lime8',
+        '&:focus': {
+          outlineColor: '$bronze8',
+        },
+        '&:hover': {
+          textDecorationLine: 'underline',
+          textUnderlineOffset: '3px',
+          textDecorationColor: '$superLime5',
         },
       },
     },

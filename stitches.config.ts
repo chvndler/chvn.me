@@ -249,9 +249,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     // Fonts..
     fonts: {
       inter: "'Inter', 'sans-serif'",
-      jetbrain: "'Jet Brains', monopace",
-      urbane: "'Urbane', 'sans-serif'",
-      untitled: "-apple-system, BlinkMacSystemFont, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+      olympic: "'Olympic Sans', 'sans-serif'",
+      mori: "'Mori Gothic', 'sans-serif'",
+      iaaf: "'IAAF Sans'",
     },
     space: {
       1: '5px',

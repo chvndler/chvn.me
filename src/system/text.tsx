@@ -4,7 +4,6 @@ export const Text = styled('span', {
   // Reset
   lineHeight: '1',
   margin: '0',
-  fontFamily: '$inter',
   fontWeight: 400,
   fontVariantNumeric: 'tabular-nums',
   display: 'block',

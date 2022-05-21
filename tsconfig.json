@@ -25,6 +25,7 @@
       "@/public/*": ["./public/*"],
       "@/posts/*": ["./posts/*"],
       "@/functions/*": ["./src/components/functions/*"],
+      "@/fonts/*": ["./src/fonts/*"],
       "@/ui/*": ["./src/components/ui/*"],
       "@/components/*": ["./src/components/*"]
     },
