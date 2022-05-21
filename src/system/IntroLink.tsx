@@ -53,7 +53,7 @@ export const IntroLink = styled('a', {
       escape: {
         fontFamily: '$mori',
         fontStyle: 'none',
-        color: '$bronze12',
+        color: '$chvn5',
         textDecorationColor: '$lime8',
         '&:focus': {
           outlineColor: '$bronze8',
