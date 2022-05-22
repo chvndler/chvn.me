@@ -3,7 +3,7 @@ import { Box, Container } from '@/system';
 // import { styled } from 'stitches.config';
 import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio';
 
-type AspectRatioComponentProps = { ratio?: string };
+type AspectRatioComponentProps = { ratio?: string; children?: JSX.Element[] };
 
 // Exports
 export const AspectRatio = AspectRatioPrimitive;

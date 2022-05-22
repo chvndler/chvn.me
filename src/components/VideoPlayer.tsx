@@ -25,7 +25,7 @@ export const VideoPlayer = ({ id, poster, videoId, ...props }: VideoPlayerProps)
   }, []);
 
   return (
-    <AspectRatioComponent ratio="16:9" sx={{ overflow: 'hidden' }}>
+    <AspectRatioComponent ratio="16:9">
       <Flex
         as="button"
         aria-label="Play video"
