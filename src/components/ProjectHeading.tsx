@@ -25,13 +25,14 @@ const ProjectBox = styled('a', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+  borderRadius: '27px',
 
-  backgroundColor: '$translucent',
+  backgroundColor: '$gray5',
   // border: '1px solid $sage5',
   boxShadow: '0 0 0 1px $colors$sage5',
 
   '&:hover': {
-    backgroundColor: '$sage2',
+    backgroundColor: '$chvn4',
     cursor: 'pointer',
   },
 
