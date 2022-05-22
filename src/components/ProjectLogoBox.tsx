@@ -1,9 +1,9 @@
 import React from 'react';
-import { ProjectLogo } from '@/components/ProjectLogo';
 import { styled } from '@stitches/react';
 
 type ProjectLogoBoxProps = {
-  variant?: string;
+  title?: string;
+  children?: JSX.Element;
   href?: string;
 };
 
@@ -32,11 +32,11 @@ const ProjectBox = styled('a', {
   },
 });
 
-export const ProjectLogoBox = ({ title, variant, href, ...props }: ProjectLogoBoxProps) => {
+export const ProjectLogoBox = ({ title, href, children, ...props }: ProjectLogoBoxProps) => {
   return (
     <>
       <ProjectBox href={href} target="_blank" rel="noopener noreferrer" title={`${title}`}>
-        <ProjectLogo variant={variant} />
+        {children}
       </ProjectBox>
     </>
   );

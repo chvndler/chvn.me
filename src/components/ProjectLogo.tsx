@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type ProjectLogoVariant = 'Atelier Design Yield' | 'Interval' | 'three.space' | 'Next.Start';
+export type ProjectLogoVariant = 'Atelier Design Yield' | 'Interval' | 'three.space' | 'Next.Start' | 'chvn.me';
 
 type ProjectLogoProps = React.ComponentProps<'svg'> & {
   variant: ProjectLogoVariant;
