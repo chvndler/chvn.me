@@ -1,5 +1,5 @@
 <!-- Hi there! Feel free to make this your own but don't use my data. Attributions are welcomed -->
-<h3>Hi! 👋<br>I'm Chan,<br>a Front-End Developer, Designer & Director (Film).</h3>
+<h3>I'm Chan,<br>a Front-End Developer, Designer & Director (Film).</h3>
 <h6>I build <a href="https://stephenajulu.com/portfolio">websites</a>, write <a href="https://stephenajulu.com/blog">articles</a>, design <a href="https://chvn.me/projects">graphics</a>, and sell <a href="https://ady.world">digital products</a>.<br /></h6>
 
 <h4> <a href="https://chvn.me">Website</a> • <a href="https://chvn.me/blog">Blog</a> • <a href="https://chvn.me/projects">Projects</a></h4>

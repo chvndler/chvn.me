@@ -79,3 +79,17 @@ table :global(a) {
   letter-spacing: 0;
   font-style: italic;
 }
+
+.st0 {
+  fill: #a493f8;
+}
+.st1 {
+  fill: #837e95;
+}
+
+svg .st0 {
+  fill: #a493f8;
+}
+svg .st1 {
+  fill: #837e95;
+}

@@ -4,9 +4,10 @@ import Link from 'next/link';
 // ATELIER® DESIGN SYSTEM
 import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
-import { Text } from '@/system/text';
 import { NewLink } from '@/system/newlink';
 import { AppBar } from '@/components/ui/AppBar';
+// import { ChvnLogo } from '@/components/ChvnLogo';
+import { MasterLogo } from '@/components/ui/MasterLogo';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
@@ -37,7 +38,7 @@ export const Navbar = () => {
           <Box
             as="a"
             css={{
-              width: '100px',
+              width: '120px',
               ml: '12px',
               display: 'inline-flex',
               textDecoration: 'none',
@@ -46,6 +47,7 @@ export const Navbar = () => {
               },
               '@bp2': { ml: '12px' },
             }}>
+            {/* <!--
             <Text
               css={{
                 zIndex: '999',
@@ -58,6 +60,8 @@ export const Navbar = () => {
               }}>
               chandler
             </Text>
+            --> */}
+            <MasterLogo />
           </Box>
         </Link>
 
