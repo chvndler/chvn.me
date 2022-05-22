@@ -112,7 +112,7 @@ export const Navbar = () => {
           </Link>
 
           {/* <!-- Nav Link #3 --> */}
-          <Link href="/cover" passHref>
+          <Link href="/archive" passHref>
             <NewLink
               variant="subtle"
               css={{
