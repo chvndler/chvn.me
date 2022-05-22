@@ -1,38 +1,14 @@
-<p align="center">
-  <a href="https://github.com/chvndler/next.start">
-    <img src="https://cdn.ady.systems/assets/github/next_start_logo.png" width="150px" alt="Next.Start" />
-  </a>
-</p>
+<!-- Hi there! Feel free to make this your own but don't use my data. Attributions are welcomed -->
+<h3>Hi! 👋<br>I'm Chan,<br>a Front-End Developer, Designer & Director (Film).</h3>
+<h6>I build <a href="https://stephenajulu.com/portfolio">websites</a>, write <a href="https://stephenajulu.com/blog">articles</a>, design <a href="https://stephenajulu.com/portfolio">graphics</a>, provide <a href="https://stephenajulu.com/book-a-consultation">advice</a> and sell <a href="https://stephenajulu.com/store">digital products</a>.<br>I have 8 years of tech experience, creating products, content and solutons while providing IT services.<br></h6>
 
-<a href="https://github.com/chvndler/next.start">
-<img src="https://cdn.ady.systems/assets/github/banner.png" alt="Fiercely independent, professional publishing. Ghost is the most popular open source, headless Node.js CMS which already works with all the tools you know and love." />
-</a>
+<h4> <a href="https://chvn.me">Website</a> • <a href="https://chvn.me/blog">Blog</a> • <a href="https://chvn.me/projects">Projects</a></h4>
 
-Next.js, Typescript, Stitches, Radix-UI Components Starter Project
+<h4>This project is built w/ Next.js, Typescript, Radix-UI, Stitches, and @AtelierDesign Components</h4>
 
-## Features
+<!-- BLOG-POST-LIST:START -->
 
-- ⚡️ Next.js 12
-- ⚛️ React 17
-- ⛑ TypeScript
-- 📏 ESLint — Find and fix problems in your code
-- 💖 Prettier — Code Formatter for consistent style
-- 🐶 Husky — For running scripts before committing
-- 📄 Commitizen — To define a standard way of committing rules
-- 🚓 Commitlint — Make sure your commit messages follow the convention
-- 🖌 Renovate — Keep your dependencies up to date
-- 🚫 lint-staged — To run ESLint and Prettier against staged Git files
-- 👷 PR Workflow — Run Type Check & Linters on all Pull Requests
-- ⚙️ EditorConfig - Maintain consistent coding styles across editors and IDEs
-- 🗂 Path Mapping — Import components or images using the `@` prefix
-
-### Get started
-
-```
-npx create-next-app -e https://github.com/chvndler/next.start
-# or
-yarn create next-app -e https://github.com/chvndler/next.start
-```
+<!-- BLOG-POST-LIST:END -->
 
 ### Development
 
