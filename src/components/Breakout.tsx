@@ -16,12 +16,6 @@ const BreakoutContainer = styled('div', {
   marginLeft: '-50vw',
   padding: '12px',
 
-  border: '1px dashed $sage4',
-  borderTopWidth: '0',
-  borderBottomWidth: '1px',
-  borderLeftWidth: '0',
-  borderRightWidth: '0',
-
   // backgroundImage: 'linear-gradient(25deg, #03bafb, #a4bab8, #f2f2f2, #fff)',
 });
 

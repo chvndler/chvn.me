@@ -5,6 +5,8 @@ import { Box, Flex, Heading, Text, Section } from 'atelier.design';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
 import { TwitterLogo } from '@/components/TwitterLogo';
+import { GitHubIcon } from '@/components/GitHubIcon';
+import { TwitterHashtag } from '@/components/twitter/TwitterHashtag';
 
 import { styled } from 'stitches.config';
 
@@ -31,14 +33,15 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
         <article>
           <Section size="2">
             <Heading
-              size="2"
+              size="3"
               css={{
                 marginTop: '5px',
                 marginBottom: '5px',
-                color: '$sage12',
-                letterSpacing: '-0.05rem',
-                lineHeight: '1.2',
-                fontWeight: '700',
+                letterSpacing: '-0.05em',
+                color: '$chvn5',
+                lineHeight: 'normal',
+                fontFamily: '$inter',
+                fontWeight: '800',
                 '&:hover': {
                   opacity: '0.8',
                 },
@@ -62,21 +65,31 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
             <RawContent>{children}</RawContent>
           </Section>
 
-          <Flex css={{ flexDirection: 'row', margin: 'auto', alignItems: 'center', textAlign: 'center' }}>
-            <Text size="1" css={{ textAlign: 'center', fontWeight: 'bold', marginRight: '6px' }}>
+          <Section size="3" css={{ paddingTop: '120px' }}>
+            <Flex css={{ flexDirection: 'row', margin: 'auto', alignItems: 'center', textAlign: 'center' }}>
+              <Text size="2" css={{ textAlign: 'center', fontWeight: 'bold', marginRight: '12px' }}>
+                <a href={discussUrl(post.slug)} target="_blank" rel="noopener noreferrer">
+                  {'Discuss on Twitter'}
+                </a>
+              </Text>
+              {` `}
               <a href={discussUrl(post.slug)} target="_blank" rel="noopener noreferrer">
-                {'Discuss on Twitter'}
+                {<TwitterLogo />}
               </a>
-            </Text>
-            {` `}
-            <TwitterLogo />
-            {`  •  `}
-            <Text size="1" css={{ textAlign: 'center', fontWeight: 'bold' }}>
-              <a href={editUrl(post.slug)} target="_blank" rel="noopener noreferrer">
-                {'Edit on GitHub'}
-              </a>
-            </Text>
-          </Flex>
+              {` `}
+              <Text size="2" css={{ textAlign: 'center', fontWeight: 'bold', marginRight: '12px', marginLeft: '12px' }}>
+                <a href={editUrl(post.slug)} target="_blank" rel="noopener noreferrer">
+                  {'Edit on GitHub'}
+                </a>
+              </Text>
+              {` `}
+              <GitHubIcon />
+              {` `}
+            </Flex>
+            <Box css={{ py: '20px', px: '0', backgroundColor: '$chvn1' }}>
+              <TwitterHashtag tweetTag="#atelier_dsgn" />
+            </Box>
+          </Section>
         </article>
       </BlogContainer>
     </Box>
