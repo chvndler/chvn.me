@@ -27,8 +27,6 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.3",
-    "@markdoc/markdoc": "^0.1.2",
-    "@markdoc/next.js": "^0.1.4",
     "@modulz/radix": "^0.0.1-beta.44",
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-accessible-icon": "^0.1.4",

@@ -13,7 +13,3 @@ module.exports = withContentlayer({
     urlImports: ['https://cdn.ady.systems/', 'https://cdn.skypack.dev/'],
   },
 });
-
-module.exports = withMarkdoc(/* options */)({
-  pageExtensions: ['tsx', 'js', 'md'],
-});
