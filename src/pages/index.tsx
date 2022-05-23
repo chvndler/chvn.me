@@ -14,8 +14,8 @@ import { CustomContainer } from '@/components/CustomContainer';
 import { SmallSpacer, LargeSpacer } from '@/components/space';
 import { HoverCardComponent } from '@/components/HoverCard';
 import { AlternateFooter } from '@/ui/AlternateFooter';
-// import { MarketingButton } from '@/components/MarketingButton';
-// import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { MarketingButton } from '@/components/MarketingButton';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 // Components..
 import { GridEntry } from '@/components/GridEntry';
@@ -87,6 +87,22 @@ export default function Index() {
               </IntroLink>
               , and journaling about code, life, and ideas.
             </IntroText>
+
+            <Box
+              css={{
+                paddingTop: '5px',
+                paddingLeft: '8px',
+                width: '100%',
+                alignItems: 'center',
+                // textAlign: 'center',
+                margin: 'auto',
+              }}>
+              <Link href="https://github.com/chvndler" passHref>
+                <MarketingButton as="a" icon={ArrowRightIcon}>
+                  GitHub
+                </MarketingButton>
+              </Link>
+            </Box>
           </Breakout>
         </Container>
 
