@@ -28,14 +28,14 @@ const globalStyles = globalCss(reset, {
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
-    backgroundColor: '$chvn1',
+    backgroundColor: '$rhythmA1',
 
     minHeight: '-webkit-fill-available',
   },
   body: {
     margin: 0,
     color: '$hiContrast',
-    backgroundColor: '$chvn1',
+    backgroundColor: '$rhythmA1',
     fontFamily: '$mori',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',

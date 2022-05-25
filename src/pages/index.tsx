@@ -29,7 +29,7 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
-  color: '$chvn7',
+  color: '$rhythmA00',
   fontFamily: '$mori',
   fontWeight: 'bold',
   fontSize: '3.2rem',
@@ -111,7 +111,7 @@ export default function Index() {
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
               <a target="_blank" rel="noreferrer">
-                <Text css={{ color: '$chvn5', fontFamily: '$mori', fontSize: '12px', fontWeight: '500' }}>
+                <Text css={{ color: '$rhythm11', fontFamily: '$mori', fontSize: '12px', fontWeight: '500' }}>
                   @chv_ndler
                 </Text>
               </a>
@@ -123,14 +123,14 @@ export default function Index() {
             <Heading
               size="3"
               css={{
-                color: '$chvn5',
+                color: '$rhythm00',
                 lineHeight: 'normal',
                 fontFamily: '$inter',
                 fontWeight: '800',
               }}>
               Chandler Chappell
             </Heading>
-            <Text css={{ color: '$chvn7', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
+            <Text css={{ color: '$rhythmA10', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
               Front-end Developer, Designer, and Director
             </Text>
 
@@ -150,7 +150,7 @@ export default function Index() {
             <Heading
               size="3"
               css={{
-                color: '$chvn5',
+                color: '$rhythm00',
                 fontFamily: '$inter',
                 fontWeight: '600',
                 lineHeight: '2.5',
@@ -164,7 +164,7 @@ export default function Index() {
                   <Text
                     size="2"
                     css={{
-                      color: '$chvn7',
+                      color: '$rhythmA10',
                       fontFamily: '$inter',
                       fontWeight: '800',
                       lineHeight: 'normal',
@@ -172,7 +172,7 @@ export default function Index() {
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
-                        color: '$slate10',
+                        color: '$rhythm12',
                       },
                     }}>
                     GitHub
@@ -184,7 +184,7 @@ export default function Index() {
                   <Text
                     size="2"
                     css={{
-                      color: '$chvn7',
+                      color: '$rhythmA10',
                       fontFamily: '$inter',
                       fontWeight: '800',
                       lineHeight: 'normal',
@@ -192,7 +192,7 @@ export default function Index() {
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
-                        color: '$slate10',
+                        color: '$rhythm12',
                       },
                     }}>
                     Are.na
@@ -205,7 +205,7 @@ export default function Index() {
                   <Text
                     size="2"
                     css={{
-                      color: '$chvn7',
+                      color: '$rhythmA10',
                       fontFamily: '$inter',
                       fontWeight: '800',
                       lineHeight: 'normal',
@@ -213,7 +213,7 @@ export default function Index() {
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
-                        color: '$slate10',
+                        color: '$rhythm12',
                       },
                     }}>
                     Twitter
@@ -226,7 +226,7 @@ export default function Index() {
                   <Text
                     size="2"
                     css={{
-                      color: '$chvn7',
+                      color: '$rhythmA10',
                       fontFamily: '$inter',
                       fontWeight: '800',
                       lineHeight: 'normal',
@@ -234,7 +234,7 @@ export default function Index() {
                       paddingLeft: '0px',
                       paddingRight: '20px',
                       '&:hover': {
-                        color: '$slate10',
+                        color: '$rhythm12',
                       },
                     }}>
                     Contact
@@ -256,6 +256,7 @@ export default function Index() {
                 fontWeight: '600',
                 lineHeight: '2.5',
                 letterSpacing: '-0.15rem',
+                marginBottom: '10px',
               }}>
               Projects
             </Heading>

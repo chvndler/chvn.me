@@ -41,7 +41,7 @@ const SpotifyButton = styled('div', {
 
 const Card = styled('div', {
   display: 'flex',
-  backgroundColor: '$sage4',
+  backgroundColor: '$rhythmA4',
   border: 'solid 1px $slate7',
   position: 'relative',
   borderRadius: '18px',
@@ -50,6 +50,7 @@ const Card = styled('div', {
   padding: '18px',
   alignItems: 'left',
   height: '120px',
+  width: 'auto',
 
   '&:hover': {
     backgroundColor: '$slate7',

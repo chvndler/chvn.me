@@ -25,7 +25,30 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
         <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
           <BlogContainer title="Blog – Chandler CHappell" description="Notes, thoughts, and ideas.">
             <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
-              <Section size="1" css={{ paddingBottom: '0px' }}>
+              <Section
+                size="1"
+                css={{
+                  paddingBottom: '0px',
+                  '@xl': {
+                    maxWidth: '70% !important',
+                  },
+                  '@lg': {
+                    maxWidth: '70% !important',
+                  },
+                  '@md': {
+                    maxWidth: '70% !important',
+                  },
+                  '@sm': {
+                    minWidth: '100%',
+                    maxWidth: '100% !important',
+                    width: '100%',
+                  },
+                  '@xs': {
+                    minWidth: '100%',
+                    maxWidth: '100%',
+                    width: '100%',
+                  },
+                }}>
                 <Heading
                   size="4"
                   css={{
@@ -35,16 +58,33 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                     lineHeight: '1.3',
                     paddingBottom: '6px',
                   }}>
-                  Blog
+                  blog
                 </Heading>
+                {/* <!--
+                <Text
+                  css={{
+                    color: '$chvn4',
+                    fontFamily: '$inter',
+                    fontSize: '15px',
+                    fontWeight: '700',
+                    lineHeight: '1.5',
+                  }}>
+                  Notes, Thoughts, and Ideas.
+                </Text>
+                --> */}
                 <Text
                   css={{
                     color: '$chvn4',
                     fontSize: '15px',
                     fontWeight: '500',
-                    lineHeight: '1.3',
+                    lineHeight: '1.5',
+                    marginBottom: '20px',
                   }}>
-                  Notes, Thoughts, and Ideas.
+                  This blog is a record of what I've learned along the way and a rough draft of things yet to come.
+                  <br />
+                  My favorite/popular posts are pinned to the top under "Popular".
+                  <br />
+                  Ideas that I may be drafting or developing are marked with "©".
                 </Text>
                 <Text
                   css={{
@@ -52,7 +92,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                     fontSize: '15px',
                     fontWeight: '500',
                     lineHeight: '1.3',
-                  }}>{`I have currently written ${posts.length} stories here, for you.`}</Text>
+                  }}>{`${posts.length} stories, for you.`}</Text>
 
                 <Text
                   size="1"
@@ -66,7 +106,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
               <Box css={{ position: 'relative' }}>
                 <TextField
                   size="3"
-                  variant="lime"
+                  variant="brand"
                   aria-label="Search articles"
                   type="text"
                   onChange={e => setSearchValue(e.target.value)}

@@ -1,7 +1,7 @@
 import useSWR from 'swr';
 
 import fetcher from '@/lib/fetcher';
-import { Box, Grid } from 'atelier.design';
+import { Grid } from '@/system/grid';
 import { TopTracks } from '@/types/tracks';
 import Track from '@/components/spotify/Track';
 
@@ -14,26 +14,19 @@ export default function Tracks() {
 
   return (
     <>
-      {/* PRODUCT ROW ONE */}
-      <Box>
-        <Grid
-          css={{
-            gap: '4px',
-            gridTemplateColumns: '1fr',
-            '@bp1': {
-              gap: '4px',
-              gridTemplateColumns: '1fr 1fr',
-            },
-            '@bp2': {
-              gap: '4px',
-              gridTemplateColumns: '1fr 1fr',
-            },
-          }}>
-          {data.tracks.map((track, index) => (
-            <Track ranking={index + 1} key={track.songUrl} {...track} />
-          ))}
-        </Grid>
-      </Box>
+      <Grid
+        align="center"
+        columns={{ '@initial': 1, '@bp1': 2, '@bp2': 3 }}
+        css={{
+          gap: '4px',
+          placeItems: 'stretch',
+          gridAutoRows: '120px',
+          mb: '$8',
+        }}>
+        {data.tracks.map((track, index) => (
+          <Track ranking={index + 1} key={track.songUrl} {...track} />
+        ))}
+      </Grid>
     </>
   );
 }

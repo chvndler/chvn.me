@@ -17,11 +17,11 @@ const ProjectBox = styled('a', {
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '12px',
-  backgroundColor: '$gray6',
+  backgroundColor: '$rhythmA2',
   // border: '1px solid $sage5',
   boxShadow: '0 0 0 1px $colors$chvn4',
   '&:hover': {
-    backgroundColor: '$gray8',
+    backgroundColor: '$rhythm4',
     cursor: 'pointer',
   },
   '&:focus': {

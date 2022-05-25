@@ -11,7 +11,7 @@ const imagePrefix = `https://cdn.ady.systems`;
 
 const Title = styled('div', {
   // mixBlendMode: 'difference',
-  color: '$sage12',
+  color: '$rhythmA12',
   fontFamily: '$inter',
   fontSize: '17px',
   fontWeight: '700',
@@ -29,7 +29,7 @@ const Description = styled('div', {
   fontSize: '13px',
   lineHeight: '0.8',
 
-  color: '$sage10',
+  color: '$rhythmA10',
 });
 
 const EntryLink = styled('a', {
@@ -41,21 +41,24 @@ const EntryLink = styled('a', {
 
 const Card = styled('div', {
   display: 'flex',
-  backgroundColor: '$blue8',
-  border: 'solid 2px $slate7',
+  backgroundColor: '$rhythmA4',
+  color: '$rhythm3',
+  border: 'solid 1px $rhythmA7',
   position: 'relative',
   borderRadius: '20px',
-  marginTop: '4px',
+  marginTop: '0',
   marginBottom: '0',
   padding: '18px',
   alignItems: 'left',
   webkitScrollbar: 'none',
   height: '140px',
+  boxShadow: '1px 1px 0 3px $rhythm12',
 
   '&:hover': {
     // color: '$slate1',
-    background: '$sage9',
+    background: '$rhythmA7',
     transition: 'opacity 0.1s, transform 0.1s',
+    boxShadow: '1px 5px 0 6px $rhythm12',
   },
 });
 
@@ -74,7 +77,12 @@ export const GridEntry = ({ title, description, image, href }) => {
             backgroundSize: 'cover',
             objectFit: 'cover',
           }}>
-          <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
+          <EntryLink
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            ref={ref}
+            title={`${title} - ${description}`}>
             <section>
               <Box
                 css={{

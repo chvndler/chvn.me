@@ -132,6 +132,26 @@ export const TextField = styled('input', {
           backgroundColor: 'transparent',
         },
       },
+      brand: {
+        width: '100%',
+        boxShadow: 'inset 0 0 0 2px $colors$sageA7',
+        backgroundColor: 'transparent',
+        '@hover': {
+          '&:hover': {
+            boxShadow: 'inset 0 0 0 2px $colors$sageA9',
+          },
+        },
+        '&:focus': {
+          backgroundColor: '$loContrast',
+          boxShadow: 'inset 0px 0px 0px 1px $colors$chvn5, 0px 0px 0px 1px $colors$chvn4',
+        },
+        '&:disabled': {
+          backgroundColor: 'transparent',
+        },
+        '&:read-only': {
+          backgroundColor: 'transparent',
+        },
+      },
     },
     state: {
       invalid: {
