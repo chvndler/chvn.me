@@ -219,6 +219,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chvn6: '#2b4570',
       chvn7: '#413a3c',
 
+      // Rhythm Colour System (Light)
       rhythm1: 'hsl(300, 20.0%, 99.0%)',
       rhythm2: 'hsl(300, 7.7%, 97.5%)',
       rhythm3: 'hsl(294, 5.5%, 95.3%)',
@@ -230,10 +231,12 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       rhythm9: 'hsl(252, 4.0%, 57.3%)',
       rhythm10: 'hsl(253, 3.5%, 53.5%)',
       rhythm11: 'hsl(252, 4.0%, 44.8%)',
-
       rhythm12: 'hsl(195, 100%, 13.0%)',
       rhythm00: 'hsl(0, 0%, 9.0%)',
+      rhythmLx: 'hsl(95, 98%, 63%)',
+      rhythmPx: 'hsl(312, 44.0%, 44.0%)',
 
+      // Rhythm Alphas (Light)
       rhythmA1: 'hsla(300, 89.3%, 18.3%, 0.012)',
       rhythmA2: 'hsla(300, 78.1%, 9.0%, 0.028)',
       rhythmA3: 'hsla(300, 99.5%, 7.7%, 0.051)',
@@ -245,9 +248,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       rhythmA9: 'hsla(255, 94.8%, 3.7%, 0.444)',
       rhythmA10: 'hsla(253, 96.5%, 3.8%, 0.483)',
       rhythmA11: 'hsla(247, 97.9%, 3.2%, 0.569)',
-
       rhythmA12: 'hsla(196, 100%, 12.2%, 0.980)',
       rhythmA00: 'hsla(0, 0%, 0%, 0.910)',
+      rhythmALime: 'hsla(95, 98%, 63%, 0.8)',
 
       // SuperLime..
       superLime0: '#ebffe9',
@@ -257,6 +260,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       superLime4: '#39e12c',
       superLime5: '#34ce28',
       superLogo: '#6e6d5d',
+      superLime: '#96F550',
 
       // Translucents..
       light100: 'rgba(240, 240, 240, 0.5)',
@@ -266,7 +270,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       // Neons..
       blend: '#aeff00',
       superYellow: '#F6F930',
-      superLime: '#96F550',
       slime: '#FFFD8E',
       lime9Alpha: 'rgba(153,213,42, 0.2)',
       sky9Alpha: 'rgba(104,221,253,0.3)',
@@ -593,6 +596,7 @@ export const darkTheme = createTheme('darkTheme', {
     chvn6: '#cccab8',
     chvn7: '#f1f1f1',
 
+    // Rhythm Colour System (Dark)
     rhythm1: 'hsl(246, 6.0%, 9.0%)',
     rhythm2: 'hsl(240, 5.1%, 11.6%)',
     rhythm3: 'hsl(241, 5.0%, 14.3%)',
@@ -606,7 +610,10 @@ export const darkTheme = createTheme('darkTheme', {
     rhythm11: 'hsl(253, 4.0%, 63.7%)',
     rhythm12: 'hsl(256, 6.0%, 93.2%)',
     rhythm00: 'hsl(0, 0%, 93.0%)',
+    rhythmLx: 'hsla(95, 95%, 89%, 64%)',
+    rhythmPx: 'hsla(312, 95%, 44.0%, 44.0%)',
 
+    // Rhythm Alphas (Dark)
     rhythmA1: 'hsla(0, 0%, 0%, 0)',
     rhythmA2: 'hsla(240, 76.7%, 91.2%, 0.031)',
     rhythmA3: 'hsla(240, 86.0%, 95.8%, 0.061)',
@@ -620,6 +627,7 @@ export const darkTheme = createTheme('darkTheme', {
     rhythmA11: 'hsla(250, 98.0%, 98.0%, 0.615)',
     rhythmA12: 'hsla(240, 93.9%, 99.6%, 0.931)',
     rhythmA00: 'hsla(0, 0%, 100%, 0.923)',
+    rhythmALime: 'hsla(95, 98%, 63%, 0.8)',
 
     // SuperLime..
     superLime0: '#ebffe9',
