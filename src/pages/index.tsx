@@ -29,7 +29,7 @@ import { styled } from 'stitches.config';
 import { data as items } from '@/projects/current.json';
 
 const IntroText = styled('p', {
-  color: '$rhythmA00',
+  color: '$rhythmA12',
   fontFamily: '$mori',
   fontWeight: 'bold',
   fontSize: '3.2rem',
@@ -133,16 +133,6 @@ export default function Index() {
             <Text css={{ color: '$rhythmA10', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
               Front-end Developer, Designer, and Director
             </Text>
-
-            {/* <!-- Marketing Button..
-            <Box css={{ marginTop: '25px' }}>
-              <Link href="https://github.com/chvndler" passHref>
-                <MarketingButton as="a" icon={ArrowRightIcon}>
-                  GitHub
-                </MarketingButton>
-              </Link>
-            </Box>
-             --> */}
 
             <LargeSpacer />
 
@@ -251,7 +241,7 @@ export default function Index() {
             <Heading
               size="3"
               css={{
-                color: '$chvn5',
+                color: '$rhythm00',
                 fontFamily: '$inter',
                 fontWeight: '600',
                 lineHeight: '2.5',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Container, Heading, Grid, Box } from '@/system';
+import { Section, Container, Heading, Grid, Box, Text } from '@/system';
 
 export const RhythmColorSystem = () => {
   return (
@@ -77,6 +77,58 @@ export const RhythmColorSystem = () => {
             <Box css={{ height: '200px', width: 'auto', bc: '$rhythmA12', padding: '20px' }}>( $rhythmA12 )</Box>
             <Box css={{ height: '200px', width: 'auto', bc: '$rhythmA00', padding: '20px' }}>( $rhythmA00 )</Box>
             <Box css={{ height: '200px', width: 'auto', bc: '$rhythmALime', padding: '20px' }}>( $rhythmALime )</Box>
+          </Grid>
+        </Container>
+      </Section>
+
+      <Section size="3">
+        <Container size="3">
+          <Heading size="2">
+            <strong>rhythm</strong> Type Testing.
+          </Heading>
+          <Heading size="1" css={{ fontFamily: '$inter', fontSize: '13px' }}></Heading>
+
+          <Grid
+            align="center"
+            columns={{ '@initial': 1, '@bp1': 2, '@bp2': 3 }}
+            css={{
+              gap: '8px',
+              placeItems: 'stretch',
+              gridAutoRows: '200px',
+              mb: '$8',
+              fontSize: '12px',
+              fontWeight: '600',
+            }}>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm1' }}>
+              ( $rhythm1 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm2' }}>
+              ( $rhythm2 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm3' }}>
+              ( $rhythm3 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm4' }}>
+              ( $rhythm4 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm5' }}>
+              ( $rhythm5 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm6' }}>
+              ( $rhythm6 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm7' }}>
+              ( $rhythm7 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm8' }}>
+              ( $rhythm8 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm9' }}>
+              ( $rhythm9 )
+            </Text>
+            <Text css={{ fontSize: '24px', fontFamily: '$inter', fontWeight: '700', color: '$rhythm10' }}>
+              ( $rhythm10 )
+            </Text>
           </Grid>
         </Container>
       </Section>

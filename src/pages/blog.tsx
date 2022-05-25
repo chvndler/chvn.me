@@ -52,7 +52,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                 <Heading
                   size="4"
                   css={{
-                    color: '$chvn5',
+                    color: '$rhythm12',
                     fontFamily: '$inter',
                     fontWeight: '700',
                     lineHeight: '1.3',
@@ -74,7 +74,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                 --> */}
                 <Text
                   css={{
-                    color: '$chvn4',
+                    color: '$rhythm10',
                     fontSize: '15px',
                     fontWeight: '500',
                     lineHeight: '1.5',
@@ -88,7 +88,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                 </Text>
                 <Text
                   css={{
-                    color: '$chvn7',
+                    color: '$rhythmPx',
                     fontSize: '15px',
                     fontWeight: '500',
                     lineHeight: '1.3',

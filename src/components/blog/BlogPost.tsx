@@ -12,6 +12,7 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
         <a>
           <Box
             css={{
+              backgroundColor: '$rhythmA2',
               marginTop: '6px',
               marginBottom: '6px',
               paddingLeft: '10px',
@@ -20,8 +21,8 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
               border: '1px solid $chvn1',
               '&:hover': {
                 // backgroundColor: '$sage2',
-                backgroundColor: '$sage5',
-                border: '1px solid $sage3',
+                backgroundColor: '$rhythmA3',
+                border: '1px solid $rhythmA4',
               },
             }}>
             <Box

@@ -16,15 +16,16 @@ export const StyledButton = styled('button', {
   fontFamily: '$untitled',
   fontWeight: 500,
   borderRadius: '$2',
-  fontSize: '12px',
+  fontSize: '13px',
   lineHeight: '$sizes$6',
 
   $$backlight: `
-    0 0 0 2px $colors$orange3,
-    -15px 0 30px -15px $colors$orangeA8,
-    0 0 30px -15px $colors$pinkA8,
-    15px 0 30px -15px $colors$violetA8
+    0 0 0 2px $colors$limeA9,
+    -5px 0 20px -5px $colors$orangeA8,
+    0 0 30px -5px $colors$pinkA8,
+    15px 0 30px -5px $colors$rhythmLx
   `,
+
   color: '$hiContrast',
   bc: 'hsl(0 0% 20%)',
   boxShadow: '$$backlight',
@@ -49,8 +50,8 @@ export const StyledButton = styled('button', {
   variants: {
     variant: {
       contrast: {
-        bc: '$hiContrast',
-        color: '$loContrast',
+        bc: '$rhythm4',
+        color: '$rhythm12',
         '@hover': {
           '&:hover': {
             opacity: 0.9,
@@ -69,10 +70,10 @@ export const StyledButton = styled('button', {
         // <!-- BackLight -->
         [`.${darkTheme} &`]: {
           $$backlight: `
-            0 0 0 1px $colors$limeA9,
+            0 0 0 2px $colors$rhythmPx,
             -5px 0 20px -5px $colors$orangeA8,
             0 0 30px -5px $colors$pinkA8,
-            15px 0 30px -5px $colors$limeA8
+            15px 0 30px -5px $colors$rhythmPx
           `,
           color: '$hiContrast',
           bc: 'hsl(0 0% 6%)',

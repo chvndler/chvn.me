@@ -119,6 +119,7 @@ import {
   bronzeDarkA,
   goldDarkA,
 } from '@radix-ui/colors';
+import { rhythm, rhythmA, rhythmDark, rhythmDarkA } from 'rhythm.color';
 
 ///////////////////////////////
 // Radix Scales.. Use Cases //
@@ -202,6 +203,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
 
       ...whiteA,
       ...blackA,
+
+      ...rhythm,
+      ...rhythmA,
 
       // Custom Colors..
       white: 'hsl(0, 0%, 100%)',
@@ -479,9 +483,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     ox: (value: Stitches.PropertyValue<'overflowX'>) => ({ overflowX: value }),
     oy: (value: Stitches.PropertyValue<'overflowY'>) => ({ overflowY: value }),
 
-    pe: (value: Stitches.PropertyValue<'pointerEvents'>) => ({
-      pointerEvents: value,
-    }),
     us: (value: Stitches.PropertyValue<'userSelect'>) => ({
       WebkitUserSelect: value,
       userSelect: value,
@@ -571,6 +572,9 @@ export const darkTheme = createTheme('darkTheme', {
     ...brownDarkA,
     ...bronzeDarkA,
     ...goldDarkA,
+
+    ...rhythmDark,
+    ...rhythmDarkA,
 
     // Semantic colors
     hiContrast: '$slate12',
