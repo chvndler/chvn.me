@@ -119,7 +119,7 @@ import {
   bronzeDarkA,
   goldDarkA,
 } from '@radix-ui/colors';
-import { rhythm, rhythmA, rhythmDark, rhythmDarkA } from 'rhythm.color';
+import { rhythm, rhythmA } from 'rhythm.color';
 
 ///////////////////////////////
 // Radix Scales.. Use Cases //
@@ -572,9 +572,6 @@ export const darkTheme = createTheme('darkTheme', {
     ...brownDarkA,
     ...bronzeDarkA,
     ...goldDarkA,
-
-    ...rhythmDark,
-    ...rhythmDarkA,
 
     // Semantic colors
     hiContrast: '$slate12',

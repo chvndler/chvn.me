@@ -1,7 +1,6 @@
 import { Box, Heading, Text, Container, Section } from 'atelier.design';
 import { SmallSpacer } from '@/components/space';
 import { CustomContainer } from '@/components/CustomContainer';
-import { Grid } from '@/system';
 import { RhythmColorSystem } from '@/components/RhythmColorSystem';
 
 // APP BEGIN / Components Page
