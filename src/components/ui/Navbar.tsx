@@ -6,7 +6,7 @@ import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
 import { AppBar } from '@/components/ui/AppBar';
-// import { ChvnLogo } from '@/components/ChvnLogo';
+import { AppLogo } from '@/components/AppLogo';
 import { MasterLogo } from '@/components/ui/MasterLogo';
 
 // FUNCTIONS
@@ -61,7 +61,7 @@ export const Navbar = () => {
               chandler
             </Text>
             --> */}
-            <MasterLogo />
+            <AppLogo />
           </Box>
         </Link>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Box, Text, Heading } from 'atelier.design';
 import { SpotifyLogo } from '@/components/SpotifyLogo';
+import { keyframes } from '@stitches/react';
 
 import { styled } from '@stitches/react';
 
@@ -40,9 +41,10 @@ const SpotifyButton = styled('div', {
 */
 
 const Card = styled('div', {
+  transition: 'all .4s ease-in-out',
   display: 'flex',
-  backgroundColor: '$rhythmA4',
-  border: 'solid 1px $slate7',
+  // backgroundColor: '$rhythmA4',
+  // border: 'solid 1px $slate7',
   position: 'relative',
   borderRadius: '18px',
   marginTop: '4px',
@@ -53,7 +55,8 @@ const Card = styled('div', {
   width: 'auto',
 
   '&:hover': {
-    backgroundColor: '$slate7',
+    // transition: 'opacity 0.1s, transform 0.5s',
+    backgroundColor: '$rhythmA3',
   },
 });
 
