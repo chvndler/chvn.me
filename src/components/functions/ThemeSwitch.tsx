@@ -15,26 +15,26 @@ const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',
   width: 32,
   height: 16,
-  backgroundColor: '$chvn4',
+  backgroundColor: '$rhythm3',
   borderRadius: '9999px',
   position: 'relative',
   boxShadow: `0 2px 10px $gray10`,
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
   '&:focus': { boxShadow: `0 0 0 2px black` },
-  '&[data-state="checked"]': { backgroundColor: '$chvn5' },
+  '&[data-state="checked"]': { backgroundColor: '$rhythm6' },
 });
 
 const StyledThumb = styled(SwitchPrimitive.Thumb, {
   display: 'block',
   width: 11,
   height: 11,
-  backgroundColor: '$chvn3',
+  backgroundColor: '$rhythmALime',
   borderRadius: '9999px',
   boxShadow: `0 2px 2px $gray11`,
   transition: 'transform 100ms',
   transform: 'translateX(2px)',
   willChange: 'transform',
-  '&[data-state="checked"]': { backgroundColor: '$chvn3', transform: 'translateX(19px)' },
+  '&[data-state="checked"]': { backgroundColor: '$rhythmPx', transform: 'translateX(19px)' },
 });
 
 // Exports

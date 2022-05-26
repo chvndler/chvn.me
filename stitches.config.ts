@@ -296,7 +296,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       inter: "'Inter', 'sans-serif'",
       olympic: "'Olympic Sans', 'sans-serif'",
       mori: "'Mori Gothic', 'sans-serif'",
-      iaaf: "'IAAF Sans', sans-serif",
+      hyper: "'Atkinson Hyperlegible', 'sans-serif'",
     },
     space: {
       1: '5px',

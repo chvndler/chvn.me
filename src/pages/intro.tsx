@@ -47,7 +47,6 @@ export default function Intro() {
           zIndex: '0',
           overflowY: 'visible',
           overflowX: 'visible',
-          backgroundColor: '$chvn1',
         }}>
         <Head>
           <title>chvn.me/</title>
@@ -58,14 +57,14 @@ export default function Intro() {
             <Heading
               size="3"
               css={{
-                color: '$chvn5',
+                color: '$rhythmA12',
                 lineHeight: 'normal',
                 fontFamily: '$inter',
                 fontWeight: '800',
               }}>
               Chandler Chappell
             </Heading>
-            <Text css={{ color: '$chvn7', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
+            <Text css={{ color: '$rhythm9', fontSize: '16px', fontWeight: '500', lineHeight: 'normal' }}>
               Front-end Developer, Designer, and Director
             </Text>
 

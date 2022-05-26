@@ -5,7 +5,7 @@ import { allBlogs } from 'contentlayer/generated';
 import type { Blog } from 'contentlayer/generated';
 // import { Blog } from 'contentlayer/generated';
 
-export default function Post({ post }: { post: Blog; tweets: any[] }) {
+export default function Post({ post }: { post: Blog }) {
   const Component = useMDXComponent(post.body.code);
 
   return (

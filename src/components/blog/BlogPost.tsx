@@ -39,7 +39,7 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
                   fontFamily: '$inter',
                   marginTop: '5px',
                   marginBottom: '5px',
-                  color: '$chvn7',
+                  color: '$rhythmA12',
                   letterSpacing: '-0.05rem',
                   lineHeight: '1.2',
                   fontWeight: '700',
@@ -49,7 +49,7 @@ export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 
                 }}>
                 {title}
               </Heading>
-              <Text size="2" css={{ color: '$chvn7', lineHeight: '1.4', fontWeight: '500' }}>
+              <Text size="2" css={{ color: '$rhythmA10', lineHeight: '1.4', fontWeight: '500' }}>
                 {summary}
               </Text>
             </Box>

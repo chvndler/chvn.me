@@ -7,7 +7,6 @@ import type { Blog } from 'contentlayer/generated';
 // import { Blog } from 'contentlayer/generated';
 import { TwitterLogo } from '@/components/TwitterLogo';
 import { GitHubIcon } from '@/components/GitHubIcon';
-import { TwitterHashtag } from '@/components/twitter/TwitterHashtag';
 
 import { styled } from 'stitches.config';
 
@@ -18,7 +17,7 @@ const RawContent = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  fontFamily: '$inter',
+  fontFamily: '$hyper',
   lineHeight: '1.3',
 });
 
@@ -39,10 +38,11 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
                 marginTop: '5px',
                 marginBottom: '5px',
                 letterSpacing: '-0.05em',
-                color: '$chvn5',
+                color: '$rhythmA12',
                 lineHeight: 'normal',
                 fontFamily: '$inter',
                 fontWeight: '800',
+                //textTransform: 'uppercase',
                 '&:hover': {
                   opacity: '0.8',
                 },
@@ -51,12 +51,14 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
             </Heading>
 
             <Flex css={{ flexDirection: 'column' }}>
-              <Box css={{ alignItems: 'center' }}>
+              <Box css={{ alignItems: 'center', paddingBottom: '0px' }}>
                 {/* <!-- ADD A COOL BLOG ICON HERE --> */}
                 <Text size="2" css={{ color: '$sage11', lineHeight: '1.4', fontWeight: '500' }}>
                   {'@chv_ndler / '}
                   {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
                 </Text>
+
+                <Text css={{ fontFamily: '$hyper', lineHeight: '1.3', paddingTop: '10px' }}>{post.summary}</Text>
               </Box>
             </Flex>
           </Section>
@@ -87,9 +89,6 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
               <GitHubIcon />
               {` `}
             </Flex>
-            <Box css={{ py: '20px', px: '0', backgroundColor: '$chvn1' }}>
-              <TwitterHashtag tweetTag="#atelier_dsgn" />
-            </Box>
           </Section>
         </article>
       </BlogContainer>

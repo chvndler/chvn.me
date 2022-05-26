@@ -14,7 +14,7 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 // Styles..
 import { reset } from '@/styles/reset';
 import '@/styles/mori-gothic.css';
-import '@/styles/iaaf.css';
+import '@/styles/atkinson-hyperlegible.css';
 import 'inter-ui/inter.css';
 import '@/styles/olympic-sans.css';
 import '@/styles/global.css';

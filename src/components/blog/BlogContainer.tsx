@@ -1,6 +1,22 @@
 import Head from 'next/head';
 
-import { CustomContainer } from '@/components/CustomContainer';
+import { styled } from 'stitches.config';
+
+// Container..
+const BlogWidthContainer = styled('div', {
+  // Reset
+  boxSizing: 'border-box',
+  flexShrink: 0,
+  maxWidth: '700px',
+  padding: '8px',
+  margin: 'auto',
+
+  // Custom
+  ml: 'auto',
+  mr: 'auto',
+  px: '$5',
+  mt: '0',
+});
 
 export default function BlogContainer(props) {
   const { children } = props;
@@ -20,7 +36,7 @@ export default function BlogContainer(props) {
         <meta property="og:type" content={meta.type} />
       </Head>
       <main>
-        <CustomContainer>{children}</CustomContainer>
+        <BlogWidthContainer>{children}</BlogWidthContainer>
       </main>
     </>
   );
