@@ -18,6 +18,7 @@ import '@/styles/atkinson-hyperlegible.css';
 import 'inter-ui/inter.css';
 import '@/styles/olympic-sans.css';
 import '@/styles/global.css';
+import '@/styles/dracula-prism.css';
 
 const appWrapper = css({
   include: ['box', 'minHeightScreen'],

@@ -3,6 +3,12 @@ import * as React from 'react';
 
 import { Container, Box, Flex } from '@/system';
 import { ThemeImage } from '@/components/ThemeImage';
+import { styled } from '@stitches/react';
+
+export const StyledLink = styled('a', {
+  fontFamily: '$hyper',
+  fontWeight: 'bold',
+});
 
 const CustomLink = props => {
   const href = props.href;
@@ -10,9 +16,13 @@ const CustomLink = props => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...props}>{props.children}</a>
-      </Link>
+      <>
+        <StyledLink>
+          <Link href={href}>
+            <a {...props}>{props.children}</a>
+          </Link>
+        </StyledLink>
+      </>
     );
   }
 
