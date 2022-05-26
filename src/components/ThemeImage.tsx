@@ -2,11 +2,12 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Box } from '@/system';
 
+/*
 type ThemeImageProps = {
   alt?: string;
 };
-
-export const ThemeImage = ({ alt, ...props }: ThemeImageProps) => {
+*/
+export const ThemeImage = ({ ...props }) => {
   const { theme } = useTheme();
 
   return (
