@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Box, Text, Heading } from 'atelier.design';
 import { SpotifyLogo } from '@/components/SpotifyLogo';
-import { keyframes } from '@stitches/react';
+// import { keyframes } from '@stitches/react';
 
 import { styled } from '@stitches/react';
 

@@ -6,14 +6,8 @@ import 'intersection-observer';
 import { Box } from '@/system/box';
 
 import { styled } from '@stitches/react';
-import { keyframes } from '@stitches/react';
 
 const imagePrefix = `https://cdn.ady.systems`;
-
-const scaleUp = keyframes({
-  '0%': { transform: 'scale(1)' },
-  '100%': { transform: 'scale(1.2)' },
-});
 
 const Title = styled('div', {
   // mixBlendMode: 'difference',
@@ -63,7 +57,7 @@ const Card = styled('div', {
 
   '&:hover': {
     // color: '$slate1',
-    animation: '${scaleUp} 200ms',
+    //   animation: '${scaleUp} 200ms',
     background: '$rhythmA3',
     boxShadow: '1px 5px 0 6px $rhythm12',
   },

@@ -7,7 +7,6 @@ import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
 import { AppBar } from '@/components/ui/AppBar';
 import { AppLogo } from '@/components/AppLogo';
-import { MasterLogo } from '@/components/ui/MasterLogo';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
