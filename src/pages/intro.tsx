@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Box, Text, Heading } from '@/system';
+import { CoverFooter } from '@/components/ui/CoverFooter';
 // import { SocialLinks } from '@/components/SocialLinks';
 
 import { styled } from 'stitches.config';
@@ -71,6 +72,8 @@ export default function Intro() {
             {/* <!-- <SocialLinks /> --> */}
           </TextBox>
         </CoverBox>
+
+        <CoverFooter />
       </Box>
     </>
   );
