@@ -44,7 +44,7 @@ const Card = styled('div', {
   display: 'flex',
   backgroundColor: '$rhythmA2',
   color: '$rhythm3',
-  // border: 'solid 1px $rhythmA7',
+  border: 'solid 1px $rhythmA4',
   position: 'relative',
   borderRadius: '20px',
   marginTop: '0',
@@ -53,13 +53,13 @@ const Card = styled('div', {
   alignItems: 'left',
   webkitScrollbar: 'none',
   height: '140px',
-  boxShadow: '1px 1px 0 3px $rhythm12',
+  // boxShadow: '1px 1px 1px 1px $colors$rhythm12',
 
   '&:hover': {
     // color: '$slate1',
     //   animation: '${scaleUp} 200ms',
-    background: '$rhythmA3',
-    boxShadow: '1px 5px 0 6px $rhythm12',
+    background: '$rhythmPx',
+    // boxShadow: '1px 1px 0 1px $colors$rhythm12',
   },
 });
 

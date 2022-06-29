@@ -3,7 +3,7 @@ import { Text } from '@/system/text';
 
 export const IntroLink = styled('a', {
   alignItems: 'center',
-  fontFamily: '$olympic',
+  // fontFamily: '$olympic',
   fontSize: 'inherit',
   fontWeight: 'inherit',
   gap: '$1',
@@ -34,6 +34,15 @@ export const IntroLink = styled('a', {
   },
   variants: {
     variant: {
+      hyper: {
+        color: '$rhythm11',
+        fontFamily: '$hyper',
+        // fontStyle: 'italic',
+        textDecoration: 'none',
+        '&:focus': {
+          outlineColor: '$slate8',
+        },
+      },
       subtle: {
         color: '$bronze9',
         fontStyle: 'italic',

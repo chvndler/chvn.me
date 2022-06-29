@@ -1,5 +1,5 @@
 import timeline from '@/projects/timeline.json';
-import Link from 'next/link';
+import { Flex } from '@/system/flex';
 import { styled } from 'stitches.config';
 
 interface TimelineEntries {
@@ -14,22 +14,32 @@ interface TimelineEntries {
 }
 
 const Table = styled('table', {
-  fontFamily: 'inherit',
+  fontFamily: '$olympic',
   width: '100%',
+  minWidth: '100%',
   borderCollapse: 'initial',
   WebkitBorderHorizontalSpacing: '0',
 });
-
+const TableBody = styled('tbody', {
+  width: '100%',
+});
+const TitleLink = styled('a', {
+  fontFamily: '$inter',
+  fontSize: '13px',
+  fontWeight: '800',
+  lineHeight: '10px',
+});
 const Description = styled('p', {
   fontFamily: '$inter',
-  fontSize: '14px',
+  fontSize: '13px',
   fontWeight: '400',
+  lineHeight: 'normal',
 });
 const Year = styled('div', {
   fontFamily: '$inter',
-  fontSize: '15px',
+  fontSize: '13px',
   fontWeight: '600',
-  paddingRight: '10px',
+  paddingRight: '20px',
 });
 
 export const Timeline = () => {
@@ -50,29 +60,30 @@ export const Timeline = () => {
   return (
     <>
       <Table>
-        <tbody>
+        <TableBody>
           {Object.keys(orderedData)
             .sort()
             .reverse()
             .map(year => {
               return orderedData[year].map((entry, index) => (
-                <tr key={`${year}-${index}`}>
-                  {index === 0 ? (
-                    <th>
-                      <Year>{year}</Year>
-                    </th>
-                  ) : (
-                    <td />
-                  )}
-                  <td>
-                    <Link href={entry.url}>{entry.title}</Link>
-
-                    <Description>{entry.description}</Description>
-                  </td>
-                </tr>
+                <Flex css={{ flexDirection: 'row', minWidth: '100%' }}>
+                  <tr key={`${year}-${index}`}>
+                    {index === 0 ? (
+                      <th>
+                        <Year>{year}</Year>
+                      </th>
+                    ) : (
+                      <td />
+                    )}
+                    <td>
+                      <TitleLink href={entry.url}>{entry.title}</TitleLink>
+                      <Description>{entry.description}</Description>
+                    </td>
+                  </tr>
+                </Flex>
               ));
             })}
-        </tbody>
+        </TableBody>
       </Table>
     </>
   );

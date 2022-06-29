@@ -5,7 +5,6 @@ import NextLink from 'next/link';
 import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { Text } from '@/system/text';
-import { Link } from '@/system/link';
 
 export const CoverFooter = () => {
   return (
@@ -21,10 +20,10 @@ export const CoverFooter = () => {
           left: '0',
           right: '0',
           margin: '0',
-          backgroundColor: '$translucent',
+          backgroundColor: 'transparent',
           width: '100vw',
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
+          // backdropFilter: 'blur(10px)',
+          // WebkitBackdropFilter: 'blur(10px)',
           saturate: '300%',
 
           zIndex: '9999',

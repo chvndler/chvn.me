@@ -9,6 +9,13 @@ export const Text = styled('span', {
   display: 'block',
 
   variants: {
+    font: {
+      hyper: {
+        fontFamily: '$hyper',
+        fontSize: '16px',
+        lineHeight: '1.3',
+      },
+    },
     size: {
       '1': {
         fontSize: '$1',

@@ -16,3 +16,19 @@ export const CustomContainer = styled('div', {
   px: '$5',
   mt: '0',
 });
+
+// Container..
+export const ChvnContainer = styled('div', {
+  // Reset
+  boxSizing: 'border-box',
+  flexShrink: 0,
+  maxWidth: '650px',
+  padding: '8px',
+  margin: 'auto',
+
+  // Custom
+  ml: 'auto',
+  mr: 'auto',
+  px: '$5',
+  mt: '0',
+});

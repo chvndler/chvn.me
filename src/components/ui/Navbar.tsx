@@ -6,7 +6,7 @@ import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
 import { AppBar } from '@/components/ui/AppBar';
-import { AppLogo } from '@/components/AppLogo';
+import { ChvnLogo } from '@/components/ChvnLogo';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
@@ -33,6 +33,7 @@ export const Navbar = () => {
           zIndex: '9999',
         }}>
         {/* <!-- LOGO SECTION --> */}
+
         <Link href="/" passHref>
           <Box
             as="a"
@@ -60,7 +61,7 @@ export const Navbar = () => {
               chandler
             </Text>
             --> */}
-            <AppLogo />
+            <ChvnLogo />
           </Box>
         </Link>
 
@@ -88,7 +89,7 @@ export const Navbar = () => {
                   color: '$blue10',
                 },
               }}>
-              blog
+              journal
             </NewLink>
           </Link>
 
@@ -142,7 +143,7 @@ export const Navbar = () => {
                   color: '$orange9',
                 },
               }}>
-              film
+              ideas
             </NewLink>
           </Link>
         </Flex>

@@ -6,7 +6,7 @@ const Index = () => {
 
   // Redirect to /cover
   useEffect(() => {
-    router.replace('/intro');
+    router.replace('/chvn');
   });
 
   return null;
