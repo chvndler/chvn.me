@@ -13,7 +13,7 @@ export const CurrentProjects = () => {
   return (
     <>
       {/* <!-- Current Projects.. --> */}
-      <Section size="2" css={{ paddingTop: '0', paddingBottom: '80px' }}>
+      <Section size="2" css={{ paddingTop: '0', paddingBottom: '40px' }}>
         <Grid
           css={{
             gap: '4px',

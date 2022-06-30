@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import { Box } from '@/system/box';
 import { Heading } from '@/system/heading';
@@ -8,7 +9,8 @@ import { MediumSpacer } from '@/components/space';
 import { Text } from '@/system/text';
 import { ChvnContainer } from '@/components/CustomContainer';
 import { CoverFooter } from '@/components/ui/CoverFooter';
-
+import { MarketingButton } from '@/components/MarketingButton';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CurrentProjects } from '@/components/CurrentProjects';
 
 export default function Chvn() {
@@ -39,23 +41,39 @@ export default function Chvn() {
 
           <ChvnContainer>
             <Heading
-              size="2"
+              size="1"
               css={{
                 color: '$rhythm00',
                 fontFamily: '$inter',
-                fontWeight: '500',
+                fontWeight: '600',
                 lineHeight: '2.5',
-                letterSpacing: '-0.15rem',
+                letterSpacing: '-0.05rem',
                 marginBottom: '10px',
-                marginLeft: '8px',
+                marginLeft: '4px',
               }}>
-              Projects
+              Current Projects
             </Heading>
 
             <CurrentProjects />
+
+            <Box
+              css={{
+                paddingTop: '5px',
+                paddingLeft: '8px',
+                paddingBottom: '60px',
+                width: '100%',
+                alignItems: 'center',
+                // textAlign: 'center',
+                margin: 'auto',
+              }}>
+              <Link href="https://github.com/chvndler" passHref>
+                <MarketingButton as="a" icon={ArrowRightIcon}>
+                  GitHub
+                </MarketingButton>
+              </Link>
+            </Box>
           </ChvnContainer>
         </Box>
-
         <CoverFooter />
       </Box>
     </>
