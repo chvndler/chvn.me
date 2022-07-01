@@ -7,6 +7,7 @@ import { Box } from 'atelier.design';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
+import { Header } from '@/ui/Header';
 
 // stitches.config
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -63,7 +64,8 @@ const App = ({ Component, pageProps }: AppProps) => {
           value={{ light: 'light-theme', dark: darkTheme.className }}
           defaultTheme="light">
           <Box css={{ zIndex: '0' }}>
-            <Navbar />
+            {/* <!-- <Navbar /> --> */}
+            <Header />
             <div
               className={appWrapper({
                 display: 'flex',
