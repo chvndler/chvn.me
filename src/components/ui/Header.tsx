@@ -27,7 +27,7 @@ const LogoBox = styled('div', {
   zIndex: '999',
 });
 
-const LogoLink = styled('div', {
+const LogoLink = styled('a', {
   color: '$rhythm11',
   fontFamily: '$inter',
   fontSize: '13px',
@@ -122,7 +122,7 @@ export const Header = () => {
                 fontFamily: '$inter',
                 fontSize: '13px',
                 fontWeight: 'normal',
-                lineHeight: 'normal',
+
                 textDecoration: 'none',
 
                 '&:hover': {
@@ -140,7 +140,7 @@ export const Header = () => {
                 fontFamily: '$inter',
                 fontSize: '13px',
                 fontWeight: 'normal',
-                lineHeight: 'normal',
+
                 textDecoration: 'none',
 
                 '&:hover': {
@@ -158,7 +158,7 @@ export const Header = () => {
                 fontFamily: '$inter',
                 fontSize: '13px',
                 fontWeight: 'normal',
-                lineHeight: 'normal',
+
                 textDecoration: 'none',
 
                 '&:hover': {
