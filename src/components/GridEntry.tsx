@@ -42,9 +42,10 @@ const EntryLink = styled('a', {
 const Card = styled('div', {
   transition: 'all .4s ease-in-out',
   display: 'flex',
-  backgroundColor: '$rhythmA2',
+  // backgroundColor: '$rhythmA2',
+  backgroundColor: '$translucent',
   color: '$rhythm3',
-  border: 'solid 1px $rhythmA4',
+ // border: 'solid 1px $rhythmA4',
   position: 'relative',
   borderRadius: '20px',
   marginTop: '0',

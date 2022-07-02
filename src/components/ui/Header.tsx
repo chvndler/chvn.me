@@ -114,7 +114,7 @@ export const Header = () => {
 
           <NavLinks>
             <NewLink
-              href="/"
+              href="/blog"
               css={{
                 lineHeight: 'normal',
                 marginRight: '12px',
@@ -132,7 +132,7 @@ export const Header = () => {
               blog
             </NewLink>
             <NewLink
-              href="/"
+              href="/projects"
               css={{
                 lineHeight: 'normal',
                 marginRight: '12px',
@@ -150,7 +150,7 @@ export const Header = () => {
               projects
             </NewLink>
             <NewLink
-              href="/"
+              href="/me"
               css={{
                 lineHeight: 'normal',
                 marginRight: '12px',
