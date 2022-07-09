@@ -47,7 +47,7 @@ const Card = styled('div', {
   color: '$rhythm3',
   border: 'solid 1px $rhythmA4',
   position: 'relative',
-  borderRadius: '20px',
+  borderRadius: '12px',
   marginTop: '0',
   marginBottom: '0',
   padding: '18px',

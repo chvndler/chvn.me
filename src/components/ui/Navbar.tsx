@@ -3,9 +3,10 @@ import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM
 import { Box } from '@/system/box';
+import { Text } from '@/system/text';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
-import { AppBar } from '@/components/ui/AppBar';
+// import { AppBar } from '@/components/ui/AppBar';
 import { ChvnLogo } from '@/components/ChvnLogo';
 
 // FUNCTIONS
@@ -15,7 +16,7 @@ import { PopoverPanel } from '@/functions/PopoverPanel';
 export const Navbar = () => {
   return (
     <>
-      <AppBar />
+      {/* <!-- <AppBar /> --> */}
       <Flex
         as="header"
         css={{
@@ -47,21 +48,20 @@ export const Navbar = () => {
               },
               '@bp2': { ml: '12px' },
             }}>
-            {/* <!--
             <Text
               css={{
                 zIndex: '999',
                 fontWeight: 'bold',
                 fontFamily: '$mori',
-                fontSize: '18px',
+                fontSize: '14px',
                 color: '$chvn4',
                 lineHeight: '48px',
                 letterSpacing: '-0.03rem',
               }}>
-              chandler
+              Chandler.Ch®
             </Text>
-            --> */}
-            <ChvnLogo />
+
+            {/* <!--  <ChvnLogo /> --> */}
           </Box>
         </Link>
 

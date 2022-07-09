@@ -65,7 +65,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           defaultTheme="light">
           <Box css={{ zIndex: '0' }}>
             {/* <!-- <Navbar /> --> */}
-            <Header />
+            <Navbar />
             <div
               className={appWrapper({
                 display: 'flex',
