@@ -6,7 +6,6 @@ import { Box } from '@/system/box';
 import { Text } from '@/system/text';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
-// import { AppBar } from '@/components/ui/AppBar';
 import { ChvnLogo } from '@/components/ChvnLogo';
 
 // FUNCTIONS
@@ -16,7 +15,6 @@ import { PopoverPanel } from '@/functions/PopoverPanel';
 export const Navbar = () => {
   return (
     <>
-      {/* <!-- <AppBar /> --> */}
       <Flex
         as="header"
         css={{

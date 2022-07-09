@@ -80,12 +80,7 @@ export const ProjectEntry = ({ title, description, image, href }) => {
             '&::before': {},
             '&::after': {},
           }}>
-          <EntryLink
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            ref={ref}
-            title={`${title} - ${description}`}>
+          <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
             <section>
               <Box
                 css={{

@@ -28,15 +28,7 @@ export const CurrentPrjcts = () => {
             },
           }}>
           {items.map(entry => {
-            return (
-              <ProjectEntry
-                key={entry.title}
-                title={entry.title}
-                image={entry.image}
-                href={entry.url}
-                description={entry.description}
-              />
-            );
+            return <ProjectEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
           })}
         </Grid>
       </Section>

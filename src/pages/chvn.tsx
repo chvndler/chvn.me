@@ -23,9 +23,7 @@ export default function Chvn() {
 
         <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
           <ChvnContainer>
-            <Heading
-              size="3"
-              css={{ fontFamily: '$inter', fontWeight: '500', letterSpacing: '-0.14rem', marginBottom: '20px' }}>
+            <Heading size="3" css={{ fontFamily: '$inter', fontWeight: '500', letterSpacing: '-0.14rem', marginBottom: '20px' }}>
               <strong>Chandler</strong>.Ch®
             </Heading>
             <Text font="hyper" css={{ color: '$rhythm12' }}>
@@ -33,8 +31,8 @@ export default function Chvn() {
               <IntroLink variant="hyper" href="https://ady.world" target="_blank" rel="norefferer">
                 Atelier Design®
               </IntroLink>{' '}
-              to calm the noise within the design culture. I enjoy exploring– finding, and learning new tech
-              advancements, developing beautiful user interfaces, and have a passion for building brands.
+              to calm the noise within the design culture. I enjoy exploring– finding, and learning new tech advancements, developing beautiful user
+              interfaces, and have a passion for building brands.
             </Text>
           </ChvnContainer>
           <MediumSpacer />
