@@ -119,7 +119,7 @@ import {
   bronzeDarkA,
   goldDarkA,
 } from '@radix-ui/colors';
-import { rhythm, rhythmA } from 'rhythm.color';
+import { rhythm, rhythmA, rhythmDark, rhythmDarkA } from 'rhythm.color';
 
 ///////////////////////////////
 // Radix Scales.. Use Cases //
@@ -223,38 +223,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chvn6: '#2b4570',
       chvn7: '#413a3c',
 
-      // Rhythm Colour System (Light)
-      rhythm1: 'hsl(300, 20.0%, 99.0%)',
-      rhythm2: 'hsl(300, 7.7%, 97.5%)',
-      rhythm3: 'hsl(294, 5.5%, 95.3%)',
-      rhythm4: 'hsl(289, 4.7%, 93.3%)',
-      rhythm5: 'hsl(283, 4.4%, 91.3%)',
-      rhythm6: 'hsl(278, 4.1%, 89.1%)',
-      rhythm7: 'hsl(271, 3.9%, 86.3%)',
-      rhythm8: 'hsl(255, 3.7%, 78.8%)',
-      rhythm9: 'hsl(252, 4.0%, 57.3%)',
-      rhythm10: 'hsl(253, 3.5%, 53.5%)',
-      rhythm11: 'hsl(252, 4.0%, 44.8%)',
-      rhythm12: 'hsl(195, 100%, 13.0%)',
-      rhythm00: 'hsl(0, 0%, 9.0%)',
+      // rhythm00: 'hsl(0, 0%, 9.0%)',
       rhythmLx: 'hsl(95, 98%, 63%)',
       rhythmPx: 'hsl(312, 44.0%, 44.0%)',
-
-      // Rhythm Alphas (Light)
-      rhythmA1: 'hsla(300, 89.3%, 18.3%, 0.012)',
-      rhythmA2: 'hsla(300, 78.1%, 9.0%, 0.028)',
-      rhythmA3: 'hsla(300, 99.5%, 7.7%, 0.051)',
-      rhythmA4: 'hsla(270, 90.5%, 6.1%, 0.071)',
-      rhythmA5: 'hsla(270, 83.0%, 5.2%, 0.091)',
-      rhythmA6: 'hsla(300, 93.5%, 3.7%, 0.114)',
-      rhythmA7: 'hsla(270, 82.6%, 3.3%, 0.142)',
-      rhythmA8: 'hsla(255, 95.2%, 3.7%, 0.220)',
-      rhythmA9: 'hsla(255, 94.8%, 3.7%, 0.444)',
-      rhythmA10: 'hsla(253, 96.5%, 3.8%, 0.483)',
-      rhythmA11: 'hsla(247, 97.9%, 3.2%, 0.569)',
-      rhythmA12: 'hsla(196, 100%, 12.2%, 0.980)',
-      rhythmA00: 'hsla(0, 0%, 0%, 0.910)',
-      rhythmALime: 'hsla(95, 98%, 63%, 0.8)',
 
       // SuperLime..
       superLime0: '#ebffe9',
@@ -573,6 +544,9 @@ export const darkTheme = createTheme('darkTheme', {
     ...bronzeDarkA,
     ...goldDarkA,
 
+    ...rhythmDark,
+    ...rhythmDarkA,
+
     // Semantic colors
     hiContrast: '$slate12',
     loContrast: '$slate1',
@@ -596,39 +570,6 @@ export const darkTheme = createTheme('darkTheme', {
     chvn5: '#cefe71',
     chvn6: '#cccab8',
     chvn7: '#f1f1f1',
-
-    // Rhythm Colour System (Dark)
-    rhythm1: 'hsl(246, 6.0%, 9.0%)',
-    rhythm2: 'hsl(240, 5.1%, 11.6%)',
-    rhythm3: 'hsl(241, 5.0%, 14.3%)',
-    rhythm4: 'hsl(242, 4.9%, 16.5%)',
-    rhythm5: 'hsl(243, 4.9%, 18.8%)',
-    rhythm6: 'hsl(244, 4.9%, 21.5%)',
-    rhythm7: 'hsl(245, 4.9%, 25.4%)',
-    rhythm8: 'hsl(247, 4.8%, 32.5%)',
-    rhythm9: 'hsl(252, 4.0%, 45.2%)',
-    rhythm10: 'hsl(247, 3.4%, 50.7%)',
-    rhythm11: 'hsl(253, 4.0%, 63.7%)',
-    rhythm12: 'hsl(256, 6.0%, 93.2%)',
-    rhythm00: 'hsl(0, 0%, 93.0%)',
-    rhythmLx: 'hsla(95, 95%, 89%, 64%)',
-    rhythmPx: 'hsla(312, 95%, 44.0%, 44.0%)',
-
-    // Rhythm Alphas (Dark)
-    rhythmA1: 'hsla(0, 0%, 0%, 0)',
-    rhythmA2: 'hsla(240, 76.7%, 91.2%, 0.031)',
-    rhythmA3: 'hsla(240, 86.0%, 95.8%, 0.061)',
-    rhythmA4: 'hsla(240, 91.8%, 94.7%, 0.087)',
-    rhythmA5: 'hsla(240, 91.5%, 95.8%, 0.113)',
-    rhythmA6: 'hsla(240, 92.0%, 93.8%, 0.148)',
-    rhythmA7: 'hsla(240, 94.8%, 95.3%, 0.191)',
-    rhythmA8: 'hsla(249, 98.1%, 95.2%, 0.273)',
-    rhythmA9: 'hsla(248, 97.6%, 96.2%, 0.416)',
-    rhythmA10: 'hsla(248, 95.5%, 96.6%, 0.477)',
-    rhythmA11: 'hsla(250, 98.0%, 98.0%, 0.615)',
-    rhythmA12: 'hsla(240, 93.9%, 99.6%, 0.931)',
-    rhythmA00: 'hsla(0, 0%, 100%, 0.923)',
-    rhythmALime: 'hsla(95, 98%, 63%, 0.8)',
 
     // SuperLime..
     superLime0: '#ebffe9',

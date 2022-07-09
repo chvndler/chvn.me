@@ -24,10 +24,10 @@ export const StyledButton = styled('button', {
   boxShadow: '$$backlight',
 
   $$backlight: `
-    0 0 0 2px $colors$rhythmALime,
-    -5px 0 20px -5px $colors$rhythmALime,
-    0 0 30px -5px $colors$rhythmALime,
-    15px 0 30px -5px $colors$rhythmALime
+    0 0 0 2px $colors$purpleA6,
+    -5px 0 20px -5px $colors$purpleA9,
+    0 0 30px -5px $colors$redA8,
+    15px 0 30px -5px $colors$purpleA8
   `,
 
   '&:focus': {

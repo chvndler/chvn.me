@@ -11,7 +11,7 @@ import { ChvnContainer } from '@/components/CustomContainer';
 import { CoverFooter } from '@/components/ui/CoverFooter';
 import { MarketingButton } from '@/components/MarketingButton';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { CurrentProjects } from '@/components/CurrentProjects';
+import { CurrentPrjcts } from '@/components/alternates/CurrentPrjcts';
 
 export default function Chvn() {
   return (
@@ -54,7 +54,7 @@ export default function Chvn() {
               Current Projects
             </Heading>
 
-            <CurrentProjects />
+            <CurrentPrjcts />
 
             <Box
               css={{
