@@ -18,13 +18,13 @@ module.exports = withContentlayer({
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.ady.systems;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.ady.systems fonts.googleapis.com;
     child-src *.youtube.com *.google.com *.twitter.com;
-    style-src 'self' 'unsafe-inline' *.ady.systems cdn.ady.systems i.scdn.co *.scdn.co;
+    style-src 'self' 'unsafe-inline' *.ady.systems cdn.ady.systems i.scdn.co *.scdn.co fonts.googleapis.com;
     img-src * blob: data:;
     media-src 'none' *.scdn.co;
     connect-src *;
-    font-src 'self' *.ady.systems cdn.ady.systems;
+    font-src 'self' *.ady.systems cdn.ady.systems fonts.googleapis.com;
 `;
 
 const securityHeaders = [

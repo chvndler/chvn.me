@@ -16,21 +16,7 @@ export default class Document extends NextDocument {
           <link rel="amphtml" href="https://chvn.me" />
           <link rel="canonical" href="https://chvn.me" />
 
-          <link
-            rel="preload"
-            href="/fonts/AtkinsonHyperlegible-Regular.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
-
-          <link
-            rel="preload"
-            href="/fonts/AtkinsonHyperlegible-Bold.woff2"
-            as="font"
-            type="font/woff2"
-            crossOrigin="anonymous"
-          />
+          <link rel="preload" href="/fonts/AeroportMono.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
           <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
           <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
