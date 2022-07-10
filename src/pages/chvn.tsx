@@ -18,7 +18,7 @@ export default function Chvn() {
     <>
       <Box css={{}}>
         <Head>
-          <title>Blog - chvn.me/</title>
+          <title>chvn.me/</title>
         </Head>
 
         <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>

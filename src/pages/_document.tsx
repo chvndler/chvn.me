@@ -36,8 +36,9 @@ export default class Document extends NextDocument {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
 
-          {/* <!-- Preload Jetbrains for CodeBlocks --> */}
+          {/* <!-- Preload Jetbrains for CodeBlocks
           <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+          --> */}
 
           <meta name="googlebot" content="follow, index, noarchive" />
           <meta name="robots" content="follow, index, noarchive" />
