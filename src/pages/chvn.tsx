@@ -26,9 +26,9 @@ export default function Chvn() {
             <Heading size="3" css={{ fontFamily: '$inter', fontWeight: '500', letterSpacing: '-0.14rem', marginBottom: '20px' }}>
               <strong>Chandler</strong>.Ch®
             </Heading>
-            <Text font="hyper" css={{ color: '$rhythm12' }}>
+            <Text font="aero" css={{ color: '$rhythm12', fontSize: '13px', fontFamily: '$aeroportMono' }}>
               I’m a Front-end developer & designer based in Charlotte, NC– I am currently building{' '}
-              <IntroLink variant="hyper" href="https://ady.world" target="_blank" rel="norefferer">
+              <IntroLink variant="aero" href="https://ady.world" target="_blank" rel="norefferer">
                 Atelier Design®
               </IntroLink>{' '}
               to calm the noise within the design culture. I enjoy exploring– finding, and learning new tech advancements, developing beautiful user
@@ -61,7 +61,6 @@ export default function Chvn() {
                 paddingBottom: '60px',
                 width: '100%',
                 alignItems: 'center',
-                // textAlign: 'center',
                 margin: 'auto',
               }}>
               <Link href="https://github.com/chvndler" passHref>

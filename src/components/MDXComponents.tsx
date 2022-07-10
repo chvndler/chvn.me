@@ -1,33 +1,9 @@
-import Link from 'next/link';
 import * as React from 'react';
 
 import { Container, Box, Flex } from '@/system';
 import { ThemeImage } from '@/components/ThemeImage';
-import { styled } from '@stitches/react';
-
-export const StyledLink = styled('a', {
-  fontFamily: '$hyper',
-  fontWeight: 'bold',
-});
-
-const CustomLink = props => {
-  const href = props.href;
-  const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
-
-  if (isInternalLink) {
-    return (
-      <>
-        <StyledLink>
-          <Link href={href}>
-            <a {...props}>{props.children}</a>
-          </Link>
-        </StyledLink>
-      </>
-    );
-  }
-
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
-};
+import BlogLink from '@/components/blog/BlogLink';
+import BlogFlex from '@/components/blog/BlogFlex';
 
 function Callout(props) {
   return (
@@ -53,7 +29,8 @@ function Callout(props) {
 }
 
 const MDXComponents = {
-  a: CustomLink,
+  BlogFlex,
+  BlogLink,
   Callout,
   ThemeImage,
 };

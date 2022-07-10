@@ -1,16 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM
 import { Box } from '@/system/box';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
-// import { AppBar } from '@/components/ui/AppBar';
-// import { ChvnLogo } from '@/components/ChvnLogo';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
-// import { PopoverPanel } from '@/functions/PopoverPanel';
 
 // ATELIER® DESIGN SYSTEM
 import { styled } from 'stitches.config';

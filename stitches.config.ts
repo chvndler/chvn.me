@@ -268,6 +268,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       olympic: "'Olympic Sans', 'sans-serif'",
       mori: "'Mori Gothic', 'sans-serif'",
       hyper: "'Atkinson Hyperlegible', 'sans-serif'",
+      mono: "'Monument Grotesk Semi-Mono', monospaced",
+      aeroportMono: "'Aeroport Mono', monospaced",
+      readex: "'Readex Pro', sans-serif",
     },
     space: {
       1: '5px',

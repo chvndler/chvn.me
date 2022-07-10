@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 // ATELIER® DESIGN SYSTEM
 import { Box } from '@/system/box';
-import { Text } from '@/system/text';
+import { Text } from '@/system';
 import { Flex } from '@/system/flex';
 import { NewLink } from '@/system/newlink';
-import { ChvnLogo } from '@/components/ChvnLogo';
+// import { ChvnLogo } from '@/components/ChvnLogo';
 
 // FUNCTIONS
 import { ThemeSwitch } from '@/functions/ThemeSwitch';
@@ -47,16 +47,17 @@ export const Navbar = () => {
               '@bp2': { ml: '12px' },
             }}>
             <Text
+              font="aero"
               css={{
                 zIndex: '999',
-                fontWeight: 'bold',
-                fontFamily: '$mori',
-                fontSize: '14px',
+                // fontWeight: 'bold',
+                fontFamily: '$aeroportMono',
+                fontSize: '15px',
                 color: '$chvn4',
                 lineHeight: '48px',
                 letterSpacing: '-0.03rem',
               }}>
-              Chandler.Ch®
+              chvn.me/
             </Text>
 
             {/* <!--  <ChvnLogo /> --> */}

@@ -6,7 +6,8 @@ import { InferGetStaticPropsType } from 'next';
 import { pick } from '@/lib/utils';
 import { allBlogs } from 'contentlayer/generated';
 
-import { Box, Badge, Section, Text } from 'atelier.design';
+import { Badge, Section } from 'atelier.design';
+import { Box, Text } from '@/system';
 import { TextField } from '@/components/TextField';
 import { Heading } from '@/system/heading';
 import { AlternateFooter } from '@/ui/AlternateFooter';
@@ -23,7 +24,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
         </Head>
 
         <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
-          <BlogContainer title="Blog – Chandler CHappell" description="Notes, thoughts, and ideas.">
+          <BlogContainer title="Blog – Chandler Chappell" description="Notes, thoughts, and ideas.">
             <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
               <Section
                 size="1"
@@ -50,53 +51,41 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
                   },
                 }}>
                 <Heading
-                  size="4"
+                  size="2"
                   css={{
                     color: '$rhythm12',
                     fontFamily: '$inter',
                     fontWeight: '700',
-                    lineHeight: '1.3',
-                    paddingBottom: '6px',
-                  }}>
-                  blog
-                </Heading>
-                {/* <!--
-                <Text
-                  css={{
-                    color: '$chvn4',
-                    fontFamily: '$inter',
-                    fontSize: '15px',
-                    fontWeight: '700',
                     lineHeight: '1.5',
+                    paddingBottom: '18px',
                   }}>
-                  Notes, Thoughts, and Ideas.
-                </Text>
-                --> */}
+                  journal
+                </Heading>
+
                 <Text
                   css={{
                     color: '$rhythm10',
-                    fontSize: '15px',
+                    fontFamily: '$readex',
+                    fontSize: '13px',
                     fontWeight: '500',
                     lineHeight: '1.5',
                     marginBottom: '20px',
                   }}>
-                  This blog is a record of what I've learned along the way and a rough draft of things yet to come.
+                  This journal will document my thoughts, ideas, notes, and any resources that have shaped me as a designer & developer. I plan to
+                  also use this space as my own knowledge base for all things dev. My favorite posts are pinned to the top under "Popular".
                   <br />
-                  My favorite/popular posts are pinned to the top under "Popular".
-                  <br />
-                  Ideas that I may be drafting or developing are marked with "©".
+                  <br />© Copyright 2022. All Rights Reserved.
                 </Text>
                 <Text
+                  font="aero"
                   css={{
                     color: '$rhythmPx',
-                    fontSize: '15px',
+                    fontSize: '14px',
                     fontWeight: '500',
                     lineHeight: '1.3',
-                  }}>{`${posts.length} stories, for you.`}</Text>
+                  }}>{`entry count: 00${posts.length}`}</Text>
 
-                <Text
-                  size="1"
-                  css={{ paddingTop: '20px', fontSize: '15px', color: '$chvn7', fontWeight: '500', lineHeight: '2.2' }}>
+                <Text size="1" css={{ paddingTop: '20px', fontSize: '15px', color: '$chvn7', fontWeight: '500', lineHeight: '2.2' }}>
                   Use the search bar to filter by title.
                 </Text>
               </Section>

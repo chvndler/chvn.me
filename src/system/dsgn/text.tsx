@@ -4,12 +4,23 @@ export const Text = styled('span', {
   // Reset
   lineHeight: '1',
   margin: '0',
-  fontFamily: '$inter',
+  fontFamily: 'inherit',
   fontWeight: 400,
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
 
   variants: {
+    font: {
+      hyper: {
+        fontFamily: '$hyper',
+        fontSize: '16px',
+        lineHeight: '1.3',
+      },
+      aero: {
+        fontFamily: '$aeroportMono',
+        lineHeight: '1.4',
+      },
+    },
     size: {
       '1': {
         fontSize: '$1',

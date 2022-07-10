@@ -3,7 +3,6 @@ import { Text } from '@/system/text';
 
 export const IntroLink = styled('a', {
   alignItems: 'center',
-  // fontFamily: '$olympic',
   fontSize: 'inherit',
   fontWeight: 'inherit',
   gap: '$1',
@@ -41,6 +40,19 @@ export const IntroLink = styled('a', {
         textDecoration: 'none',
         '&:focus': {
           outlineColor: '$slate8',
+        },
+      },
+      aero: {
+        color: '$rhythm11',
+        fontFamily: '$aeroportMono',
+        textDecoration: 'underline',
+        textUnderlineOffset: '1px',
+        textDecorationColor: 'inherit',
+        '&:hover': {
+          textUnderlineOffset: '1px',
+        },
+        '&:focus': {
+          outlineColor: '$rhythm8',
         },
       },
       subtle: {

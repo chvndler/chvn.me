@@ -1,7 +1,7 @@
 import { parseISO, format } from 'date-fns';
 
 import BlogContainer from '@/components/blog/BlogContainer';
-import { Box, Flex, Heading, Text, Section } from 'atelier.design';
+import { Box, Flex, Heading, Text, Section } from '@/system';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
 // import { Blog } from 'contentlayer/generated';
@@ -53,12 +53,12 @@ export default function BlogLayout({ children, post }: PropsWithChildren<{ post:
             <Flex css={{ flexDirection: 'column' }}>
               <Box css={{ alignItems: 'center', paddingBottom: '0px' }}>
                 {/* <!-- ADD A COOL BLOG ICON HERE --> */}
-                <Text size="2" css={{ color: '$sage11', lineHeight: '1.4', fontWeight: '500' }}>
-                  {'@chv_ndler / '}
+                <Text font="aero" css={{ color: '$sage11', fontFamily: '$aeroportMono', fontSize: '13px', lineHeight: '1.4' }}>
+                  {'@chv_ndler : '}
                   {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')}
                 </Text>
 
-                <Text css={{ fontFamily: '$hyper', lineHeight: '1.3', paddingTop: '10px' }}>{post.summary}</Text>
+                <Text css={{ fontFamily: '$aeroportMono', lineHeight: '1.3', paddingTop: '10px' }}>{post.summary}</Text>
               </Box>
             </Flex>
           </Section>

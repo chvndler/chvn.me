@@ -7,7 +7,6 @@ import { Box } from 'atelier.design';
 
 // Components..
 import { Navbar } from '@/ui/Navbar';
-import { Header } from '@/ui/Header';
 
 // stitches.config
 import { css, globalCss, darkTheme } from 'stitches.config';
@@ -15,6 +14,7 @@ import { css, globalCss, darkTheme } from 'stitches.config';
 // Styles..
 import { reset } from '@/styles/reset';
 import '@/styles/mori-gothic.css';
+import '@/styles/monospaced.css';
 import '@/styles/atkinson-hyperlegible.css';
 import 'inter-ui/inter.css';
 import '@/styles/olympic-sans.css';
@@ -58,11 +58,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         </Head>
 
-        <ThemeProvider
-          disableTransitionOnChange
-          attribute="class"
-          value={{ light: 'light-theme', dark: darkTheme.className }}
-          defaultTheme="light">
+        <ThemeProvider disableTransitionOnChange attribute="class" value={{ light: 'light-theme', dark: darkTheme.className }} defaultTheme="light">
           <Box css={{ zIndex: '0' }}>
             {/* <!-- <Navbar /> --> */}
             <Navbar />

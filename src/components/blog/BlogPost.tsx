@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 // import fetcher from '@/lib/fetcher';
 import type { Blog } from 'contentlayer/generated';
-// import { Blog } from 'contentlayer/generated';
 import { Box, Heading, Text } from 'atelier.design';
 
 export default function BlogPost({ title, summary, slug }: Pick<Blog, 'title' | 'summary' | 'slug'>) {

@@ -38,7 +38,7 @@ export const reset = {
     fontWeight: 'bolder',
   },
   'code, kbd, samp': {
-    fontFamily: '$jetbrain, monospace',
+    fontFamily: '$aeroportMono, monospace',
     fontSize: '1em',
   },
   small: {
@@ -74,15 +74,13 @@ export const reset = {
   'button, [type="button"], [type="reset"], [type="submit"]': {
     '-webkit-appearance': 'button',
   },
-  'button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner':
-    {
-      borderStyle: 'none',
-      padding: 0,
-    },
-  'button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring':
-    {
-      outline: '1px dotted ButtonText',
-    },
+  'button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner': {
+    borderStyle: 'none',
+    padding: 0,
+  },
+  'button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring': {
+    outline: '1px dotted ButtonText',
+  },
   fieldset: {
     padding: '0.35em 0.75em 0.625em',
   },

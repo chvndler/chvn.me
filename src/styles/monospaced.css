@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Monument Grotesk Semi-Mono';
+  src: url('/fonts/MonumentGrotesk-Semi-Mono.eot');
+  src: local('Monument Grotesk Semi-Mono'), local('MonumentGrotesk-Semi-Mono'),
+    url('/fonts/MonumentGrotesk-Semi-Mono.eot?#iefix') format('embedded-opentype'), url('/fonts/MonumentGrotesk-Semi-Mono.woff2') format('woff2'),
+    url('/fonts/MonumentGrotesk-Semi-Mono.woff') format('woff'), url('/fonts/MonumentGrotesk-Semi-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monument Grotesk Mono';
+  src: url('/fonts/MonumentGrotesk-Mono.eot');
+  src: local('Monument Grotesk Mono'), local('MonumentGrotesk-Mono'), url('/fonts/MonumentGrotesk-Mono.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/MonumentGrotesk-Mono.woff2') format('woff2'), url('/fonts/MonumentGrotesk-Mono.woff') format('woff'),
+    url('/fonts/MonumentGrotesk-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeroport Mono';
+  src: url('/fonts/AeroportMono.eot');
+  src: local('Aeroport Mono'), local('AeroportMono'), url('/fonts/AeroportMono.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/AeroportMono.woff2') format('woff2'), url('/fonts/AeroportMono.woff') format('woff'),
+    url('/fonts/AeroportMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Readex Pro';
+  src: url('/fonts/ReadexPro-Regular.eot');
+  src: local('Readex Pro Regular'), local('ReadexPro-Regular'), url('/fonts/ReadexPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/ReadexPro-Regular.woff2') format('woff2'), url('/fonts/ReadexPro-Regular.woff') format('woff'),
+    url('/fonts/ReadexPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

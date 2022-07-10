@@ -15,6 +15,10 @@ export const Text = styled('span', {
         fontSize: '16px',
         lineHeight: '1.3',
       },
+      aero: {
+        fontFamily: '$aeroportMono',
+        lineHeight: '1.4',
+      },
     },
     size: {
       '1': {
