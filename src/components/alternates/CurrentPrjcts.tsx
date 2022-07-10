@@ -7,7 +7,7 @@ import { Section } from '@/system/section';
 import { ProjectEntry } from '@/components/alternates/ProjectEntry';
 
 // Data
-import { data as items } from '@/projects/current.json';
+import { prjcts as items } from '@/projects/current';
 
 export const CurrentPrjcts = () => {
   return (
@@ -28,7 +28,7 @@ export const CurrentPrjcts = () => {
             },
           }}>
           {items.map(entry => {
-            return <ProjectEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
+            return <ProjectEntry title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
           })}
         </Grid>
       </Section>

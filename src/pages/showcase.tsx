@@ -13,7 +13,7 @@ import { Text } from '@/system/text';
 import { ShowcaseEntry } from '@/components/ShowcaseEntry';
 
 // Data
-import { data as items } from '@/projects/showcase.json';
+import { showcase as items } from '@/projects/showcase';
 
 const Showcase = () => {
   return (
@@ -34,12 +34,9 @@ const Showcase = () => {
         }}>
         {/* <!-- MAIN HEADING SECTION --> */}
         <Section size="1">
-          <Container
-            css={{ ai: 'center', paddingTop: '120px', paddingBottom: '40px', margin: 'auto', textAlign: 'center' }}>
+          <Container css={{ ai: 'center', paddingTop: '120px', paddingBottom: '40px', margin: 'auto', textAlign: 'center' }}>
             <Heading size="4">Showcase</Heading>
-            <Text
-              as="p"
-              css={{ fontWeight: '700', fontSize: '11px', lineHeight: '4', color: '$blue8', fontFamily: '$neuewide' }}>
+            <Text as="p" css={{ fontWeight: '700', fontSize: '11px', lineHeight: '4', color: '$blue8', fontFamily: '$neuewide' }}>
               Copyright © 2022
             </Text>
           </Container>
@@ -48,15 +45,7 @@ const Showcase = () => {
         {/* <!-- SHOWCASE ONE --> */}
         <Container size="3" css={{ bc: '$translucent', paddingBottom: '100px' }}>
           {items.map(entry => {
-            return (
-              <ShowcaseEntry
-                key={entry.title}
-                title={entry.title}
-                image={entry.image}
-                href={entry.url}
-                description={entry.description}
-              />
-            );
+            return <ShowcaseEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
           })}
         </Container>
         <Footer />

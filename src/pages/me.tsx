@@ -26,7 +26,7 @@ import { Breakout } from '@/components/Breakout';
 import { styled } from 'stitches.config';
 
 // Data
-import { data as items } from '@/projects/current.json';
+import { prjcts as items } from '@/projects/current';
 
 const IntroText = styled('p', {
   color: '$rhythmA12',
@@ -72,8 +72,7 @@ export default function Me() {
           }}>
           <Breakout>
             <IntroText className="intro">
-              I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently
-              building{' '}
+              I'm Chandler Chappell, a Front-end Developer, Designer, and Director located in Charlotte, NC. Currently building{' '}
               <IntroLink variant="escape" href="https://ady.world" target="_blank" rel="norefferer">
                 ( ady )
               </IntroLink>
@@ -111,9 +110,7 @@ export default function Me() {
             <HoverCardComponent />
             <Link href="https://twitter.com/chv_ndler" passHref>
               <a target="_blank" rel="noreferrer">
-                <Text css={{ color: '$rhythm11', fontFamily: '$mori', fontSize: '12px', fontWeight: '500' }}>
-                  @chv_ndler
-                </Text>
+                <Text css={{ color: '$rhythm11', fontFamily: '$mori', fontSize: '12px', fontWeight: '500' }}>@chv_ndler</Text>
               </a>
             </Link>
 
@@ -265,15 +262,7 @@ export default function Me() {
                 },
               }}>
               {items.map(entry => {
-                return (
-                  <GridEntry
-                    key={entry.title}
-                    title={entry.title}
-                    image={entry.image}
-                    href={entry.url}
-                    description={entry.description}
-                  />
-                );
+                return <GridEntry key={entry.title} title={entry.title} image={entry.image} href={entry.url} description={entry.description} />;
               })}
             </Grid>
           </CustomContainer>
@@ -282,9 +271,7 @@ export default function Me() {
         {/* <!-- Spotify Now Playing.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '40px', alignItems: 'left' }}>
           <CustomContainer css={{ alignItems: 'left' }}>
-            <Heading
-              size="1"
-              css={{ color: '$sage12', px: '8px', fontFamily: '$inter', fontWeight: 'bold', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', px: '8px', fontFamily: '$inter', fontWeight: 'bold', lineHeight: '2' }}>
               Now Playing
             </Heading>
             <Text
@@ -311,9 +298,7 @@ export default function Me() {
         {/* <!-- Spotify Top Tracks.. --> */}
         <Section size="2" css={{ paddingTop: '0', paddingBottom: '180px' }}>
           <CustomContainer>
-            <Heading
-              size="1"
-              css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
+            <Heading size="1" css={{ color: '$sage12', px: '8px', marginBottom: '10px', fontWeight: '600', lineHeight: '2' }}>
               Spotify Top 5
             </Heading>
             <TopTracks />
