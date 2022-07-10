@@ -1,45 +1,34 @@
-/* CSS HEX */
---dark-liver: #484349ff;
---snow: #f7f0f0ff;
---screamin-green: #72f863ff;
---air-superiority-blue: #7398aeff;
---maximum-blue-purple: #9191e9ff;
-
-/* CSS HSL */
---dark-liver: hsla(290, 4%, 27%, 1);
---snow: hsla(0, 30%, 95%, 1);
---screamin-green: hsla(114, 91%, 68%, 1);
---air-superiority-blue: hsla(202, 27%, 57%, 1);
---maximum-blue-purple: hsla(240, 67%, 74%, 1);
-
-/* SCSS HEX */
+/* MAIN COLOR PALETTE */
 $dark-liver: #484349ff;
 $snow: #f7f0f0ff;
 $screamin-green: #72f863ff;
 $air-superiority-blue: #7398aeff;
 $maximum-blue-purple: #9191e9ff;
 
-/* SCSS HSL */
 $dark-liver: hsla(290, 4%, 27%, 1);
 $snow: hsla(0, 30%, 95%, 1);
 $screamin-green: hsla(114, 91%, 68%, 1);
 $air-superiority-blue: hsla(202, 27%, 57%, 1);
 $maximum-blue-purple: hsla(240, 67%, 74%, 1);
 
-/* SCSS RGB */
-$dark-liver: rgba(72, 67, 73, 1);
-$snow: rgba(247, 240, 240, 1);
-$screamin-green: rgba(114, 248, 99, 1);
-$air-superiority-blue: rgba(115, 152, 174, 1);
-$maximum-blue-purple: rgba(145, 145, 233, 1);
+/* $suprLime -->
+suprLime1: 'hsl(109, 85%, 97%)',
+suprLime2: 'hsl(108, 90%, 88%)',
+suprLime3: 'hsl(110, 91%, 83%)',
+suprLime4: 'hsl(111, 91%, 78%)',
+suprLime5: 'hsl(113, 91%, 73%)',
+suprLime6: 'hsl(114, 91%, 68%)',
+suprLime7: 'hsl(164, 79%, 6%)',
+*/
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-right: linear-gradient(90deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-bottom: linear-gradient(180deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-left: linear-gradient(270deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-top-right: linear-gradient(45deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-bottom-right: linear-gradient(135deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-top-left: linear-gradient(225deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-bottom-left: linear-gradient(315deg, #484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
-$gradient-radial: radial-gradient(#484349ff, #f7f0f0ff, #72f863ff, #7398aeff, #9191e9ff);
+/* $air -->
+air1: 'hsl(220, 20%, 97%)',
+air2: 'hsl(207, 22%, 90%)',
+air3: 'hsl(207, 24%, 84%)',
+air4: 'hsl(206, 24%, 77%)',
+air5: 'hsl(204, 25%, 70%)',
+air6: 'hsl(202, 27%, 57%)',
+air7: 'hsl(322, 39%, 20%)',
+*/
+
+/* $maxAir */
