@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 const Index = () => {
   const router = useRouter();
 
-  // Redirect to /cover
+  // Redirect..
   useEffect(() => {
     router.replace('/chvn');
   });
