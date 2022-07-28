@@ -55,6 +55,19 @@ export const IntroLink = styled('a', {
           outlineColor: '$rhythm8',
         },
       },
+      readex: {
+        color: '$rhythm11',
+        fontFamily: '$readex',
+        textDecoration: 'underline',
+        textUnderlineOffset: '1px',
+        textDecorationColor: 'inherit',
+        '&:hover': {
+          textUnderlineOffset: '1px',
+        },
+        '&:focus': {
+          outlineColor: '$rhythm8',
+        },
+      },
       subtle: {
         color: '$bronze9',
         fontStyle: 'italic',

@@ -19,6 +19,10 @@ export const Text = styled('span', {
         fontFamily: '$aeroportMono',
         lineHeight: '1.4',
       },
+      readex: {
+        fontFamily: '$readex',
+        lineHeight: '1.4',
+      },
     },
     size: {
       '1': {

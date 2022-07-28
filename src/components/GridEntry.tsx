@@ -10,7 +10,6 @@ import { styled } from '@stitches/react';
 const imagePrefix = `https://cdn.ady.systems`;
 
 const Title = styled('div', {
-  // mixBlendMode: 'difference',
   color: '$rhythmA12',
   fontFamily: '$inter',
   fontSize: '17px',
@@ -18,12 +17,9 @@ const Title = styled('div', {
   marginBottom: '10px',
   lineHeight: '0.6',
   letterSpacing: '-0.05rem',
-
-  // textTransform: 'uppercase',
 });
 
 const Description = styled('div', {
-  // mixBlendMode: 'difference',
   fontFamily: '$inter',
   fontWeight: '500',
   fontSize: '13px',
@@ -45,7 +41,7 @@ const Card = styled('div', {
   // backgroundColor: '$rhythmA2',
   backgroundColor: '$translucent',
   color: '$rhythm3',
- // border: 'solid 1px $rhythmA4',
+  border: 'solid 1px $rhythmA4',
   position: 'relative',
   borderRadius: '20px',
   marginTop: '0',
@@ -54,13 +50,9 @@ const Card = styled('div', {
   alignItems: 'left',
   webkitScrollbar: 'none',
   height: '140px',
-  // boxShadow: '1px 1px 1px 1px $colors$rhythm12',
 
   '&:hover': {
-    // color: '$slate1',
-    //   animation: '${scaleUp} 200ms',
     background: '$rhythmPx',
-    // boxShadow: '1px 1px 0 1px $colors$rhythm12',
   },
 });
 
@@ -79,12 +71,7 @@ export const GridEntry = ({ title, description, image, href }) => {
             backgroundSize: 'cover',
             objectFit: 'cover',
           }}>
-          <EntryLink
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            ref={ref}
-            title={`${title} - ${description}`}>
+          <EntryLink href={href} target="_blank" rel="noopener noreferrer" ref={ref} title={`${title} - ${description}`}>
             <section>
               <Box
                 css={{
