@@ -62,8 +62,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
           <ThemeProvider disableTransitionOnChange attribute="class" value={{ light: 'light-theme', dark: darkTheme.className }} defaultTheme="light">
             <Box css={{ zIndex: '0' }}>
-              {/* <!-- <Navbar /> --> */}
+              {/* <!-- <Navbar />
               <Navbar />
+              --> */}
               <div
                 className={appWrapper({
                   display: 'flex',
