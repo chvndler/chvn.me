@@ -67,6 +67,7 @@ export default class Document extends NextDocument {
           <Main />
           <NextScript>
             <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
+            <script defer data-domain="chvn.me" src="https://plausible.io/js/plausible.js" />
           </NextScript>
         </body>
       </Html>
