@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import { DesignProvider } from '@/components/DesignProvider';
+import PlausibleProvider from 'next-plausible';
 import { Box } from 'atelier.design';
 
 // Components..
@@ -54,23 +55,25 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DesignProvider>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        </Head>
+        <PlausibleProvider domain="chvn.me">
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+          </Head>
 
-        <ThemeProvider disableTransitionOnChange attribute="class" value={{ light: 'light-theme', dark: darkTheme.className }} defaultTheme="light">
-          <Box css={{ zIndex: '0' }}>
-            {/* <!-- <Navbar /> --> */}
-            <Navbar />
-            <div
-              className={appWrapper({
-                display: 'flex',
-                flexDirection: 'column',
-              })}>
-              <Component {...pageProps} />
-            </div>
-          </Box>
-        </ThemeProvider>
+          <ThemeProvider disableTransitionOnChange attribute="class" value={{ light: 'light-theme', dark: darkTheme.className }} defaultTheme="light">
+            <Box css={{ zIndex: '0' }}>
+              {/* <!-- <Navbar /> --> */}
+              <Navbar />
+              <div
+                className={appWrapper({
+                  display: 'flex',
+                  flexDirection: 'column',
+                })}>
+                <Component {...pageProps} />
+              </div>
+            </Box>
+          </ThemeProvider>
+        </PlausibleProvider>
       </DesignProvider>
     </>
   );
