@@ -70,7 +70,7 @@ export default function NowPlaying() {
               <>
                 {/* <!-- Not Playing Component --> */}
                 <Box css={{ position: 'relative', margin: 'auto' }}>
-                  <Avatar variant="spotify" size="5" alt="Spotify" src="" fallback="💤"></Avatar>
+                  <Avatar variant="spotify" size="5" alt="Spotify" src="" fallback="⌁"></Avatar>
                 </Box>
 
                 <Flex css={{ paddingLeft: '6px', flexDirection: 'column', margin: 'auto' }}>
