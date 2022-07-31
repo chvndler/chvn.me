@@ -1,5 +1,6 @@
 import React from 'react';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
+import { PlausibleScript } from '@/components/scripts/Plausible';
 import { getCssText } from 'stitches.config';
 
 const getCssAndReset = () => {
@@ -62,12 +63,12 @@ export default class Document extends NextDocument {
           <meta property="og:site_name" content="chvn.me" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://chvn.me" />
+          <PlausibleScript />
         </Head>
         <body>
           <Main />
           <NextScript>
             <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssAndReset() }} />
-            <script defer data-domain="chvn.me" src="https://plausible.io/js/plausible.js" />
           </NextScript>
         </body>
       </Html>
