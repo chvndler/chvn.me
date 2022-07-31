@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
 import Link from 'next/link';
 
 import { Box } from '@/system/box';
@@ -20,6 +21,7 @@ export default function Chvn() {
       <Box css={{}}>
         <Head>
           <title>chvn.me/</title>
+          <Script defer data-domain="chvn.me" src="https://plausible.io/js/plausible.js" />
         </Head>
 
         <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
