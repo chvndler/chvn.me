@@ -9,6 +9,8 @@ import { Container } from '@/system/container';
 import { Section } from '@/system/section';
 import { Heading } from '@/system/heading';
 import { Text } from '@/system/text';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 import { ShowcaseEntry } from '@/components/ShowcaseEntry';
 
@@ -18,6 +20,7 @@ import { showcase as items } from '@/projects/showcase';
 const Showcase = () => {
   return (
     <Box>
+      <Navbar />
       <Head>
         <title>Showcase.</title>
       </Head>

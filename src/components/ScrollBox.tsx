@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'stitches.config';
-import { violet, mauve, blackA } from '@radix-ui/colors';
+import { blackA } from '@radix-ui/colors';
 import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
 
 const SCROLLBAR_SIZE = 8;
@@ -67,30 +67,38 @@ export const ScrollAreaThumb = StyledThumb;
 export const ScrollAreaCorner = StyledCorner;
 
 // Your app...
-const Box = styled('div', {});
-const Text = styled('div', {
-  color: violet.violet11,
-  fontSize: 15,
-  lineHeight: '18px',
-  fontWeight: 500,
+const Box = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '0',
+  margin: '0',
 });
-const Tag = styled('div', {
+
+const Tag = styled('a', {
   color: '$gray9',
   fontSize: '14px',
   lineHeight: '16px',
   marginTop: '8px',
   // borderTop: `1px solid $colors$mauveA5`,
   paddingTop: 8,
+
+  '&:hover': {
+    color: '$gray10',
+  },
 });
 
-const TAGS = Array.from({ length: 10 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
+// const TAGS = Array.from({ length: 10 }).map((_, i, a) => `v1.2.0-beta.${a.length - i}`);
+
+import { dTags as DTAGS } from '@/projects/design-tags';
 
 export const ScrollBox = () => (
   <ScrollArea>
     <ScrollAreaViewport css={{ backgroundColor: 'transparent' }}>
-      <Box style={{ paddingLeft: '0', paddingRight: '0', paddingTop: '0px', paddingBottom: '0px' }}>
-        {TAGS.map(tag => (
-          <Tag key={tag}>{tag}</Tag>
+      <Box>
+        {DTAGS.map(tag => (
+          <Tag key={tag.key} href={tag.url} target="_blank" rel="norefferrer noopener">
+            {tag.tag}
+          </Tag>
         ))}
       </Box>
     </ScrollAreaViewport>

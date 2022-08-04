@@ -1,7 +1,5 @@
-import Head from 'next/head';
-import { Box, Text, Heading, Grid } from '@/system';
+import { Box, Text, Grid } from '@/system';
 import { ScrollBox } from '@/components/ScrollBox';
-import { styled } from 'stitches.config';
 
 export default function Test() {
   return (
@@ -19,13 +17,17 @@ export default function Test() {
           zIndex: '0',
           overflowY: 'visible',
           overflowX: 'visible',
+          '@sm': {
+            overflowY: 'scroll',
+            overflowX: 'scroll',
+            overflow: 'auto',
+          },
         }}>
         <Grid
           align="center"
           columns={{ '@xl': 4, '@lg': 4, '@md': 3, '@sm': 2, '@xs': 1 }}
           css={{ gap: '20px', placeItems: 'stretch', gridAutoRows: 'auto', mb: '2px' }}>
-          <Text css={{ color: '$rhythm12', fontSize: '14px', fontWeight: '500', lineHeight: 'normal' }}>Chandler.Chappell</Text>
-
+          <Text css={{ color: '$rhythm12', fontSize: '14px', fontWeight: '600', lineHeight: 'normal' }}>Chandler.Chappell</Text>
           <Box
             css={{
               margin: '0',
@@ -47,17 +49,9 @@ export default function Test() {
                 maxHeight: '300px',
               },
             }}>
-            <Text css={{ color: '$rhythm9', fontSize: '14px', fontWeight: '500', lineHeight: 'normal' }}>Design</Text>
+            <Text css={{ color: '$rhythm11', fontSize: '14px', fontWeight: '700', lineHeight: 'normal' }}>Design</Text>
 
             <ScrollBox />
-
-            {/*
-            <ul>
-              <li>one</li>
-              <li>one</li>
-              <li>one</li>
-            </ul>
-            */}
           </Box>
 
           <Box

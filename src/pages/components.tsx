@@ -2,11 +2,14 @@ import { Box, Heading, Text, Container, Section } from 'atelier.design';
 import { SmallSpacer } from '@/components/space';
 import { CustomContainer } from '@/components/CustomContainer';
 import { RhythmColorSystem } from '@/components/RhythmColorSystem';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 // APP BEGIN / Components Page
 const Components = () => {
   return (
     <>
+      <Navbar />
       <Box css={{ minWidth: '100vw', paddingTop: '80px', bc: '$rhythmA1' }}>
         <Section size="2">
           <Container size="3" css={{ bc: '$rhythmA2', padding: '10px' }}>

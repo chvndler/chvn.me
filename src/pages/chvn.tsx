@@ -13,10 +13,13 @@ import { MarketingButton } from '@/components/MarketingButton';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { CurrentPrjcts } from '@/components/alternates/CurrentPrjcts';
 import NowPlaying from '@/components/spotify/NowPlaying';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 export default function Chvn() {
   return (
     <>
+      <Navbar />
       <Box css={{}}>
         <Head>
           <title>chvn.me/</title>

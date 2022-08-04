@@ -22,6 +22,8 @@ import { GridEntry } from '@/components/GridEntry';
 import TopTracks from '@/components/spotify/TopTracks';
 import NowPlaying from '@/components/spotify/NowPlaying';
 import { Breakout } from '@/components/Breakout';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 import { styled } from 'stitches.config';
 
@@ -54,6 +56,7 @@ const IntroText = styled('p', {
 export default function Me() {
   return (
     <>
+      <Navbar />
       <Box>
         <Head>
           <title>Chandler Chappell</title>

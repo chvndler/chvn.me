@@ -4,6 +4,8 @@ import { CoverFooter } from '@/components/ui/CoverFooter';
 // import { SocialLinks } from '@/components/SocialLinks';
 
 import { styled } from 'stitches.config';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 const CoverBox = styled('div', {
   zIndex: '10',
@@ -35,6 +37,7 @@ const TextBox = styled('div', {
 export default function Intro() {
   return (
     <>
+      <Navbar />
       <Box
         css={{
           position: 'fixed',

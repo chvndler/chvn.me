@@ -5,6 +5,8 @@ import BlogPost from '@/components/blog/BlogPost';
 import { InferGetStaticPropsType } from 'next';
 import { pick } from '@/lib/utils';
 import { allBlogs } from 'contentlayer/generated';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 import { Badge, Section } from 'atelier.design';
 import { Box, Text } from '@/system';
@@ -18,6 +20,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
 
   return (
     <>
+      <Navbar />
       <Box css={{}}>
         <Head>
           <title>Blog - chvn.me/</title>
