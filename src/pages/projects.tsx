@@ -2,10 +2,13 @@ import React from 'react';
 import { Container, Section, Grid, Heading } from '@/system';
 import { ProjectLogoBox } from '@/components/ProjectLogoBox';
 import { ProjectLogo } from '@/components/ProjectLogo';
+// Components..
+import { Navbar } from '@/ui/Navbar';
 
 const Projects = () => {
   return (
     <>
+      <Navbar />
       <Container css={{ paddingTop: '100px', paddingBottom: '0px' }} size={{ '@initial': 2, '@bp2': 3 }}>
         <Heading size="3" css={{ fontFamily: '$inter', fontWeight: '700', textAlign: 'center' }}>
           Current Projects

@@ -56,7 +56,7 @@ const Card = styled('div', {
   height: '120px',
 });
 
-export const ProjectEntry = ({ title, description, image, href }) => {
+export const ProjectEntry = ({ title, description, image, href, key }) => {
   const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
